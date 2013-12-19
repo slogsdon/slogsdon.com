@@ -18,18 +18,18 @@
     <meta property="og:description" content="{{ page.excerpt | strip_html }}"> 
     <meta property="og:type" content="article">
     {% if page %}
-        <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+        <meta property="og:url" content="{{ site.url }}{{ page.url }}/">
     {% else %}
-        <meta property="og:url" content="{{ site.url }}">
+        <meta property="og:url" content="{{ site.url }}/">
     {% endif %}
     <!-- <meta property="og:image" content="http://www.your-site.com/image.jpg"> -->
     <meta property="og:site_name" content="{{ page.title }}">
     <!-- Twitter -->
     <meta name="twitter:card" content="summary">
     {% if page %}
-        <meta property="twitter:url" content="{{ site.url }}{{ page.url }}">
+        <meta property="twitter:url" content="{{ site.url }}{{ page.url }}/">
     {% else %}
-        <meta property="twitter:url" content="{{ site.url }}">
+        <meta property="twitter:url" content="{{ site.url }}/">
     {% endif %}
     <meta name="twitter:title" content="{{ page.title }}">
     <meta name="twitter:description" content="{{ page.excerpt | strip_html }}">
@@ -37,7 +37,7 @@
     <meta name="author" content="Shane Logsdon">
     <meta charset="utf-8">
 
-    <link href="{{ site.url }}" rel="canonical" />
+    <link href="{{ site.url }}/" rel="canonical" />
     <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed/atom.xml" title="RSS feed">
     <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Roboto+Slab:300' rel='stylesheet' type='text/css'>
@@ -112,25 +112,25 @@
                     <h3 class="hidden-phone">Categories</h3>
                     <nav class="hidden-phone">
                         <ul class="nav">
-                            <li><a href="/categories/devops">
+                            <li><a href="/categories/devops/">
                                 DevOps <span class="badge pull-right">{{ site.categories.devops.size }}</span>
                             </a></li>
-                            <li><a href="/categories/elixir">
+                            <li><a href="/categories/elixir/">
                                 Elixir <span class="badge pull-right">{{ site.categories.elixir.size }}</span>
                             </a></li>
-                            <li><a href="/categories/erlang">
+                            <li><a href="/categories/erlang/">
                                 Erlang <span class="badge pull-right">{{ site.categories.erlang.size }}</span>
                             </a></li>
-                            <li><a href="/categories/golang">
+                            <li><a href="/categories/golang/">
                                 Golang <span class="badge pull-right">{{ site.categories.golang.size }}</span>
                             </a></li>
-                            <li><a href="/categories/list">
+                            <li><a href="/categories/list/">
                                 List <span class="badge pull-right">{{ site.categories.list.size }}</span>
                             </a></li>
-                            <li><a href="/categories/net">
+                            <li><a href="/categories/net/">
                                 .NET <span class="badge pull-right">{{ site.categories.net.size }}</span>
                             </a></li>
-                            <li><a href="/categories/ruby">
+                            <li><a href="/categories/ruby/">
                                 Ruby <span class="badge pull-right">{{ site.categories.ruby.size }}</span>
                             </a></li>
                         </ul>
@@ -138,25 +138,25 @@
                     <nav class="only-phone">
                         <select class="form-control only-phone">
                             <option>Categories...</option>
-                            <option value="/categories/devops">
+                            <option value="/categories/devops/">
                                 DevOps ({{ site.categories.devops.size }})
                             </option>
-                            <option value="/categories/elixir">
+                            <option value="/categories/elixir/">
                                 Elixir ({{ site.categories.elixir.size }})
                             </option>
-                            <option value="/categories/erlang">
+                            <option value="/categories/erlang/">
                                 Erlang ({{ site.categories.erlang.size }})
                             </option>
-                            <option value="/categories/golang">
+                            <option value="/categories/golang/">
                                 Golang ({{ site.categories.golang.size }})
                             </option>
-                            <option value="/categories/list">
+                            <option value="/categories/list/">
                                 List ({{ site.categories.list.size }})
                             </option>
-                            <option value="/categories/net">
+                            <option value="/categories/net/">
                                 .NET ({{ site.categories.net.size }})
                             </option>
-                            <option value="/categories/ruby">
+                            <option value="/categories/ruby/">
                                 Ruby ({{ site.categories.ruby.size }})
                             </option>
                         </select>
@@ -174,7 +174,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <!-- does anyone actually look at this? -->
-                    Built using <a href="http://jekyllrb.com">Jekyll</a> and <a href="http://getbootstrap.com/">Bootstrap</a>.
+                    Built using <a href="http://jekyllrb.com/">Jekyll</a> and <a href="http://getbootstrap.com/">Bootstrap</a>.
                     Hosted with <a href="https://pages.github.com/">GitHub Pages</a>.
                 </div>
             </div>
