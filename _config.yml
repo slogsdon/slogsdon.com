@@ -2,7 +2,9 @@ name: Shane Logsdon
 description: "I code things. Sometimes, I write about them here."
 url: "http://shane.logsdon.io"
 
-markdown: kramdown # was redcarpet but needed footnotes
+markdown: kramdown
+kramdown:
+  input: GFM
 pygments: true
 
 permalink: /posts/:categories/:title
