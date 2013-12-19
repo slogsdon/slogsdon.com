@@ -1,3 +1,10 @@
-name: Your New Jekyll Site
+name: Shane Logsdon
+description: "I code things. Sometimes, I write about them here."
+url: "http://shane.logsdon.io"
+
 markdown: redcarpet
 pygments: true
+
+permalink: /posts/:categories/:title
+paginate: 6
+paginate_path: "posts/page/:num"
