@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<main class="col-lg-9 col-md-9 col-sm-9" role="main">
+
+    <h1>Posts in Ruby <span class="badge">{{ site.categories.ruby.size }}</span></h1>
+
+    {% for post in site.categories.ruby %}
+        <article class="post collapsed" itemscope itemType="http://schema.org/BlogPosting">
+            <meta itemprop="inLanguage" content="en-US"/>
+            <h2 class="external" itemprop="name">
+                <a itemprop="url" href="{{ post.url }}">{{ post.title }}</a>
+            </h2>
+            <div class="post-details">
+                <span>published <time itemprop="datePublished" content="{{ post.date }}">{{ post.date | date_to_string }}</time></span>
+                <span>in {{ post.categories }}</span>
+            </div>
+            <div class="intro">
+                <p>{{ post.excerpt }}</p>
+                <p><a href="{{ post.url }}">Continue Reading</a></p>
+            </div>
+        </article>
+    {% endfor %}
+
+</main>
