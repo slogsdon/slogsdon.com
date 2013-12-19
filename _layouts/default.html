@@ -3,18 +3,18 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>{{ page.title }}</title>
+    <title>{{ page.title }} - {{ site.name }}</title>
     <meta name="description" content="{{ page.excerpt | strip_html }}" />
 
     <meta name="HandheldFriendly" content="True" />
     <meta name="MobileOptimized" content="320" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Google -->
-    <meta itemprop="name" content="{{ page.title }}">
+    <meta itemprop="name" content="{{ page.title }} - {{ site.name }}">
     <meta itemprop="description" content="{{ page.excerpt | strip_html }}">
     <!-- <meta itemprop="image" content="http://www.example.com/image.jpg"> -->
     <!-- Facebook -->
-    <meta property="og:title" content="{{ page.title }}"> 
+    <meta property="og:title" content="{{ page.title }} - {{ site.name }}"> 
     <meta property="og:description" content="{{ page.excerpt | strip_html }}"> 
     <meta property="og:type" content="article">
     {% if page %}
@@ -23,7 +23,7 @@
         <meta property="og:url" content="{{ site.url }}/">
     {% endif %}
     <!-- <meta property="og:image" content="http://www.your-site.com/image.jpg"> -->
-    <meta property="og:site_name" content="{{ page.title }}">
+    <meta property="og:site_name" content="{{ page.title }} - {{ site.name }}">
     <!-- Twitter -->
     <meta name="twitter:card" content="summary">
     {% if page %}
@@ -31,7 +31,7 @@
     {% else %}
         <meta property="twitter:url" content="{{ site.url }}/">
     {% endif %}
-    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:title" content="{{ page.title }} - {{ site.name }}">
     <meta name="twitter:description" content="{{ page.excerpt | strip_html }}">
     <!-- <meta name="twitter:image" content="http://example.com/image.jpg"> -->
     <meta name="author" content="Shane Logsdon">
