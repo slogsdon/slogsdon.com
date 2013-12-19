@@ -1,13 +1,49 @@
 ---
 layout: default
-title: Your New Jekyll Site
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+<main class="col-lg-9 col-md-9 col-sm-9" role="main">
+    {% for post in paginator.posts %}
+        <article class="post collapsed" itemscope itemType="http://schema.org/BlogPosting">
+            <meta itemprop="inLanguage" content="en-US"/>
+            <h2 class="external" itemprop="name">
+                <a itemprop="url" href="{{ post.url }}">{{ post.title }}</a>
+            </h2>
+            <div class="post-details">
+                <span>published <time itemprop="datePublished" content="{{ post.date }}">{{ post.date | date_to_string }}</time></span>
+                <span>in {{ post.categories }}</span>
+            </div>
+            <div class="intro">
+                <p>{{ post.excerpt }}</p>
+                <p><a href="{{ post.url }}">Continue Reading</a></p>
+            </div>
+        </article>
     {% endfor %}
-  </ul>
-</div>
+
+    {% if paginator.total_pages > 1 %}
+		<div class="pagination">
+			{% if paginator.previous_page %}
+			    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+			{% else %}
+			    <span>&laquo; Prev</span>
+			{% endif %}
+
+			{% for page in (1..paginator.total_pages) %}
+			    {% if page == paginator.page %}
+			        <em>{{ page }}</em>
+			    {% elsif page == 1 %}
+			        <a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+			    {% else %}
+			        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+			    {% endif %}
+			{% endfor %}
+
+			{% if paginator.next_page %}
+			    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+			{% else %}
+			    <span>Next &raquo;</span>
+			{% endif %}
+		</div>
+	{% endif %}
+
+</main>
