@@ -25,5 +25,7 @@ Sadly, I don't have definitive numbers on app response time from the server as N
 
 Go has left me wanting more. I just want more. More time with it. More projects written in it. Development time with it is quick, writing, compiling, and running, while the code is concise and easy to read for when I don't document (considering my track record with code, that will be most of the time).
 
+---
+
 [^1]: Obtvse2 was running as a Passenger app, while acvte was running as itself. Both were reverse-proxied from nginx, had varnish acting as an edge cache, and were running on a 1GB Memory, 1 Core, 30GB SSD cloud instance from DigitalOcean.
 [^2]: Definition of Time (total duration) and Latency (time to first byte) from [Google](https://developers.google.com/chrome-developer-tools/docs/network).
