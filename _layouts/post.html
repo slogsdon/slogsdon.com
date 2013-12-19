@@ -11,7 +11,7 @@ layout: default
         </h1>
         <div class="post-details">
             <span>published <time itemprop="datePublished" content="{{ page.date }}">{{ page.date | date_to_string }}</time></span>
-            <span>in {{ page.category }}</span>
+            <span>in <a href="/categories/{{ page.categories }}">{{ page.categories }}</a></span>
         </div>
         <div class="post" itemprop="articleBody">
             {{ content }}
