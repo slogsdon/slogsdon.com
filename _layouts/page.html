@@ -4,16 +4,16 @@ layout: default
 
 <main class="col-lg-9 col-md-9 col-sm-9" role="main">
 
-    <article id="post" class="full" itemscope itemType="http://schema.org/BlogPosting">
+    <article id="page" class="full" itemscope itemType="http://schema.org/BlogPosting">
         <meta itemprop="inLanguage" content="en-US"/>
         <h1 itemprop="name">
             <a itemprop="url" href="http://shane.logsdon.io{{ page.url }}" title="permanent link">{{ page.title }}</a>
         </h1>
-        <div class="post-details">
+        <div class="page-details">
             <span>published <time itemprop="datePublished" content="{{ page.date }}">{{ page.date | date_to_string }}</time></span>
             <span>in {{ page.category }}</span>
         </div>
-        <div class="post" itemprop="articleBody">
+        <div class="page" itemprop="articleBody">
             {{ content }}
         </div>
     </article>
@@ -29,7 +29,7 @@ layout: default
             or subscribe to <a href="/feed/atom.xml">RSS</a>.
         </div>
         <div class="share">
-            Share this post on:
+            Share this page on:
             <a class="fa fa-twitter" href="http://twitter.com/share?text={{ page.title }}&url=http://shane.logsdon.io{{ page.url }}"
                 onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                 <span class="hidden">Twitter</span>
