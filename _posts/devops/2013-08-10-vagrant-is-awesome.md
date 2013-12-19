@@ -42,9 +42,7 @@ I've been using Vagrant to host a Phalcon project for a while, and I managed to 
 >
 > ##### Note
 >
-> Nginx is configured by default to use `./src/Public/` as the root directory. 
-> If your public directory differs, be sure to update the `Vagrantfile` to 
-> reflect your needs.
+> Nginx is configured by default to use `./src/Public/` as the root directory.  If your public directory differs, be sure to update the `Vagrantfile` to  reflect your needs.
 
 While not perfect, it does the job of setting up a Phalcon dev environment quite well, so I felt content with releasing it out into the wild. Happen to find a problem with it or have a suggestion? Submit an [issue](https://github.com/slogsdon/vagrant-phalcon/issues), or better yet, submit a [pull-request](https://github.com/slogsdon/vagrant-phalcon/pulls).
 

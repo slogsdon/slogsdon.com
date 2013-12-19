@@ -19,11 +19,7 @@ Ready? Let's go.
 
 Developers using Elixir use `mix` for building, running, and testing their applications. What is `mix`, you ask? Well, from its [intro page](http://elixir-lang.org/getting_started/mix/1.html):
 
-> Mix is a build tool that provides tasks for
-> creating, compiling, testing (and soon
-> releasing) Elixir projects. Mix is inspired by
-> the Leiningen build tool for Clojure and was
-> written by one of its contributors.
+> Mix is a build tool that provides tasks for creating, compiling, testing (and soon releasing) Elixir projects. Mix is inspired by the Leiningen build tool for Clojure and was written by one of its contributors.
 
 With mix, creating our project is as simple as:
 
