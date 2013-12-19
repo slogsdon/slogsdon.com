@@ -18,7 +18,7 @@ title: Ruby Posts
                 <span>in <a href="/categories/{{ post.categories }}/">{{ post.categories }}</a></span>
             </div>
             <div class="intro">
-                <p>{{ post.excerpt }}</p>
+                <p>{{ post.excerpt | strip_html }}&hellip;</p>
                 <p><a href="{{ post.url }}/">Continue Reading</a></p>
             </div>
         </article>

@@ -18,7 +18,7 @@ title: Current Projects
                 <span>in {{ post.categories }}</span>
             </div>
             <div class="intro">
-                <p>{{ post.excerpt }}</p>
+                <p>{{ post.excerpt | strip_html }}&hellip;</p>
                 <p><a href="{{ post.url }}">Continue Reading</a></p>
             </div>
         </article>
