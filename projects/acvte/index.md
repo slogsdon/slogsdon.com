@@ -14,7 +14,7 @@ just an exercise in getting comfortable with go and revel.
 
 ## What it isn't
 
-Acvte is definitely not a full CMS like WordPress. There aren't any plugins or themes strewn across the Internet. It's also not a static site generator like Jekyll. Acvute is fully dynamic, backed by your favorite database.
+Acvte is definitely not a full CMS like WordPress. There aren't any plugins or themes strewn across the Internet. It's also not a static site generator like Jekyll. Acvte is fully dynamic, backed by your favorite database.
 
 ## Demo
 
