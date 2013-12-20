@@ -1,7 +1,50 @@
-<http>
-<head>
-<meta http-equiv="refresh" content="0; url=/">
-</head>
-<body>
-</body>
-</html>
+---
+layout: default
+title: Posts
+---
+
+<main class="col-lg-7 col-md-8 col-sm-9" role="main">
+    {% for post in paginator.posts %}
+        <article class="post collapsed" itemscope itemType="http://schema.org/BlogPosting">
+            <meta itemprop="inLanguage" content="en-US"/>
+            <h2 class="external" itemprop="name">
+                <a itemprop="url" href="{{ site.url }}{{ post.url }}/">{{ post.title }}</a>
+            </h2>
+            <div class="post-details">
+                <span>published <time itemprop="datePublished" content="{{ post.date }}">{{ post.date | date_to_string }}</time></span>
+                <span>in <a href="/categories/{{ post.categories }}/">{{ post.categories }}</a></span>
+            </div>
+            <div class="intro">
+                <p>{{ post.excerpt | strip_html }}&hellip;</p>
+                <p><a href="{{ post.url }}/">Continue Reading</a></p>
+            </div>
+        </article>
+    {% endfor %}
+
+    {% if paginator.total_pages > 1 %}
+		<div class="pagination">
+			{% if paginator.previous_page %}
+			    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+			{% else %}
+			    <span>&laquo; Prev</span>
+			{% endif %}
+
+			{% for page in (1..paginator.total_pages) %}
+			    {% if page == paginator.page %}
+			        <em>{{ page }}</em>
+			    {% elsif page == 1 %}
+			        <a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+			    {% else %}
+			        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}/">{{ page }}</a>
+			    {% endif %}
+			{% endfor %}
+
+			{% if paginator.next_page %}
+			    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}/">Next &raquo;</a>
+			{% else %}
+			    <span>Next &raquo;</span>
+			{% endif %}
+		</div>
+	{% endif %}
+
+</main>

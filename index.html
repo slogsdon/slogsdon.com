@@ -1,50 +1,40 @@
 ---
-layout: default
+layout: main
 title: There's no place like home.
 ---
 
-<main class="col-lg-7 col-md-8 col-sm-9" role="main">
-    {% for post in paginator.posts %}
-        <article class="post collapsed" itemscope itemType="http://schema.org/BlogPosting">
-            <meta itemprop="inLanguage" content="en-US"/>
-            <h2 class="external" itemprop="name">
-                <a itemprop="url" href="{{ site.url }}{{ post.url }}/">{{ post.title }}</a>
-            </h2>
-            <div class="post-details">
-                <span>published <time itemprop="datePublished" content="{{ post.date }}">{{ post.date | date_to_string }}</time></span>
-                <span>in <a href="/categories/{{ post.categories }}/">{{ post.categories }}</a></span>
-            </div>
-            <div class="intro">
-                <p>{{ post.excerpt | strip_html }}&hellip;</p>
-                <p><a href="{{ post.url }}/">Continue Reading</a></p>
-            </div>
-        </article>
-    {% endfor %}
+<main class="row home" role="main">
+    <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-md-offset-3">
+		<h1>
+			hi, i'm shane. 
+			<img class="pull-right" src="http://www.gravatar.com/avatar/033132c341296d7f5e5b41e871178418.png" alt="Shane Logsdon" />
+		</h1>
 
-    {% if paginator.total_pages > 1 %}
-		<div class="pagination">
-			{% if paginator.previous_page %}
-			    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
-			{% else %}
-			    <span>&laquo; Prev</span>
-			{% endif %}
+		<p>
+			i <a href="https://github.com/slogsdon">code</a>. 
+			i occasionally <a href="http://shane.logsdon.io/posts/">write</a>
+			and <a href="https://twitter.com/shanelogsdon">tweet</a>.
+		</p>
 
-			{% for page in (1..paginator.total_pages) %}
-			    {% if page == paginator.page %}
-			        <em>{{ page }}</em>
-			    {% elsif page == 1 %}
-			        <a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-			    {% else %}
-			        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}/">{{ page }}</a>
-			    {% endif %}
-			{% endfor %}
+		<p>you might be interested in my:</p>
 
-			{% if paginator.next_page %}
-			    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}/">Next &raquo;</a>
-			{% else %}
-			    <span>Next &raquo;</span>
-			{% endif %}
-		</div>
-	{% endif %}
-
+		<nav class="row">
+			<ul class="nav col-lg-6 col-lg-offset-1 col-md-7 col-md-offset-1 col-sm-8 col-md-offset-1">
+				<li><a href="/projects/">projects <i class="fa fa-code pull-right"></i></a></li>
+				<li><a href="/posts/">posts <i class="fa fa-file-text-o pull-right"></i></a></li>
+				<li><a href="/contact/">contact info <i class="fa fa-envelope-o pull-right"></i></a></li>
+			</ul>
+		</nav>
+	</div>
 </main>
+
+<footer>
+    <div class="row">
+        <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-md-offset-3">
+        	<hr>
+            <!-- does anyone actually look at this? -->
+            Built using <a href="http://jekyllrb.com/">Jekyll</a> and <a href="http://getbootstrap.com/">Bootstrap</a>.
+            Hosted with <a href="https://pages.github.com/">GitHub Pages</a>.
+        </div>
+    </div>
+</footer>
