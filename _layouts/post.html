@@ -13,6 +13,11 @@ layout: default
             <span>published <time itemprop="datePublished" content="{{ page.date }}">{{ page.date | date_to_string }}</time></span>
             <span>in <a href="/categories/{{ page.categories }}/">{{ page.categories }}</a></span>
         </div>
+        {% if page.image %}
+            <div class="post-image">
+                <img src="{{ page.image }}" />
+            </div>
+        {% endif %}
         <div class="post" itemprop="articleBody">
             {{ content }}
         </div>
