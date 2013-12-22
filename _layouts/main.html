@@ -1,125 +1,20 @@
-<!DOCTYPE html>
-<html lang="en-US" itemscope itemtype="http://schema.org/Article">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>{{ page.title }} - {{ site.name }}</title>
-    <meta name="description" content="{{ page.excerpt | strip_html }}&hellip;" />
+---
+layout: bare
+---
 
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="MobileOptimized" content="320" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Google -->
-    <meta itemprop="name" content="{{ page.title }} - {{ site.name }}">
-    <meta itemprop="description" content="{{ page.excerpt | strip_html }}&hellip;">
-    <!-- <meta itemprop="image" content="http://www.example.com/image.jpg"> -->
-    <!-- Facebook -->
-    <meta property="og:title" content="{{ page.title }} - {{ site.name }}"> 
-    <meta property="og:description" content="{{ page.excerpt | strip_html }}&hellip;"> 
-    <meta property="og:type" content="article">
-    {% if page %}
-        <meta property="og:url" content="{{ site.url }}{{ page.url }}/">
-    {% else %}
-        <meta property="og:url" content="{{ site.url }}/">
-    {% endif %}
-    <!-- <meta property="og:image" content="http://www.your-site.com/image.jpg"> -->
-    <meta property="og:site_name" content="{{ page.title }} - {{ site.name }}&hellip;">
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary">
-    {% if page %}
-        <meta property="twitter:url" content="{{ site.url }}{{ page.url }}/">
-    {% else %}
-        <meta property="twitter:url" content="{{ site.url }}/">
-    {% endif %}
-    <meta name="twitter:title" content="{{ page.title }} - {{ site.name }}">
-    <meta name="twitter:description" content="{{ page.excerpt | strip_html }}&hellip;">
-    <!-- <meta name="twitter:image" content="http://example.com/image.jpg"> -->
-    <meta name="author" content="Shane Logsdon">
-    <meta charset="utf-8">
-
-    <link href="{{ site.url }}/" rel="canonical" />
-    <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed/atom.xml" title="RSS feed">
-    <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Roboto+Slab:300' rel='stylesheet' type='text/css'>
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <style type="text/css">
-        body { background: #eee; font-family: "Roboto Slab", sans; }
-        a { color: #517da3; }
-        blockquote { border-color: #e5e5e5; }
-        pre, code { background: none; }
-        h1, h2, h3, h4, h5, h6 { font-family: "Source Sans Pro", sans; }
-        hr { border-top: 1px solid #ccc; }
-        article .post-details, article .repo-details , .well.related-posts time { color: #999; display: inline-block; font-size: 0.85em; padding-bottom: 10px; }
-        article .post-details a, article .repo-details a { color: #555; }
-        #main { padding-top: 20px; }
-        main h1 .badge { margin: 12px; position: absolute; }
-        main.home { font-size: 2.0em; margin-top: 40px; }
-        main.home i { padding: 5px 4px 0 0; }
-        main.home li:last-child i { padding-right: 0; }
-        .nav>li>a:hover { background: #e5e5e5; }
-        .well { background: #e5e5e5; border: 0; }
-        .well.info h2 { margin-top: 0; }
-        .well.info .connect ul { padding-left: 15px; }
-        .well.info .connect li { display: inline-block; }
-        .well.categories .badge { background-color: #517da3; }
-        .well.recent-posts h3 { padding-bottom: 10px; }
-        .well.recent-posts article { border-bottom: 1px solid #ccc; }
-        .well.recent-posts article:last-child { border: none; }
-        footer { font-size: 0.85em; padding-bottom: 20px; }
-        aside.signature { text-align: center; padding: 20px 0; }
-        aside.signature hr { width: 33%; }
-        nav.history { padding-bottom: 20px; }
-        nav.history .prev::before { content: "« ";}
-        nav.history .next::after { content: " »";}
-        .only-phone { display: none; }
-        @media (max-width: 767px) {
-            .hidden-phone { display:none !important; }
-            .only-phone { display:block !important; }
-        }
-    </style>
-    <link rel="stylesheet" href="/assets/css/highlight/tomorrow-night-eighties.css" type="text/css">
-</head>
-<body>
-    <div id="main" class="container">
-        
+<main class="row home" role="main">
+    <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
         {{ content }}
+    </div>
+</main>
 
-    </div><!-- /.container -->
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="/assets/js/highlight.pack.js" type="text/javascript" charset="utf-8"></script>
-    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
-    <script type="text/javascript">
-        (function (window, document, $, undefined) {
-            function updateLocation(){
-                window.location = $(this).val();
-            }
-            $(document).ready(function () {
-                $('nav.only-phone select').change(updateLocation);
-            });
-        })(window, document, jQuery);
-    </script>
-    <script type="text/javascript">
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date(); a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-40131422-3', 'shane.logsdon.io');
-        ga('send', 'pageview');
-        setTimeout(function () {
-            // sends an event once 30s has passed
-            ga('send', {
-                'hitType': 'event',          // Required.
-                'eventCategory': 'time',   // Required.
-                'eventAction': '30s'      // Required.
-                //'eventLabel': 'nav buttons',
-                //'eventValue': 4
-            });
-        }, 30000);
-    </script>
-</body>
-</html>
+<footer>
+    <div class="row">
+        <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+            <hr>
+            <!-- does anyone actually look at this? -->
+            Built using <a href="http://jekyllrb.com/">Jekyll</a> and <a href="http://getbootstrap.com/">Bootstrap</a>.
+            Hosted with <a href="https://pages.github.com/">GitHub Pages</a>.
+        </div>
+    </div>
+</footer>
