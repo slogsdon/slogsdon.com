@@ -23,7 +23,7 @@ Developers using Elixir use `mix` for building, running, and testing their appli
 
 With mix, creating our project is as simple as:
 
-```
+```bash
 $ mix new api_wrapper
 ```
 
