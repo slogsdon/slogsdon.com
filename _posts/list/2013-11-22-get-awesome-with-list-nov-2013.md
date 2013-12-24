@@ -14,13 +14,13 @@ I figured maintaining a list of awesome projects that interest me would be a goo
 - [Foundation 5](http://foundation.zurb.com/)
 
 ## Backend
-- [Phalcon (latest)](http://phalconphp.com/) [in progress]
-- [Erlang](http://www.erlang.org/) [in progress]
-- [ChicagoBoss](http://www.chicagoboss.org/) [in progress]
+- [Phalcon (latest)](http://phalconphp.com/)
+- [Erlang](http://www.erlang.org/)
+- [ChicagoBoss](http://www.chicagoboss.org/)
 - [Elixir](http://elixir-lang.org/)
 - [Weber](https://github.com/0xAX/weber)
-- [Go](http://golang.org/) [in progress]
-- [Martini](https://github.com/codegangsta/martini) [in progress]
+- [Go](http://golang.org/)
+- [Martini](https://github.com/codegangsta/martini)
 
 ## Ops
 - [Docker](http://www.docker.io/)
