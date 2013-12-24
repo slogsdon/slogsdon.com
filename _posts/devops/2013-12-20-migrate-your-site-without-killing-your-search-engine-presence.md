@@ -120,7 +120,7 @@ Since I've recently decided that my own site was in need of change, we'll walkth
 
 ### Is this necessary?
 
-*If you're moving to a new platform, is there a way to set your routes and resources to use the same URL structure that you're currently using?* I'm moving to using [Jekyll][http://jekyllrb.com/] on [GitHub Pages](https://pages.github.com/), so yes is the answer to this question. Jekyll has the ability to set a permalink structure that can mimic a multitude of possibilities, even setting it on a post-by-post basis.
+*If you're moving to a new platform, is there a way to set your routes and resources to use the same URL structure that you're currently using?* I'm moving to using [Jekyll](http://jekyllrb.com/) on [GitHub Pages](https://pages.github.com/), so yes is the answer to this question. Jekyll has the ability to set a permalink structure that can mimic a multitude of possibilities, even setting it on a post-by-post basis.
 
 *Are your current URLs really that bad?* Yes, the were. My old application (which was based on another) only allowed for a single level for the site's hierarchy without expanding on the functionality. Could I have done that? Yes. Did I want to do more than I already had (I had added the ability for categories by extending the use of the posts' slugs)? No, because I'm lazy. I didn't want to put in the extra time involved with modifying my old application.
 
