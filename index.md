@@ -1,13 +1,11 @@
 ---
-layout: main
+layout: home
 title: There's no place like home.
 ---
 
 # hi, i'm shane. <img class="pull-right" src="http://www.gravatar.com/avatar/033132c341296d7f5e5b41e871178418.png" alt="Shane Logsdon" />
 
-i [code](https://github.com/slogsdon). 
-i occasionally [write](http://shane.logsdon.io/posts/) 
-and [tweet](https://twitter.com/shanelogsdon).
+i [code](https://github.com/slogsdon). i occasionally [write](http://shane.logsdon.io/posts/) and [tweet](https://twitter.com/shanelogsdon).
 
 you might be interested in my:
 
