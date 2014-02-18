@@ -1,8 +1,9 @@
 ---
-layout: page
+layout: post
 title: Acvte
 date: 2013-09-02 17:56:50
 categories: projects
+permalink: /projects/acvte/
 ---
 
 ## What it is

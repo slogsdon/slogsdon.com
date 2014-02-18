@@ -1,56 +1,58 @@
 ---
-layout: default
+layout: base
 title: Current Projects
 ---
 
-<!-- <main class="col-lg-7 col-md-8 col-sm-9" role="main"> -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+      <h1>Current Projects <span class="badge">1</span></h1>
 
-    <h1>Current Projects <span class="badge">1</span></h1>
+      <article class="project collapsed" itemscope itemType="http://schema.org/BlogPosting">
+          <meta itemprop="inLanguage" content="en-US"/>
+          <h2 class="external" itemprop="name">
+              <a itemprop="url" href="{{ site.url }}/projects/acvte/">Acvte</a>
+          </h2>
+          <div class="project-details">
+              <span>published <time itemprop="datePublished" content="2013-09-02 17:56:50">02 Sept 2013</time></span>
+          </div>
+          <div class="intro">
+              <p>
+                  A markdown blog based off of @natew's obtvse2, which was 
+                  originally inspired by svbtle, using Today theme contributed 
+                  to obtvse2 by @shilov. This is basically a direct port of 
+                  obtvse2 using the revel framework for go, and it was never 
+                  intended for it to be any more than that. This project was 
+                  just an exercise in getting comfortable with go and revel.
+                  &hellip;
+              </p>
+              <p><a href="/projects/acvte/">Continue Reading</a></p>
+          </div>
+      </article>
 
-    <article class="project collapsed" itemscope itemType="http://schema.org/BlogPosting">
-        <meta itemprop="inLanguage" content="en-US"/>
-        <h2 class="external" itemprop="name">
-            <a itemprop="url" href="{{ site.url }}/projects/acvte/">Acvte</a>
-        </h2>
-        <div class="project-details">
-            <span>published <time itemprop="datePublished" content="2013-09-02 17:56:50">02 Sept 2013</time></span>
-        </div>
-        <div class="intro">
-            <p>
-                A markdown blog based off of @natew's obtvse2, which was 
-                originally inspired by svbtle, using Today theme contributed 
-                to obtvse2 by @shilov. This is basically a direct port of 
-                obtvse2 using the revel framework for go, and it was never 
-                intended for it to be any more than that. This project was 
-                just an exercise in getting comfortable with go and revel.
-                &hellip;
-            </p>
-            <p><a href="/projects/acvte/">Continue Reading</a></p>
-        </div>
-    </article>
+      <hr />
 
-    <hr />
+      <h2><a href="https://github.com/slogsdon?tab=repositories">Github Repos</a></h2>
 
-    <h2><a href="https://github.com/slogsdon?tab=repositories">Github Repos</a></h2>
-
-    {% for repo in site.data.repositories %}
-        <article class="repo collapsed" itemscope itemType="http://schema.org/BlogPosting">
-            <meta itemprop="inLanguage" content="en-US"/>
-            <h4 class="external" itemprop="name">
-                <a itemprop="url" href="https://github.com/slogsdon/{{ repo.name }}">{{ repo.name }}</a>
-                {% if repo.forked %}
-                    <span class="forked">forked from <a href="https://github.com/{{ repo.forked }}">{{ repo.forked }}</a></span>
-                {% endif %}
-            </h4>
-            <div class="repo-details">
-                <span class="language">{{ repo.language }}</span>
-                <span class="stars"><a href="https://github.com/slogsdon/{{ repo.name }}/stars"><i class="fa fa-star"></i> {{ repo.stars }}</a></span>
-                <span class="forks"><a href="https://github.com/slogsdon/{{ repo.name }}/network"><i class="fa fa-code-fork"></i> {{ repo.forks }}</a></span>
-            </div>
-            <div class="intro">
-                <p>{{ repo.description }}</p>
-            </div>
-        </article>
-    {% endfor %}
-
-<!-- </main> -->>
+      {% for repo in site.data.repositories %}
+          <article class="repo collapsed" itemscope itemType="http://schema.org/BlogPosting">
+              <meta itemprop="inLanguage" content="en-US"/>
+              <h4 class="external" itemprop="name">
+                  <a itemprop="url" href="https://github.com/slogsdon/{{ repo.name }}">{{ repo.name }}</a>
+                  {% if repo.forked %}
+                      <span class="forked">forked from <a href="https://github.com/{{ repo.forked }}">{{ repo.forked }}</a></span>
+                  {% endif %}
+              </h4>
+              <div class="repo-details">
+                  <span class="language">{{ repo.language }}</span>
+                  <span class="stars"><a href="https://github.com/slogsdon/{{ repo.name }}/stars"><i class="fa fa-star"></i> {{ repo.stars }}</a></span>
+                  <span class="forks"><a href="https://github.com/slogsdon/{{ repo.name }}/network"><i class="fa fa-code-fork"></i> {{ repo.forks }}</a></span>
+              </div>
+              <div class="intro">
+                  <p>{{ repo.description }}</p>
+              </div>
+          </article>
+      {% endfor %}
+    </div>
+  </div>
+</div>

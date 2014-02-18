@@ -1,0 +1,138 @@
+---
+layout: base
+title: Shane Logsdon - Polyglot Web Developer
+permalink: /
+---
+
+<!-- +++++ Welcome Section +++++ -->
+<div id="ww">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 centered">
+        <h1>hi, i am shane!</h1>
+        <p>i <a href="https://github.com/slogsdon">make things</a>. i occasionally <a href="http://shane.logsdon.io/posts/">write</a> and <a href="https://twitter.com/shanelogsdon">tweet</a>.</p>
+      
+      </div><!-- /col-lg-8 -->
+    </div><!-- /row -->
+  </div> <!-- /container -->
+</div><!-- /ww -->
+
+<div class="white">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2" style="text-align:center;">
+        <h2>Latest Projects</h2>
+      </div>
+    </div>
+    <div class="row">
+      <article class="project collapsed col-lg-4 col-lmd-4 col-sm-4" itemscope itemType="http://schema.org/BlogPosting">
+          <meta itemprop="inLanguage" content="en-US"/>
+          <h2 class="external" itemprop="name">
+              <a itemprop="url" href="http://sugar-framework.github.io/">Sugar</a>
+          </h2>
+          <div class="project-details">
+              <span>published <time itemprop="datePublished" content="2013-09-02 17:56:50">18 Jan 2014</time></span>
+          </div>
+          <div class="intro">
+              <p>
+                  A modular web framework for Elixir. 
+              </p>
+              <p><a href="http://sugar-framework.github.io/">Learn More</a></p>
+          </div>
+      </article>
+
+      <article class="project collapsed col-lg-4 col-lmd-4 col-sm-4" itemscope itemType="http://schema.org/BlogPosting">
+          <meta itemprop="inLanguage" content="en-US"/>
+          <h2 class="external" itemprop="name">
+              <a itemprop="url" href="http://www.chatblend.com/">ChatBlend</a>
+          </h2>
+          <div class="project-details">
+              <span>in progress</span>
+          </div>
+          <div class="intro">
+              <p>
+                  This webchat/text tool offers an on-demand, real time customer 
+                  service platform, maximizing engagement and sales potential. 
+                  With mobile traffic expected to surpass desktop traffic by 
+                  2015, ChatBlend allows users to SMS chat with multiple 
+                  customers in a single platform.
+              </p>
+              <p><a href="http://www.chatblend.com/">Learn More</a></p>
+          </div>
+      </article>
+
+      <article class="project collapsed col-lg-4 col-lmd-4 col-sm-4" itemscope itemType="http://schema.org/BlogPosting">
+          <meta itemprop="inLanguage" content="en-US"/>
+          <h2 class="external" itemprop="name">
+              <a itemprop="url" href="{{ site.url }}/projects/acvte/">Acvte</a>
+          </h2>
+          <div class="project-details">
+              <span>published <time itemprop="datePublished" content="2013-09-02 17:56:50">02 Sept 2013</time></span>
+          </div>
+          <div class="intro">
+              <p>
+                  A markdown blog based off of @natew's obtvse2, which was 
+                  originally inspired by svbtle, using Today theme contributed 
+                  to obtvse2 by @shilov. This is basically a direct port of 
+                  obtvse2 using the revel framework for go, and it was never 
+                  intended for it to be any more than that. This project was 
+                  just an exercise in getting comfortable with go and revel.
+              </p>
+              <p><a href="/projects/acvte/">Learn More</a></p>
+          </div>
+      </article>
+    </div>
+  </div>
+</div>
+<div class="white" style="padding: 0; text-align: center; padding-bottom: 30px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <h2><a href="/projects/">See more projects</a></h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="grey" style="padding: 0; text-align: center; padding-top: 30px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <h2>Latest Posts</h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% for post in site.posts limit:3 %}
+<div class="{% cycle 'grey', 'white' %}">
+  <div class="container">
+    <div class="row">
+      <article class="post collapsed col-lg-8 col-lg-offset-2" itemscope itemType="http://schema.org/BlogPosting">
+        <meta itemprop="inLanguage" content="en-US"/>
+        <h3 class="external" itemprop="name">
+          <a itemprop="url" href="{{ site.url }}{{ post.url }}/">{{ post.title }}</a>
+        </h3>
+        <div class="post-details">
+          <span>published <time itemprop="datePublished" content="{{ post.date }}">{{ post.date | date_to_string }}</time></span>
+          <span>in <a href="/categories/{{ post.categories }}/">{{ post.categories }}</a></span>
+        </div>
+        <div class="intro">
+          <p>{{ post.excerpt | strip_html }}&hellip;</p>
+          <p><a href="{{ post.url }}/">Continue Reading</a></p>
+        </div>
+      </article>
+    </div>
+  </div>
+</div>
+{% endfor %}
+
+<div class="grey" style="padding: 0; text-align: center; padding-bottom: 30px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <h2><a href="/archive/">See more posts</a></h2>
+      </div>
+    </div>
+  </div>
+</div>

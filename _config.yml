@@ -5,9 +5,12 @@ url: "http://shane.logsdon.io"
 
 # rendering
 markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 
 # settings
-permalink: /posts/:categories/:title
+permalink: /:categories/:title
+relative_permalinks: false
 paginate: 5
-paginate_path: "posts/page/:num"
+paginate_path: "page/:num"
 encoding: "utf-8"
