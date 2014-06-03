@@ -1,6 +1,6 @@
 ---
 layout: post
-title: nginx-pushstream-module: WebSockets/LongPolling Made Easy
+title: "nginx-pushstream-module: WebSockets/LongPolling Made Easy"
 date: 2014-06-02 22:52:00
 categories: devops
 ---
