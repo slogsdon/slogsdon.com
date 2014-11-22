@@ -3,7 +3,25 @@
 // Documentation can be found at http://support.ghost.org/config/
 
 var path = require('path'),
-    config;
+    config,
+    db_url = process.env.DATABASE_URL || '',
+    pass_host,
+    port_name,
+    db = {};
+
+db_url = db_url.split('://')[1];
+pass_host = db_url.split(':')[1];
+port_name = db_url.split(':')[2];
+
+db.user = db_url.split(':')[0];
+db.pass = pass_host.split('@')[0];
+db.host = pass_host.split('@')[1];
+db.port = port_name.split('/')[0];
+db.name = port_name.split('/')[1];
+
+delete db_url;
+delete pass_host;
+delete port_name;
 
 config = {
     // ### Production
@@ -15,11 +33,11 @@ config = {
         database: {
             client: 'pg',
             connection: {
-                host: process.env.POSTGRES_HOST,
-                user: process.env.POSTGRES_USER,
-                password: process.env.POSTGRES_PASS,
-                database: process.env.POSTGRES_DB,
-                port: process.env.POSTGRES_PORT
+                host: db.host,
+                user: db.user,
+                password: db.pass,
+                database: db.name,
+                port: db.port
             },
             debug: false
         },

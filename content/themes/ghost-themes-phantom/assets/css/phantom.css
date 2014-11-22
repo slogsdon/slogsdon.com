@@ -81,8 +81,8 @@ a {
 	color:#7f8c8d;
 	text-decoration:none;
 	border-bottom:1px dotted #ddd;
-	-webkit-transition: color .2s ease-in-out;
-	transition: color .2s ease-in-out;
+	/*-webkit-transition: color .2s ease-in-out;
+	transition: color .2s ease-in-out;*/
 }
 a:hover {
 	color:#2e9fff;
@@ -114,8 +114,8 @@ strong {
 	height:90px;
 	font-weight:100;
 	background:#1b1f23;
-	-webkit-animation-duration:1s;
-	animation-duration:1s;
+	/*-webkit-animation-duration:1s;
+	animation-duration:1s;*/
 }
 .content, .brand {
 	display:block;
@@ -141,8 +141,8 @@ header {
 	background-position:center center;
 	background-repeat:no-repeat;
 	background-size:cover;
-	-webkit-animation-duration:3s;
-	animation-duration:3s;
+	/*-webkit-animation-duration:3s;
+	animation-duration:3s;*/
 }
 header:before {
 	position:absolute;
@@ -158,10 +158,10 @@ header .container {
 	padding-bottom:260px;
 }
 .title {
-	-webkit-animation-delay:.5s;
+	/*-webkit-animation-delay:.5s;
 	animation-delay:.5s;
 	-webkit-animation-duration:1s;
-	animation-duration:1s;
+	animation-duration:1s;*/
 }
 .title h1 {
 	font-size:55px;
@@ -195,17 +195,17 @@ header .share {
 	line-height:22px;
 }
 .published {
-	-webkit-animation-delay:.75s;
+	/*-webkit-animation-delay:.75s;
 	animation-delay:.75s;
 	-webkit-animation-duration:1s;
-	animation-duration:1s;
+	animation-duration:1s;*/
 }
 .tags {
 	margin-top:30px;
-	-webkit-animation-delay:1s;
+	/*-webkit-animation-delay:1s;
 	animation-delay:1s;
 	-webkit-animation-duration:1s;
-	animation-duration:1s;
+	animation-duration:1s;*/
 }
 .tags a {
 	display: block;
@@ -220,10 +220,10 @@ header .share {
 	padding-top:40px;
 }
 article {
-	-webkit-animation-delay:1.25s;
+	/*-webkit-animation-delay:1.25s;
 	animation-delay:1.25s;
 	-webkit-animation-duration:1s;
-	animation-duration:1s;
+	animation-duration:1s;*/
 	padding:40px 0;
 }
 .hljs {
@@ -266,8 +266,8 @@ article input {
 	border:1px solid #ddd;
 	border-radius:4px;
 	outline:none;
-	-webkit-transition:border .25s;
-	transition:border .25s;
+	/*-webkit-transition:border .25s;
+	transition:border .25s;*/
 	padding:8px 16px;
 }
 article input:hover {
@@ -311,19 +311,19 @@ article input:focus {
 	line-height: 30px;
 }
 .author, .comments {
-	-webkit-animation-delay:1.5s;
+	/*-webkit-animation-delay:1.5s;
 	animation-delay:1.5s;
 	-webkit-animation-duration:1s;
-	animation-duration:1s;
+	animation-duration:1s;*/
 }
 .comments {
 	background:#f2f3f4;
 }
 footer {
-	-webkit-animation-delay:2s;
+	/*-webkit-animation-delay:2s;
 	animation-delay:2s;
 	-webkit-animation-duration:1s;
-	animation-duration:1s;
+	animation-duration:1s;*/
 }
 .copyright {
 	font-size:30px;
@@ -344,8 +344,8 @@ footer p {
 .sample {
 	font-weight:300;
 	color:#fff;
-	-webkit-animation-duration:3s;
-	animation-duration:3s;
+	/*-webkit-animation-duration:3s;
+	animation-duration:3s;*/
 }
 .sample .title a {
 	display:block;
