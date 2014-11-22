@@ -10,10 +10,10 @@ config = {
     // When running Ghost in the wild, use the production environment
     // Configure your URL and mail settings here
     production: {
-        url: 'http://my-ghost-blog.com',
+        url: 'http://www.slogsdon.com',
         mail: {},
         database: {
-            client: 'sqlite3',
+            client: 'pg',
             connection: {
                 host: process.env.POSTGRES_HOST,
                 user: process.env.POSTGRES_USER,
