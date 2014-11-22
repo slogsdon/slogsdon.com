@@ -11,23 +11,23 @@ $(function () {
     // Expanded article images
     $('article img').parent().addClass('article-image');
 
-    // Custom transform and opacity modifier for Stellar.js
-    $.stellar.positionProperty.transfade = {
-        setPosition: function (element, newLeft, originalLeft, newTop, originalTop) {
-            var distance = newTop - originalTop,
-                rate = $('header').height() / 5;
-            element.css('transform', 'translate3d(0, ' + distance + 'px, 0').css('opacity', 1 - (distance / rate));
-        }
-    };
+    // // Custom transform and opacity modifier for Stellar.js
+    // $.stellar.positionProperty.transfade = {
+    //     setPosition: function (element, newLeft, originalLeft, newTop, originalTop) {
+    //         var distance = newTop - originalTop,
+    //             rate = $('header').height() / 5;
+    //         element.css('transform', 'translate3d(0, ' + distance + 'px, 0').css('opacity', 1 - (distance / rate));
+    //     }
+    // };
 
-    // Execute Stellar.js
-    $.stellar({
-        horizontalScrolling: false,
-        positionProperty: "transfade",
-        parallaxBackgrounds: false,
-        verticalOffset: 90,
-        hideDistantElements: false
-    });
+    // // Execute Stellar.js
+    // $.stellar({
+    //     horizontalScrolling: false,
+    //     positionProperty: "transfade",
+    //     parallaxBackgrounds: false,
+    //     verticalOffset: 90,
+    //     hideDistantElements: false
+    // });
 
     // Execute Highlight.js
     hljs.initHighlightingOnLoad();
