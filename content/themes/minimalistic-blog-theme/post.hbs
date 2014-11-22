@@ -1,0 +1,46 @@
+{{!< default}}
+
+        <div class="container clearfix">
+          <main role="main" class="content">
+              
+              {{#post}}
+              <article class="{{post_class}} post">
+                <a class="btn" href="{{@blog.url}}" title="Back to homepage">&laquo; Back to home</a>
+                <h1><a href="{{url}}" title="{{title}}">{{title}}</a></h1>
+                <footer class="post-info">Posted on <span class="post-meta"><time datetime="{{date published_at format="YYYY-MM-DD"}}">{{date published_at format="Do MMMM YYYY"}}</time> {{tags separator=", " prefix="Tagged in "}}</span></footer>
+                
+                {{content}}
+                
+                <ul class="share-buttons">
+                    <li>Share this article:</li>
+                    <li><a class="icon-facebook-squared" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+                        onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook"></a></li>
+                    <li><a class="icon-twitter"  href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}"
+                        onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Tweet this page"></a></li>
+                    <li><a class="icon-gplus"  href="https://plus.google.com/share?url={{url absolute="true"}}"
+                       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Share on Google+"></a></li>
+                    <li><a class="icon-linkedin"  href="https://www.linkedin.com/shareArticle?mini=true&url={{url absolute="true"}}&title={{encode title}}" onclick="window.open(this.href, 'linkedin-share', 'width=600,height=494');return false;" title="Share on LinkenIn"></a></li>
+                </ul>
+                
+              </article>
+              <div class="comments">
+                <a href="https://muut.com/i/slogsdon/comments" class="muut" type="dynamic">Comments</a>
+                <script src="//cdn.muut.com/1/moot.min.js"></script>
+              </div>
+              {{/post}}
+             
+          </main>
+          <aside class="author">
+            <img class="profile-image" src="{{asset "img/profile-image.png"}}" alt="" />
+            <p class="name">by <strong>Shane Logsdon</strong></p>
+            <p class="address">Louisville, KY, United States</p>
+            <p class="link"><a href="http://www.slogsdon.com" title="Shane Logsdon - Software Developer">www.slogsdon.com</a></p>
+
+            <ul class="social">
+              <li><a class="icon-twitter" href="https://twitter.com/shanelogsdon" title="Follow me on Twitter"></a></li>
+              <li><a class="icon-github" href="https://github.com/slogsdon" title="Follow me on GitHub"></a></li>
+              <li><a class="icon-gplus" href="https://plus.google.com/+ShaneLogsdon?rel=author" title="Follow me on Google+"></a></li>
+            </ul>
+
+          </aside>
+        </div>
