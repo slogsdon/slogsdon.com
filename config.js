@@ -37,7 +37,8 @@ config = {
                 user: db.user,
                 password: db.pass,
                 database: db.name,
-                port: db.port
+                port: db.port,
+                ssl: true
             },
             debug: false
         },
