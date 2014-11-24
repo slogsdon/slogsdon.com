@@ -1,1 +1,1 @@
-web: NODE_ENV=production node index
+web: node index --production
