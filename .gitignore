@@ -1,5 +1,7 @@
-_site
-.sass-cache
-node_modules/
-content/data/ghost-dev.db
-newrelic_agent.log
+.cabal-sandbox/
+dist/
+_site/
+cabal.sandbox.config
+site
+site.hi
+site.o

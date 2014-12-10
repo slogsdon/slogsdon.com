@@ -1,0 +1,34 @@
+$for(posts)$
+    <div class="sample animated fadeIn">
+      <div class="container">
+        <div class="title animated fadeInUp">
+          <a href="$url$">
+              <h2>$title$</h2>
+          </a>
+        </div>
+        <div class="sidebar text-right meta">
+          <div class="published animated fadeInUp">
+            <strong>Published</strong>
+            <time>$date$</time>
+          </div>
+          <span class="separator animated fadeInUp">//</span>
+          $if(tags)$
+          <div class="tags animated fadeInUp">
+            <strong>Tags</strong>
+            $tags$
+          </div>
+          $endif$
+        </div>
+      </div>
+    </div>
+
+    <article class="excerpt animated fadeIn post">
+        <div class="container">
+            <p>
+              $if(excerpt)$
+                $excerpt$
+              $endif$
+            </p>
+        </div>
+    </article>
+$endfor$

@@ -1,0 +1,11 @@
+/* TEAM */
+Author: Shane Logsdon
+GitHub: @slogsdon
+Twitter: @shanelogsdon
+Location: Louisville, KY, USA
+
+/* SITE */
+Language: English
+Standards: HTML5, CSS3
+Components: Hakyll, CSS, Nginx, Git
+IDE: Vim
