@@ -1,12 +1,8 @@
 --------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
-import           Control.Monad          ( forM, forM_ )
-import           Data.List              ( sortBy, isInfixOf )
-import           Data.Monoid            ( (<>), mconcat
-                                        , mappend )
-import           Data.Ord               ( comparing )
+import           Data.List              ( isInfixOf )
+import           Data.Monoid            ( (<>), mappend )
 import           Hakyll
-import           System.Locale          ( defaultTimeLocale )
 import           System.Directory
 import           System.Environment
 import           System.FilePath.Posix  ( takeBaseName, takeDirectory
@@ -38,6 +34,7 @@ main = do
   if action == "clean"
   then do
     putStrLn "Removing _site/preview..."
+    createDirectoryIfMissing True "_site/preview"
     removeDirectoryRecursive "_site/preview"
   else putStrLn ""
 
@@ -79,7 +76,7 @@ main = do
     ------------------------------------------------------------------------------
 
     match postsPattern $ do
-      route   $ niceRoute
+      route niceRoute
       compile $ pandocCompiler
         >>= saveSnapshot "content"
         >>= loadAndApplyTemplate "templates/post.html"    (postCtxWithTags tags)
@@ -88,10 +85,10 @@ main = do
 
     tagsRules tags $ \tag pattern -> do
       let title = "Posts tagged \"" ++ tag ++ "\""
-      route   $ niceRoute
+      route niceRoute
       compile $ do
         posts <- recentFirst =<< loadAll pattern
-        let ctx = 
+        let ctx =
               constField "title" title                 `mappend`
               listField "posts" postCtx (return posts) `mappend`
               defaultContext
@@ -106,13 +103,13 @@ main = do
     ------------------------------------------------------------------------------
 
     match (fromList ["about.md", "contact.md"]) $ do
-      route   $ niceRoute
+      route niceRoute
       compile $ pandocCompiler
         >>= loadAndApplyTemplate "templates/default.html" defaultContext
         >>= removeIndexHtml
 
     create ["archive.html"] $ do
-      route   $ niceRoute
+      route niceRoute
       compile $ do
         posts <- recentFirst =<< loadAll postsPattern
         let archiveCtx =
@@ -130,7 +127,7 @@ main = do
       route idRoute
       compile $ do
         posts <- loadAll postsPattern
-          >>= (fmap (take 10)) . recentFirst
+          >>= fmap (take 10) . recentFirst
         let indexCtx =
               listField "posts" (postCtxWithTags tags) (return posts) `mappend`
               constField "title" "Home"                               `mappend`
@@ -143,11 +140,11 @@ main = do
 
     create ["feed/atom.xml"] $ do
       route idRoute
-      compile $ do
+      compile $
         -- load all "content" snapshots of all posts
         loadAllSnapshots postsPattern "content"
           -- take the latest 10
-          >>= (fmap (take 10)) . recentFirst
+          >>= fmap (take 10) . recentFirst
           -- renderAntom feed using some configuration
           >>= renderAtom feedConfiguration feedCtx
 
@@ -161,12 +158,12 @@ postCtx =
   defaultContext
 
 postCtxWithTags :: Tags -> Context String
-postCtxWithTags tags = 
-  tagsField "tags" tags `mappend` 
+postCtxWithTags tags =
+  tagsField "tags" tags `mappend`
   postCtx
 
 feedCtx :: Context String
-feedCtx = 
+feedCtx =
   defaultContext <>
   -- $description$ will render as the post body
   bodyField "description"
@@ -182,7 +179,7 @@ niceRoute = customRoute createIndexRoute
         p = toFilePath ident
         baseDir = takeDirectory p
         dir = case splitPath baseDir of
-          "posts":xs -> joinPath (xs)
+          "posts":xs -> joinPath xs
           _          -> baseDir
 
 -- replace url of the form foo/bar/index.html with foo/bar/
@@ -190,20 +187,20 @@ removeIndexHtml :: Item String -> Compiler (Item String)
 removeIndexHtml item = return $ fmap (withUrls removeIndexStr) item
   where
     removeIndexStr :: String -> String
-    removeIndexStr url = 
+    removeIndexStr url =
       case splitFileName url of
         (dir, "index.html") | isLocal dir -> dir
         _                                 -> url
-      where 
-        isLocal uri = not (isInfixOf "://" uri)
+      where
+        isLocal uri = not ("://" `isInfixOf` uri)
 
 gitTag :: String -> Context String
-gitTag key = field key $ \_ -> do
+gitTag key = field key $ \_ ->
   unsafeCompiler $ do
     sha <- readProcess "git" ["log", "-1", "HEAD", "--pretty=format:%H"] []
     message <- readProcess "git" ["log", "-1", "HEAD", "--pretty=format:%s"] []
     return ("<a href=\"https://github.com/slogsdon/slogsdon.com/commit/" ++ sha ++
-           "\" title=\"" ++ message ++ "\">" ++ (take 8 sha) ++ "</a>")
+           "\" title=\"" ++ message ++ "\">" ++ take 8 sha ++ "</a>")
 
 hakyllConf :: Configuration
 hakyllConf = defaultConfiguration
