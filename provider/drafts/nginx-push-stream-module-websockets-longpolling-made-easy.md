@@ -1,5 +1,5 @@
 ---
-title: "Nginx Push Stream Module: WebSockets/LongPolling Made Easy"
+title: Nginx Push Stream Module: WebSockets/LongPolling Made Easy
 date: 2014-06-03 13:02:00
 tags: 
 ---

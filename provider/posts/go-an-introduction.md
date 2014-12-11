@@ -1,7 +1,7 @@
 ---
-title: "Go: An Introduction"
+title: Go: An Introduction
 date: 2014-06-06 12:00:00
-youtube_id: "SI-okTfauyw"
+youtube_id: SI-okTfauyw
 type: talk
 tags: talk, golang
 ---

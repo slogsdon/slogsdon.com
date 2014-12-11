@@ -242,7 +242,7 @@ article p > img {
 	width:940px;
 	margin:80px -220px;
 }
-article h1, article h2, article h3 {
+article h1, h2, h3 {
 	font-weight:300;
 	color:#464c4c;
 }
@@ -251,12 +251,12 @@ article h1 {
 	line-height:43px;
 	margin:80px 0 40px;
 }
-article h2 {
+h2 {
 	font-size:26px;
 	line-height:36px;
 	margin:40px 0 0;
 }
-article h3 {
+h3 {
 	font-size:20px;
 	line-height:30px;
 	margin:30px 0;
@@ -394,6 +394,13 @@ header .share a {
 	position: relative;
 	font-size: 25px;
 }
+input, textarea {
+    border: 1px solid #f2f3f4;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+}
+hr { border: 1px solid #f2f3f4; }
 @media (max-width: 992px) {
 	.container, .pagination {
 		width:auto;

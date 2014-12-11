@@ -1,5 +1,5 @@
 ---
-title: "Review: Getting Started with Phalcon"
+title: Review: Getting Started with Phalcon
 date: 2014-02-22 12:38:00
 tags: php, phalcon, review
 ---

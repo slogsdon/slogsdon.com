@@ -91,12 +91,13 @@ main = do
       compile $ do
         posts <- recentFirst =<< loadAll pattern
         let ctx =
-              constField "title" title                 `mappend`
-              listField "posts" postCtx (return posts) `mappend`
+              constField "title" title                                `mappend`
+              listField "posts" (postCtxWithTags tags) (return posts) `mappend`
               defaultContext
 
         makeItem ""
           >>= loadAndApplyTemplate "templates/tag.html"     ctx
+          >>= loadAndApplyTemplate "templates/page.html"    ctx
           >>= loadAndApplyTemplate "templates/default.html" ctx
           >>= removeIndexHtml
 
@@ -104,9 +105,16 @@ main = do
     -- Pages
     ------------------------------------------------------------------------------
 
-    match (fromList ["about.md", "contact.md"]) $ do
+    match "404.md" $ do
+      route $ setExtension "html"
+      compile $ pandocCompiler
+        >>= loadAndApplyTemplate "templates/page.html"    defaultContext
+        >>= loadAndApplyTemplate "templates/default.html" defaultContext
+
+    match (fromList ["about.md", "contact.md", "contact/success.md"]) $ do
       route niceRoute
       compile $ pandocCompiler
+        >>= loadAndApplyTemplate "templates/page.html"    defaultContext
         >>= loadAndApplyTemplate "templates/default.html" defaultContext
         >>= removeIndexHtml
 
@@ -136,7 +144,7 @@ main = do
               defaultContext
 
         getResourceBody
-          >>= applyAsTemplate indexCtx
+          >>= applyAsTemplate                               indexCtx
           >>= loadAndApplyTemplate "templates/default.html" indexCtx
           >>= removeIndexHtml
 

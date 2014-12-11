@@ -1,9 +1,24 @@
 ---
 title: Home
+image: /assets/images/index.jpg
 ---
 
-$partial("templates/post-list.html")$
+    <header class="animated fadeIn" $if(image)$style="background-image: url($image$)"$endif$>
+      <div class="container" data-stellar-ratio="0.75">
+        <div class="title animated fadeInUp">
+          <h1>hi, i'm shane</h1>
+          <div class="share">
+            I code things. Sometimes, I write about them here.
+          </div>
+        </div>
+        <div class="sidebar text-right meta">
+          <img src="//www.gravatar.com/avatar/033132c341296d7f5e5b41e871178418?d=404&amp;s=250" alt="Shane Logsdon">
+        </div>
+      </div>
+    </header>
 
-<div class="container">
-  <p>…or you can find more in the <a href="/archive/">archives</a>.</p>
-</div>
+    $partial("templates/post-list.html")$
+
+    <div class="container">
+      <p>…or you can find more in the <a href="/archive/">archives</a>.</p>
+    </div>
