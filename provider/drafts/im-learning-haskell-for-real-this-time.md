@@ -37,8 +37,21 @@ Probably sometime between [Cabal Hell][cabal-hell], trying to wrap my head aroun
 
 ## Erlang (with Elixir soon behind)
 
+While having a go at Go and taking a small detour with Haskell, I ran across [ChicagoBoss][chicago-boss], a web framework for [Erlang][erlang]. Now, this was a few months before the big WhatsApp purchase by Facebook, but I still had heard of Erlang and its use in scalable and fault-tolerant soft real-time systems. I looked things over, went through some tutorials, built some skeleton projects, and even wrote about [a pain-point for some people][chicago-boss-auth]. By all accounts, this
+framework and language combination was bitchin'.
+
+<center>
+![Elixir][elixir-logo]
+</center>
+
+I soon came across a readme doc in the ChicagoBoss repo about using something called "Elixir" in ChicagoBoss projects. *Hmm*, I wondered. *What's this thing?*
+
+
+
 [chicago-boss]: http://www.chicagoboss.org/
+[chicago-boss-auth]: /implementing-user-authentication-with-bcrypt-in-chicagoboss/ "Implementing User Authentication with bcrypt in ChicagoBoss"
 [elixir]: http://elixir-lang.org/
+[elixir-logo]: /assets/images/elixir-logo.png
 [erlang]: http://www.erlang.org/
 
 ### A quick dip into a Lisp
