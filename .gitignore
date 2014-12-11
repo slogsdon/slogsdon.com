@@ -3,6 +3,3 @@ deploy/
 dist/
 _site/
 cabal.sandbox.config
-site
-site.hi
-site.o

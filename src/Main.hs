@@ -1,14 +1,16 @@
 --------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
-import           Data.List              ( isInfixOf )
-import           Data.Monoid            ( (<>), mappend )
+module Main where
+
+import           Data.Monoid           ( mappend )
 import           Hakyll
-import           System.Directory
-import           System.Environment
-import           System.FilePath.Posix  ( takeBaseName, takeDirectory
-                                         , (</>), splitFileName
-                                         , splitPath, joinPath )
-import           System.Process
+import           System.Directory      ( createDirectoryIfMissing
+                                       , removeDirectoryRecursive )
+import           System.Environment    ( getArgs )
+
+import           Site.Configurations
+import           Site.Contexts
+import           Site.Helpers          ( niceRoute, removeIndexHtml )
 
 
 --------------------------------------------------------------------------------
@@ -147,77 +149,3 @@ main = do
           >>= fmap (take 10) . recentFirst
           -- renderAntom feed using some configuration
           >>= renderAtom feedConfiguration feedCtx
-
-
---------------------------------------------------------------------------------
-postCtx :: Context String
-postCtx =
-  dateField "date" "%B %e, %Y"    `mappend`
-  teaserField "excerpt" "content" `mappend`
-  gitTag "commit"                 `mappend`
-  defaultContext
-
-postCtxWithTags :: Tags -> Context String
-postCtxWithTags tags =
-  tagsField "tags" tags `mappend`
-  postCtx
-
-feedCtx :: Context String
-feedCtx =
-  defaultContext <>
-  -- $description$ will render as the post body
-  bodyField "description"
-
--- replace a foo/bar.md by foo/bar/index.html
--- this way the url looks like: foo/bar in most browsers
-niceRoute :: Routes
-niceRoute = customRoute createIndexRoute
-  where
-    createIndexRoute ident =
-      dir </> takeBaseName p </> "index.html"
-      where
-        p = toFilePath ident
-        baseDir = takeDirectory p
-        dir = case splitPath baseDir of
-          "posts":xs -> joinPath xs
-          _          -> baseDir
-
--- replace url of the form foo/bar/index.html with foo/bar/
-removeIndexHtml :: Item String -> Compiler (Item String)
-removeIndexHtml item = return $ fmap (withUrls removeIndexStr) item
-  where
-    removeIndexStr :: String -> String
-    removeIndexStr url =
-      case splitFileName url of
-        (dir, "index.html") | isLocal dir -> dir
-        _                                 -> url
-      where
-        isLocal uri = not ("://" `isInfixOf` uri)
-
-gitTag :: String -> Context String
-gitTag key = field key $ \_ ->
-  unsafeCompiler $ do
-    sha <- readProcess "git" ["log", "-1", "HEAD", "--pretty=format:%H"] []
-    message <- readProcess "git" ["log", "-1", "HEAD", "--pretty=format:%s"] []
-    return ("<a href=\"https://github.com/slogsdon/slogsdon.com/commit/" ++ sha ++
-           "\" title=\"" ++ message ++ "\">" ++ take 8 sha ++ "</a>")
-
-hakyllConf :: Configuration
-hakyllConf = defaultConfiguration
-  { deployCommand = "bash deploy.sh deploy"
-  , providerDirectory = "provider"
-  , destinationDirectory = "_site/deploy/out"
-  , storeDirectory = "_site/deploy/cache"
-  , tmpDirectory = "_site/deploy/cache/tmp"
-  , previewHost = "0.0.0.0"
-  , previewPort = 8000
-  }
-
-feedConfiguration :: FeedConfiguration
-feedConfiguration = FeedConfiguration
-    { feedTitle = "Shane Logsdon"
-    , feedDescription = "This feed provides information about Shane Logsdon's site."
-    , feedAuthorName = "Shane Logsdon"
-    , feedAuthorEmail = "shane@shanelogsdon.com"
-    , feedRoot = "http://www.slogsdon.com"
-    }
