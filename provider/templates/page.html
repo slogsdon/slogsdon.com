@@ -1,0 +1,14 @@
+    <header class="animated fadeIn" $if(image)$style="background-image: url($image$)"$endif$>
+      <div class="container" data-stellar-ratio="0.75">
+        <div class="title animated fadeInUp">
+          <h1>$title$</h1>
+          $if(subtitle)$
+            <div class="share">
+              $subtitle$ 
+            </div>
+          $endif$
+        </div>
+      </div>
+    </header>
+
+    $body$
