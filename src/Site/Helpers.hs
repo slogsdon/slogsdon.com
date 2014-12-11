@@ -41,10 +41,11 @@ removeIndexHtml item = return $ fmap (withUrls removeIndexStr) item
       where
         isLocal uri = not ("://" `isInfixOf` uri)
 
-gitTag :: String -> Context String
-gitTag key = field key $ \_ ->
+gitField :: String -> Context String
+gitField key = field key $ \_ ->
   unsafeCompiler $ do
     sha <- readProcess "git" ["log", "-1", "HEAD", "--pretty=format:%H"] []
     message <- readProcess "git" ["log", "-1", "HEAD", "--pretty=format:%s"] []
     return ("<a href=\"https://github.com/slogsdon/slogsdon.com/commit/" ++ sha ++
            "\" title=\"" ++ message ++ "\">" ++ take 8 sha ++ "</a>")
+

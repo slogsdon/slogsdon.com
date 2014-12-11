@@ -5,10 +5,10 @@ module Site.Contexts where
 import           Data.Monoid   ( (<>), mappend )
 import           Hakyll        ( Context, Tags
                                , defaultContext, bodyField
-                               , dateField, teaserField
-                               , tagsField )
+                               , dateField, tagsField
+                               , teaserField )
 
-import           Site.Helpers  ( gitTag )
+import           Site.Helpers  ( gitField )
 
 --------------------------------------------------------------------------------
 
@@ -16,7 +16,7 @@ postCtx :: Context String
 postCtx =
   dateField "date" "%B %e, %Y"    `mappend`
   teaserField "excerpt" "content" `mappend`
-  gitTag "commit"                 `mappend`
+  gitField "commit"               `mappend`
   defaultContext
 
 postCtxWithTags :: Tags -> Context String
