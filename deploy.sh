@@ -20,7 +20,7 @@ fail() {
 # shouldn't happen since `site` binary is usually at root to
 # begin with, but doesn't hurt to check
 dir_check() {
-  if [ ! -f "site.hs" ]; then
+  if [ ! -f "Setup.hs" ]; then
     fail "not at root dir"
   fi
 }
