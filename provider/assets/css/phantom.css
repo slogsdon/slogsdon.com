@@ -101,7 +101,7 @@ strong {
 	left:-190px;
 	width:130px;
 }
-.comments, footer {
+footer {
 	padding:120px 0;
 }
 .text-center {
@@ -224,7 +224,7 @@ article {
 	animation-delay:1.25s;
 	-webkit-animation-duration:1s;
 	animation-duration:1s;*/
-	padding:40px 0;
+	padding: 0;
 }
 .hljs {
 	padding: 20px;
@@ -325,6 +325,9 @@ footer {
 	-webkit-animation-duration:1s;
 	animation-duration:1s;*/
 }
+footer .menu .sep {
+    margin: 0 10px;
+}
 .copyright {
 	font-size:30px;
 	line-height: 40px;
@@ -356,7 +359,7 @@ footer p {
 	padding-bottom:0;
 }
 .excerpt article {
-	padding:40px 0;
+	padding: 0;
 }
 .sample .container a:hover {
 	color:#2e9fff;
@@ -565,6 +568,11 @@ hr { border: 1px solid #f2f3f4; }
 		max-width: 270px;
 		margin: 10px 0 0 0;
 	}
+    .title h1, .title h2 {
+        font-size: 26px;
+        font-weight: 300;
+        line-height: 36px;
+    }
 }
 @media print {
 	header .share {
