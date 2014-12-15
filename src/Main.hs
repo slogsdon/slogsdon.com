@@ -132,7 +132,6 @@ main = do
           >>= loadAndApplyTemplate "templates/default.html" archiveCtx
           >>= removeIndexHtml
 
-
     match "index.html" $ do
       route idRoute
       compile $ do
@@ -151,9 +150,7 @@ main = do
     create ["feed/atom.xml"] $ do
       route idRoute
       compile $
-        -- load all "content" snapshots of all posts
         loadAllSnapshots postsPattern "content"
-          -- take the latest 10
           >>= fmap (take 10) . recentFirst
-          -- renderAntom feed using some configuration
           >>= renderAtom feedConfiguration feedCtx
+
