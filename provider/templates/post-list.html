@@ -1,34 +1,27 @@
 $for(posts)$
-    <div class="sample animated fadeIn">
-      <div class="container">
-        <div class="title animated fadeInUp">
-          <a href="$url$">
-              <h2>$title$</h2>
-          </a>
-        </div>
-        <div class="sidebar text-right meta">
-          <div class="published animated fadeInUp">
-            <strong>Published</strong>
-            <time>$date$</time>
+    <main class="center mw7 phm phl-ns pvl">
+      <section class="posts">
+        <article class="excerpt post pvl bb b--light-gray">
+          <div class="title">
+            <h2 class="f2 book ttu"><a href="$url$">$title$</a></h2>
           </div>
-          <span class="separator animated fadeInUp">//</span>
-          $if(tags)$
-          <div class="tags animated fadeInUp">
-            <strong>Tags</strong>
-            $tags$
+          <div class="sidebar thin gray">
+            <div class="published fl wi-100 wi-50-ns">
+              <span class="book">Published</span>
+              <time>$date$</time>
+            </div>
+            $if(tags)$
+            <div class="tags fl wi-100 wi-50-ns">
+              <span class="book">Tags</span>
+              $tags$
+            </div>
+            $endif$
+            <div class="cl"></div>
           </div>
-          $endif$
-        </div>
-      </div>
-    </div>
-
-    <article class="excerpt animated fadeIn post">
-        <div class="container">
-            <p>
-              $if(excerpt)$
-                $excerpt$
-              $endif$
-            </p>
-        </div>
-    </article>
+          <div class="content lh-copy">
+            <p>$if(excerpt)$$excerpt$$endif$</p>
+          </div>
+        </article>
+      </section>
+    </main>
 $endfor$

@@ -1,107 +1,98 @@
-
 <!doctype html>
-<html lang="en">
-<head>
-
-  <title>$title$ - Shane Logsdon</title>
-  <meta charset="utf-8" />
-  <meta name="designer" content="Hayden Bleasel" />
-  <meta name="rating" content="general" />
-  <meta name="keywords" content="ghost, blog, Shane Logsdon" />
-  <link type="text/plain" rel="author" href="http://www.slogsdon.com/humans.txt" />
-
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-  <meta name="format-detection" content="telephone=yes" />
-  <meta name="mobile-web-app-capable" content="yes" />
-  <meta name="msapplication-TileImage" content="/assets/images/windows-tile.png" />
-  <meta name="msapplication-TileColor" content="#262A2D" />
-
-  <meta name="robots" content="index, follow" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
-  <meta property="og:title" content="$title$ - Shane Logsdon" />
-  <meta property="og:locale" content="en_US" />
-
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:title" content="$title$ - Shane Logsdon" />
-
-  <link rel="icon" sizes="196x196" href="/assets/images/android-homescreen.png" />
-  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png" />
-
-  <link rel="dns-prefetch" href="//fonts.googleapis.com/" />
-
-  <link rel="stylesheet" href="/assets/css/normalize.css" />
-  <link rel="stylesheet" href="/assets/css/basics.css" />
-  <link rel="stylesheet" href="/assets/css/phantom.css" />
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/tomorrow-night-eighties.min.css">
-  <script src="/assets/js/html5shiv-printshiv.js"></script>
-  <script src="/assets/js/respond.js"></script>
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-40131422-3', 'www.slogsdon.com');
-    if (window.location.hostname.indexOf('localhost') === -1) ga('send', 'pageview');
-
-  </script>
-
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="http://www.slogsdon.com$if(url)$$url$$else$/$endif$" />
-  <meta property="twitter:url" content="http://www.slogsdon.com$if(url)$$url$$else$/$endif$" />
-
-  <link rel="canonical" href="http://www.slogsdon.com$if(url)$$url$$else$/$endif$" />
-  <meta name="generator" content="Hakyll" />
-  <link rel="alternate" type="application/atom+xml" title="Shane Logsdon" href="/feed/atom.xml" />
-
-</head>
-<body class="home-template">
-  <nav class="animated fadeIn navigation">
-    <div class="container">
-      <p class="content">
-        <a href="http://www.slogsdon.com/" class="text-right sidebar">
-          Shane Logsdon
-        </a>
-        <a href="#menu">Menu</a>
-      </p>
-    </div>
-  </nav>
-  <div class="main">
+<html>
+  <head>
+    <title>$title$ - Shane Logsdon</title>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-40131422-3', 'www.slogsdon.com');
+      if (window.location.hostname.indexOf('localhost') === -1) ga('send', 'pageview');
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//tachyons.io/css/tachyons.min.css" rel="stylesheet" type="text/css" />
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/tomorrow-night-eighties.min.css">
+    <style type="text/css">
+      a { color: #006540 } /* .dark-green */
+      footer a { color: #eee } /* .light-gray */
+      input, textarea {
+        border: 1px solid #eee;
+        margin-bottom: 10px;
+        padding: 5px;
+        width: 100%;
+      }
+      .pos-rel { position: relative; }
+      .posts :last-child { border-bottom: none; }
+    </style>
+  </head>
+  <body class="wi-100 h-100">
+    <nav class="bb b--light-gray pvm center mw8">
+      <div class="center mw7 phm phl-ns fl">
+        <a href="http://www.slogsdon.com/" class="f3">shane</a>
+      </div>
+      <div class="center mw8 phm phl-ns fr">
+        <a href="#menu" class="f3">menu</a>
+      </div>
+      <div class="cb"></div>
+    </nav>
 
     $body$
 
-  </div>
-  <footer class="animated fadeIn" id="footer">
-    <div class="menu container text-center">
-      <a name="menu"></a>
-      <p>
-        <a href="/about/">About</a> <span class="sep">|</span>
-        <a href="/contact/">Contact</a> <span class="sep">|</span>
-        <a href="/archive/">Post Archive</a> <span class="sep">|</span>
-        <a href="#">Top</a>
-      </p>
-    </div>
-    <div class="container"><hr /></div>
-    <div class="container text-center">
-      <p>
-        <span>Made by Shane Logsdon.</span>
-        <span>Powered by <a href="http://github.com/jaspervdj/hakyll">Hakyll</a>.</span>
-      </p>
-      <a href="https://github.com/haydenbleasel/phantom" class="theme">Theme: Phantom by Hayden Bleasel</a>
-      <p>
-        Disclaimer: All views expressed within this website are solely those of my own
-        and not of any entity with which I may be associated.
-      </p>
-    </div>
-  </footer>
+    <footer class="bg-darkest-green light-gray bt b--light-gray">
+      <div class="center mw7 pvx pvl-ns phm phl-ns">
+        <div class="f5 db lh-copy pbm bb b--light-gray">
+          <a name="menu"></a>
+          <p class="center">
+            <a href="/about/">About</a> <span class="sep phm">|</span>
+            <a href="/contact/">Contact</a> <span class="sep phm">|</span>
+            <a href="/archive/">Post Archive</a> <span class="sep phm">|</span>
+            <a href="#">Top</a>
+          </p>
+        </div>
+        <div class="f5 db lh-copy pvm">
+          <p>
+            <span>Made by Shane Logsdon.</span>
+            <span>Powered by <a href="http://github.com/jaspervdj/hakyll">Hakyll</a>.</span>
+          </p>
+          <p>
+            Disclaimer: All views expressed within this website are solely those of my own
+            and not of any entity with which I may be associated.
+          </p>
+        </div>
+      </div>
+    </footer>
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>
+      (function (window, document, $$, undefined) {
+        'use strict';
 
-  <script src="/assets/js/fastclick.js"></script>
-  <script src="/assets/js/stellar.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
-  <script src="/assets/js/phantom.js"></script>
-</body>
+        $$(document).ready(function () {
+          // Execute Highlight.js
+          hljs.initHighlightingOnLoad();
+
+          // Social sharing links
+          $$('#twitter').click(function () {
+            window.open(this.href, 'twitter-share', 'width=550,height=235');
+            return false;
+          });
+
+          $$('#facebook').click(function () {
+            window.open(this.href, 'facebook-share', 'width=580,height=296');
+            return false;
+          });
+
+          $$('#google-plus').click(function () {
+            window.open(this.href, 'google-plus-share', 'width=490,height=530');
+            return false;
+          });
+        });
+      })(window, document, jQuery);
+    </script>
+  </body>
 </html>

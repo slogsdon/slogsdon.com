@@ -1,20 +1,19 @@
-    <header class="animated fadeIn" $if(image)$style="background-image: url($image$)"$endif$>
-      <div class="container" data-stellar-ratio="0.75">
-        <div class="title animated fadeInUp">
-          <h1>$title$</h1>
+    <header class="pos-rel bg-near-white black bb b--light-gray">
+      <div class="center mw7 phm phl-ns pvxl">
+        <div class="title fr wi-100 tc">
+          <h1 class="f1 ttu">$title$</h1>
           $if(subtitle)$
-            <div class="share">
+            <div class="f3">
               $subtitle$
             </div>
           $endif$
         </div>
+        <div class="cr"></div>
       </div>
     </header>
 
-    <div class="push-article">
-      <article class="animated fadeIn">
-        <div class="container">
+      <main class="center mw7 phm phl-ns pvl">
+        <section class="content lh-copy">
           $body$
-        </div>
-      </article>
-    </div>
+        </section>
+      </main>
