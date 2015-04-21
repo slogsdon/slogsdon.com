@@ -1,43 +1,55 @@
 # www.slogsdon.com (slogsdon.com)
 
-It is transformed by [Hakyll](http://github.com/jaspervdj/hakyll) into a static site prior to me pushing this repository to GitHub.
-
-## Setup
-
+### prepare workspace
 ```
-$ cabal sandbox init
-$ cabal install
-$ bash deploy.sh setup
+$ git clone https://github.com/slogsdon/slogsdon.com
+$ cd slogsdon.com
+$ composer install
 ```
 
-## Development
-
-Basic preview server:
-
+### build the images
 ```
-$ cabal run preview
+$ docker build --rm=true -t wordpress-fpm docker-wordpress-fpm
+$ docker build --rm=true -t nginx-fpm docker-nginx-fpm
 ```
 
-With automatic rebuild from non-Haskell changes:
-
+### run mariadb
 ```
-$ cabal run watch
+$ docker run -d --name mysql \
+                --restart always \
+                -e MYSQL_ROOT_PASSWORD="my-awesome-password" \
+                mariadb
 ```
 
-## Deployment
-
+### run wordpress fpm
 ```
-$ git add [changes]
-$ git commit
-$ cabal run deploy
-$ git push
+$ docker run -d --name wordpress-fpm \
+                --restart always \
+                --link mysql:mysql \
+                -v /path/to/slogsdon.com/wp:/var/www/html \
+                wordpress-fpm
+```
+
+### run nginx as reverse proxy
+```
+$ docker run -d --name nginx-fpm \
+                --restart always \
+                --link wordpress-fpm:fpm \
+                --volumes-from wordpress-fpm \
+                -p 12345:80 \
+                -e VIRTUAL_HOST=www.example.com \
+                nginx-fpm
+```
+
+### allow for virtual hosts to listen on port 80
+```
+$ docker run -d --name reverse-proxy \
+                --restart always \
+                -v /var/run/docker.sock:/tmp/docker.sock \
+                -p 80:80 \
+                jwilder/nginx-proxy
 ```
 
 ## License
 
-The following directories and their contents are copyright Shane Logsdon. You may not reuse anything therein without my permission:
-
-- provider/drafts/
-- provider/posts/
-
-All other directories and files are MIT Licensed. See [LICENSE](https://github.com/slogsdon/slogsdon.com/blob/master/LICENSE) for more details.
+See [LICENSE](https://github.com/slogsdon/slogsdon.com/blob/master/LICENSE) for more details.

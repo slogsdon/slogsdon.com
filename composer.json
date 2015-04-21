@@ -1,0 +1,36 @@
+{
+  "name": "slogsdon/slogsdon.com",
+  "homepage": "https://github.com/slogsdon/slogsdon.com",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Shane Logsdon",
+      "email": "shane@shanelogsdon.com",
+      "homepage": "http://www.slogsdon.com",
+      "role": "Developer"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://wpackagist.org"
+    }
+  ],
+  "require": {
+    "php": ">=5.4",
+    "johnpbloch/wordpress": "4.1.1",
+    "slogsdon/staticwp": "*@dev",
+    "wpackagist-plugin/advanced-custom-fields": "*",
+    "wpackagist-plugin/google-analytics-for-wordpress": "*",
+    "wpackagist-plugin/jetpack": "*",
+    "wpackagist-plugin/wordpress-seo": "*"
+  },
+  "extra": {
+    "wordpress-install-dir": "wp",
+    "installer-paths": {
+      "wp/wp-content/plugins/{$name}": ["type:wordpress-plugin"],
+      "wp/wp-content/themes/{$name}": ["type:wordpress-theme"],
+      "wp/wp-content/mu-plugins/{$name}": ["type:wordpress-muplugin"]
+    }
+  }
+}

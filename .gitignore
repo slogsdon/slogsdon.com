@@ -1,5 +1,3 @@
-.cabal-sandbox/
-deploy/
-dist/
-_site/
-cabal.sandbox.config
+vendor/
+wp/
+composer.lock
