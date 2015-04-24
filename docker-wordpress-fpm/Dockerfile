@@ -5,6 +5,7 @@ MAINTAINER Shane Logsdon <shane@shanelogsdon.com>
 RUN apt-get update && apt-get install -y \
         git-core \
         libmcrypt-dev \
+        sendmail
     && docker-php-ext-install mbstring mcrypt
 
 CMD ["php-fpm"]
