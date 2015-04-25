@@ -24,6 +24,7 @@
     "wpackagist-plugin/cloudflare": "*",
     "wpackagist-plugin/jetpack": "*",
     "wpackagist-plugin/ninja-forms": "*",
+    "wpackagist-plugin/redirection": "*",
     "wpackagist-plugin/wordpress-seo": "*",
     "wpackagist-plugin/wpmandrill": "*",
     "wpackagist-theme/penscratch": "*"
