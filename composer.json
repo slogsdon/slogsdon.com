@@ -20,10 +20,13 @@
     "php": ">=5.4",
     "johnpbloch/wordpress": "4.1.1",
     "slogsdon/staticwp": "*@dev",
-    "wpackagist-plugin/advanced-custom-fields": "*",
     "wpackagist-plugin/google-analytics-for-wordpress": "*",
+    "wpackagist-plugin/cloudflare": "*",
     "wpackagist-plugin/jetpack": "*",
-    "wpackagist-plugin/wordpress-seo": "*"
+    "wpackagist-plugin/ninja-forms": "*",
+    "wpackagist-plugin/wordpress-seo": "*",
+    "wpackagist-plugin/wpmandrill": "*",
+    "wpackagist-theme/penscratch": "*"
   },
   "extra": {
     "wordpress-install-dir": "wp",
