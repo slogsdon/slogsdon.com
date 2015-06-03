@@ -6,7 +6,7 @@
     {
       "name": "Shane Logsdon",
       "email": "shane@shanelogsdon.com",
-      "homepage": "http://www.slogsdon.com",
+      "homepage": "https://www.slogsdon.com",
       "role": "Developer"
     }
   ],
@@ -18,12 +18,23 @@
   ],
   "require": {
     "php": ">=5.4",
-    "johnpbloch/wordpress": "4.1.1",
+    "johnpbloch/wordpress": "*",
+    "roots/soil": "*",
+    "slogsdon/simplify": "*@dev",
     "slogsdon/staticwp": "*@dev",
-    "wpackagist-plugin/advanced-custom-fields": "*",
-    "wpackagist-plugin/google-analytics-for-wordpress": "*",
+    "wpackagist-plugin/add-headers": "*",
+    "wpackagist-plugin/akismet": "*",
     "wpackagist-plugin/jetpack": "*",
-    "wpackagist-plugin/wordpress-seo": "*"
+    "wpackagist-plugin/ninja-forms": "*",
+    "wpackagist-plugin/redirection": "*",
+    "wpackagist-plugin/redis-cache": "*",
+    "wpackagist-plugin/segmentio": "*",
+    "wpackagist-plugin/wordpress-seo": "*",
+    "wpackagist-plugin/wpmandrill": "*"
+  },
+  "scripts": {
+    "post-install-cmd": "bash src/post-install-update.sh",
+    "post-update-cmd":  "bash src/post-install-update.sh"
   },
   "extra": {
     "wordpress-install-dir": "wp",
