@@ -30,7 +30,8 @@
     "wpackagist-plugin/redis-cache": "*",
     "wpackagist-plugin/segmentio": "*",
     "wpackagist-plugin/wordpress-seo": "*",
-    "wpackagist-plugin/wpmandrill": "*"
+    "wpackagist-plugin/wpmandrill": "*",
+    "wpackagist-theme/penscratch": "*"
   },
   "scripts": {
     "post-install-cmd": "bash src/post-install-update.sh",
