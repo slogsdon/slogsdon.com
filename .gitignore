@@ -1,3 +1,15 @@
-vendor/
-wp/
-composer.lock
+pollen-cache/
+pollen-latex-work/
+_build/
+_src/tags/*
+!_src/tags/.gitkeep
+.DS_Store
+*.dep
+*.zo
+*~
+
+# Generated Files
+*.html
+*.pdf
+*.epub
+*.ltx
