@@ -1,0 +1,19 @@
+<footer class="footer">
+  <h2 class="title">{{ site.title }}</h2>
+  <h3 class="subtitle">{{ site.subtitle }}</h3>
+
+  <ul class="contact-list">
+    <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+    {% if site.github_username %}
+      <li>
+        <a href="https://github.com/{{ site.github_username }}" title="GitHub">{{ site.github_username }}</a>
+      </li>
+    {% endif %}
+    {% if site.twitter_username %}
+      <li>
+        <a href="https://twitter.com/{{ site.twitter_username }}" title="Twitter">{{ site.twitter_username }}</a>
+      </li>
+    {% endif %}
+  </ul>
+  <p>{{ site.description }}</p>
+</footer>

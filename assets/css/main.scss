@@ -1,0 +1,13 @@
+---
+---
+@charset "utf-8";
+
+$body-font: caption;
+$header-font: 'Palatino', 'Didot', serif;
+$accent-color: #bbb;
+$code-font-color: #990073;
+
+@import 'mixins',
+        'base',
+        'syntax-highlighting'
+;

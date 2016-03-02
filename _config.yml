@@ -1,0 +1,22 @@
+# Site settings
+title: Shane Logsdon
+subtitle: Polyglot Developer
+email: shane@logsdon.io
+description: |
+  I code things. Sometimes, I write about them here.
+baseurl: '' # the subpath of your site, e.g. /blog
+url: 'http://www.slogsdon.com' # the base hostname & protocol for your site
+twitter_username: shanelogsdon
+github_username:  slogsdon
+
+# Build settings
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+permalink: /posts/:title/
+markdown: kramdown
+kramdown:
+  input: GFM
+sass:
+  style: compressed
