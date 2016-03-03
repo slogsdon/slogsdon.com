@@ -1,8 +1,7 @@
 ---
 title: Contact
-author: shane
 layout: page
-date: 2015-04-17
+menu_weight: 3
 ---
 If you need me for what ever, I'm fairly active at these places:
 

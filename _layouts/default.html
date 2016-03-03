@@ -6,13 +6,16 @@ layout: compress
   <head>
     {% include head.html %}
   </head>
-  <body>
+  <body class="{{ page.title | slugify }}">
     {% include header.html %}
 
     <main class="content">
       {{ content }}
     </main>
 
-    {% include footer.html %}
+    {% assign index_url = page_url index | prepend: '/' %}
+    {% unless page.url == index_url %}
+      {% include footer.html %}
+    {% endunless %}
   </body>
 </html>

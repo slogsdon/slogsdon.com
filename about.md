@@ -1,8 +1,7 @@
 ---
 title: About
-author: shane
 layout: page
-date: 2015-04-17
+menu_weight: 4
 ---
 ## Short Version
 

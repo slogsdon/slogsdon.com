@@ -1,12 +1,17 @@
 <header class="header">
-  <a class="title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-  <span class="subtitle">{{ site.subtitle }}</span>
-
   <nav class="nav">
-    {% for my_page in site.pages %}
-      {% if my_page.title %}
-        {% unless forloop.first %}<span class="sep">•</span>{% endunless %}
-        <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+    {% assign pages = site.pages | sort: 'menu_weight' %}
+    {% for p in pages %}
+      {% if p.title %}
+        {% capture title %}
+          {% if p.menu_label %}
+            {{ p.menu_label }}
+          {% else %}
+            {{ p.title }}
+          {% endif %}
+        {% endcapture %}
+        <a class="page-link" href="{{ p.url | prepend: site.baseurl }}">{{ title | strip }}</a>
+        {% unless forloop.last %}<span class="sep">•</span>{% endunless %}
       {% endif %}
     {% endfor %}
   </nav>

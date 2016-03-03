@@ -1,4 +1,7 @@
-html { font: $body-font; }
+html {
+  font: $body-font;
+  font-size: 18px;
+}
 h1, h2, h3, h4, h5, h6 { font-family: $header-font; }
 
 code.highlighter-rouge { color: $code-font-color; }
@@ -9,10 +12,6 @@ code.highlighter-rouge { color: $code-font-color; }
   padding-bottom: 1em;
   text-align: center;
   width: 100%;
-
-  .subtitle {
-    &::before { content: ' :: ' }
-  }
 }
 
 .content {
@@ -22,11 +21,27 @@ code.highlighter-rouge { color: $code-font-color; }
   }
 }
 
+.post .content {
+  .subtitle { text-align: center; }
+}
+
+.post {
+  .content {
+    margin: 0 auto;
+    max-width: $page-width;
+  }
+}
+
 .sep {
   padding: 0 .5em;
 }
+
 .meta {
   &.tags {
+    background-color: #f9f9f9;
+    padding: 0.75em;
+    text-align: center;
+
     .sep { padding: 0; }
   }
 }
@@ -37,7 +52,20 @@ blockquote {
   padding-left: 17px;
 }
 
+.rss-subscribe {
+  background-color: #f9f9f9;
+  padding: 0.75em;
+  text-align: center;
+}
+
+.contact-list {
+  line-height: 1.5em;
+}
+
 .footer {
+  margin: 0 auto;
+  max-width: $page-width;
+
   .title, .subtitle {
     text-align: center;
   }
