@@ -58,7 +58,7 @@ The following are just examples for Apache and nginx. You will need to adjust/ad
 
 These can be placed in your virtual host config file in a `<Directory>` node or in a `.htaccess` file:
 
-```apache
+```conf
 # Redirecting basic matches using Redirect.
 # Be sure to list more precise rules first. They are interpreted in order
 Redirect permanent /s/your-awesome-service http://www.yourdomain.com/services/your-awesome-service
