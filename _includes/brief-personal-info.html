@@ -8,16 +8,16 @@
 
 <ul class="contact-list">
   <li>Email me: <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-  {% if site.github_username %}
+  {% if site.github.username %}
     <li>
       Develop with me:
-      <a href="https://github.com/{{ site.github_username }}" title="GitHub">{{ site.github_username }}</a>
+      <a href="https://github.com/{{ site.github.username }}" title="GitHub">{{ site.github.username }}</a>
     </li>
   {% endif %}
-  {% if site.twitter_username %}
+  {% if site.twitter.username %}
     <li>
       Tweet me:
-      <a href="https://twitter.com/{{ site.twitter_username }}" title="Twitter">{{ site.twitter_username }}</a>
+      <a href="https://twitter.com/{{ site.twitter.username }}" title="Twitter">{{ site.twitter.username }}</a>
     </li>
   {% endif %}
 </ul>

@@ -7,17 +7,24 @@ description: |
   Let's start a conversation.
 baseurl: '' # the subpath of your site, e.g. /blog
 url: 'http://www.slogsdon.com' # the base hostname & protocol for your site
-twitter_username: shanelogsdon
-github_username:  slogsdon
+twitter:
+  username: shanelogsdon
+github:
+  username:  slogsdon
 
 # Build settings
 exclude:
   - vendor
   - Gemfile
   - Gemfile.lock
+  - CNAME
+  - LICENSE
+  - README.md
 permalink: /posts/:title/
 markdown: kramdown
 kramdown:
   input: GFM
 sass:
   style: compressed
+gems:
+  - jekyll-seo-tag
