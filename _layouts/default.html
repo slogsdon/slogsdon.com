@@ -9,13 +9,15 @@ layout: compress
   <body class="{{ page.title | slugify }}">
     {% include header.html %}
 
-    <main class="content">
-      {{ content }}
-    </main>
+    <div class="sub-header">
+      <main class="content">
+        {{ content }}
+      </main>
 
-    {% assign index_url = page_url index | prepend: '/' %}
-    {% unless page.url == index_url %}
-      {% include footer.html %}
-    {% endunless %}
+      {% assign index_url = page_url index | prepend: '/' %}
+      {% unless page.url == index_url %}
+        {% include footer.html %}
+      {% endunless %}
+    </div>
   </body>
 </html>

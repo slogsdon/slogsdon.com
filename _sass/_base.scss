@@ -1,6 +1,7 @@
 html {
   font: $body-font;
   font-size: 18px;
+  line-height: 1.5em;
 }
 h1, h2, h3, h4, h5, h6 { font-family: $header-font; }
 
@@ -15,6 +16,9 @@ code.highlighter-rouge { color: $code-font-color; }
 }
 
 .content {
+  margin: 0 auto;
+  max-width: $page-width;
+
   .header {
     border-bottom: 0;
     padding-bottom: 0;
@@ -23,13 +27,6 @@ code.highlighter-rouge { color: $code-font-color; }
 
 .post .content {
   .subtitle { text-align: center; }
-}
-
-.post {
-  .content {
-    margin: 0 auto;
-    max-width: $page-width;
-  }
 }
 
 .sep {
@@ -59,7 +56,6 @@ blockquote {
 }
 
 .contact-list {
-  line-height: 1.5em;
 }
 
 .footer {

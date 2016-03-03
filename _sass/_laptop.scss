@@ -1,0 +1,20 @@
+@include media-query(1280px) {
+  .sub-header {
+    margin: 0 auto;
+    max-width: 62em;
+  }
+  main.content {
+    float: right;
+    margin: auto;
+
+    .footer {
+      float: none;
+      max-width: 100%;
+    }
+  }
+  .footer {
+    float: left;
+    margin: auto;
+    max-width: 20em;
+  }
+}
