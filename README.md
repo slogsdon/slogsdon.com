@@ -1,5 +1,24 @@
 # slogsdon.github.io
 
+## Development
+
+```bash
+$ bundle install
+$ bundle exec jekyll serve
+```
+
+To regenerate tag archive pages:
+
+```bash
+$ ./_scripts/prepare.sh
+```
+
+## Build
+
+```bash
+$ bundle exec jekyll build
+```
+
 ## License
 
 The following directories and their contents are copyright Shane Logsdon. You may not reuse anything therein without my permission:
