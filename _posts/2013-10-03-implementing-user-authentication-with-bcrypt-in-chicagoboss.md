@@ -12,6 +12,7 @@ tags:
   - chicagoboss
   - erlang
   - functional programming
+redirect_from: /implementing-user-authentication-with-bcrypt-in-chicagoboss/
 ---
 Ever since I learned the error in using basic `MD5`/`SHA1`/`SHA256`/etc. hashes for storing password hashes, I always see to adding in `bcrypt` hashing in the authentication for my web applications, but [ChicagoBoss][1], one of my new go-to web frameworks along with [Revel][2] (yay, concurrency!), doesn't have `bcrypt` support added in by default. Let's go ahead and add that ourselves.
 

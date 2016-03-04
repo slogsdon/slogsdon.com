@@ -29,7 +29,7 @@ layout: default
         <span class="label">#:</span>
         {% for tag in page.tags %}
           {% unless forloop.first %}<span class="sep">,</span>{% endunless %}
-          <a href="{{ tag | slugify | append: '/' | prepend: '/tags/' | prepend: site.base_url }}">{{ tag }}</a>
+          <a href="{{ tag | slugify | append: '/' | prepend: '/tag/' | prepend: site.base_url }}">{{ tag }}</a>
         {% endfor %}
       </p>
     {% endif %}

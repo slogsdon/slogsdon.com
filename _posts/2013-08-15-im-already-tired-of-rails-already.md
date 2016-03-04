@@ -10,6 +10,7 @@ tags:
   - golang
   - obtvse2
   - ruby
+redirect_from: /im-already-tired-of-rails-already/
 ---
 Neckbeards of the Internet. Prepare yourselves for the following comment: I don't think Rails is for me.
 

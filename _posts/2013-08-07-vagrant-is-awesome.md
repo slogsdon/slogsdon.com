@@ -11,6 +11,7 @@ tags:
   - phalcon
   - php
   - vagrant
+redirect_from: /vagrant-is-awesome/
 ---
 I've been working on PHP web apps for years, and over time, my development workflow has remained fairly constant:
 

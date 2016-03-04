@@ -4,7 +4,7 @@
 {% for tag in site.tags %}
   {% assign t = tag | first %}
   {% assign t_slug = t | slugify %}
-  {% assign t_url = t_slug | append: '/' | prepend: '/tags/' | prepend: site.base_url %}
+  {% assign t_url = t_slug | append: '/' | prepend: '/tag/' | prepend: site.base_url %}
   {
     "tag": "{{ t }}",
     "slug": "{{ t_slug }}",

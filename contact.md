@@ -13,7 +13,6 @@ Don't like those? I'm also around on these:
   * Google+: [+ShaneLogsdon][3]
   * LinkedIn: [Shane Logsdon][4]
   * Hacker News: [slogsdon][5]
-  * Reddit: _unknown_ (hopefully you don't know this :))
   * Keybase: [slogsdon][6]
   * Tumblr: [slogsdon01][7]
   * Instagram: [slogsdon01][8]

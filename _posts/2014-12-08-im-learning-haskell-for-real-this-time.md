@@ -12,6 +12,7 @@ tags:
   - functional programming
   - golang
   - haskell
+redirect_from: /im-learning-haskell-for-real-this-time/
 ---
 About a couple of years ago, I was looking for something to add to my metaphoric programming toolbox. That something needed to push me beyond PHP and C#. My initial desires were performance related (I mean PHP isn't really known for it's blistering speed), and as I thought about the possibilities, a paradigm shift wasn't out of the question. And so, my quest began.
 
@@ -25,7 +26,7 @@ To keep things a bit easier for myself, my first stop was something that resembl
   <img src="https://golang.org/doc/gopher/frontpage.png" alt="The Go gopher" /></p>
 
   <p>
-    <sup>_the Go gopher_</sup>
+    <sup><i>the Go gopher</i></sup>
   </p>
 
 </center>
@@ -43,7 +44,9 @@ Venturing on, I decided to try this thing I'd been hearing a lot about: <a href=
 
 While having a go at Go and taking a small detour with Haskell, I ran across [ChicagoBoss](http://www.chicagoboss.org/), a web framework for [Erlang](http://www.erlang.org). Now, this was a few months before the big WhatsApp purchase by Facebook, but I still had heard of Erlang and its use in scalable and fault-tolerant soft real-time systems. I looked things over, went through some tutorials, built some skeleton projects, and even wrote about [a pain-point for some people]({% post_url 2013-10-03-implementing-user-authentication-with-bcrypt-in-chicagoboss %} "Implementing User Authentication with bcrypt in ChicagoBoss"). By all accounts, this framework and language combination was bitchin'.
 
-[![Elixir logo](http://i0.wp.com/www.slogsdon.com/wp-content/uploads/2015/04/elixir-logo.png?resize=227%2C95)](http://www.elixir-lang.org)
+<center>
+  <img alt="Elixir logo" src="http://elixir-lang.org/images/logo/logo.png" />
+</center>
 
 I soon came across a readme doc in the ChicagoBoss repo about using something called "Elixir" in ChicagoBoss projects. _Hmm_, I wondered. _What's this thing?_ After heading the the [Elixir homepage](http://elixir-lang.org/) and reading that it leverages the Erlang VM and interoperates with Erlang code, offers a more inviting syntax (I later appreciated the Erlang syntax more), and includes nifty features including hygenic macros and the pipe operator, furious Googling ensued.
 
@@ -63,14 +66,6 @@ So through this past year, I've realized I'm drawn to certain language features:
 - third-party packages/libraries
 
 Can those be used to describe Haskell? Yes. Can other programming languages be described in the same manner? Definitely. Why Haskell?
-
-<center>
-  <img src="http://i1.wp.com/www.slogsdon.com/wp-content/uploads/2015/04/haskell-baby.png?resize=140%2C211" alt="haskell-baby" /></p>
-
-  <p>
-    <sup>_How I feel using Haskell. Credits: <a href="http://learnyouahaskell.com/">learnyouahaskell.com</a>_</sup>
-  </p>
-</center>
 
 Personally, I feel as though Haskell is a good fit for me so I can make better software, with being able to leverage its type system and easily know when my functions become impure (and thus, need more tests) both having the biggest influence over me writing better code. _Sidebar: Everyone who writes software or wants to learn how should take a look at language choices, deciding on one or a few for their own needs and not based on what's hip or cool at the time._
 

@@ -10,6 +10,7 @@ tags:
   - elixir
   - functional programming
   - haskell
+redirect_from: /functors-applicatives-and-monads-in-elixir/
 ---
 > **Big ol' note:** By no means am I an expert on any of the below content. I'm currently learning this to the best of my ability and thought to write down my experiences and thoughts with implementing these in Elixir.
 

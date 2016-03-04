@@ -8,6 +8,7 @@ categories:
 tags:
   - chicagoboss
   - erlang
+redirect_from: /chicagoboss/
 ---
 I need to stop finding awesome projects to try out. [Erlang][1] and [ChicagoBoss][2] look pretty freakin' sweet. Have to love some high-performance programming languages matched with a productive web framework.
 

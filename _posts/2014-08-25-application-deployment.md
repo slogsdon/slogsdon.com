@@ -11,6 +11,7 @@ tags:
   - elixir
   - exrm
   - functional programming
+redirect_from: /application-deployment/
 ---
 The deployment of Elixir applications. You may have experience in deploying your Ruby or .NET applications, but when it comes to Elixir, do you have what it takes to deploy your app? Learn the essentials for getting your application from development to production.
 
