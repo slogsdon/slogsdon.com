@@ -6,7 +6,7 @@ description: |
   I develop things. Sometimes, I write about them here.
   Let's start a conversation.
 baseurl: '' # the subpath of your site, e.g. /blog
-url: 'http://www.slogsdon.com' # the base hostname & protocol for your site
+url: 'https://shane.logsdon.io' # the base hostname & protocol for your site
 twitter:
   username: shanelogsdon
 github:
