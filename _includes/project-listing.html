@@ -1,0 +1,9 @@
+{% assign project = include.project %}
+
+<article class="project">
+  <h2>
+    <a class="project-link" href="{{ project.title | slugify | prepend: '/projects/#' | prepend: site.baseurl }}">{{ project.title }}</a>
+  </h2>
+  <span class="project-meta">{{ project.date | date: "%b %-d, %Y" }}</span>
+  <p class="project-description">{{ project.description }}</p>
+</article>
