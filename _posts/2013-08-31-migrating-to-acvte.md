@@ -20,13 +20,13 @@ Remember [this][1]? I do. I finally got [acvte][2] to a point where I was comfor
 So far, the performance improvement has been totally worth the sixteen days it has taken to get to this point. Check out the memory usage drop that I grabbed from NewRelic:
 
 <center>
-  <img src="http://i.imgur.com/J57L8U7.png" alt="" data-recalc-dims="1" />
+  <amp-img width="640" height="254" src="http://i.imgur.com/J57L8U7.png" alt="" />
 </center>
 
 And a more quantitative view:
 
 <center>
-  <img src="http://i.imgur.com/HaFbS2x.png" alt="" data-recalc-dims="1" />
+  <amp-img width="340" height="480" src="http://i.imgur.com/HaFbS2x.png" alt="" />
 </center>
 
 Right before 12:05 is when I flipped the switch[^1]. I killed the config using the rails-based [obtvse2][3] and migrated to the one using acvte. The drop in the graph above shows that switch in more of a defined manner than I was expecting.

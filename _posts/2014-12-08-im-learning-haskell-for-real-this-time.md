@@ -23,7 +23,7 @@ About a couple of years ago, I was looking for something to add to my metaphoric
 To keep things a bit easier for myself, my first stop was something that resembled what I already knew: [Go][1]. As "an open source programming language that makes it easy to build simple, reliable, and efficient software", I figured it be right up my alley with what I was trying to achieve.
 
 <center>
-  <img src="https://golang.org/doc/gopher/frontpage.png" alt="The Go gopher" /></p>
+  <amp-img width="250" height="340" src="https://golang.org/doc/gopher/frontpage.png" alt="The Go gopher" /></p>
 
   <p>
     <sup><i>the Go gopher</i></sup>
@@ -38,14 +38,14 @@ I found a web framework to use ([revel](https://revel.github.io/)) and built a b
 
 Venturing on, I decided to try this thing I'd been hearing a lot about: <a href="https://www.haskell.org/">Haskell</a>. According to its homepage, "Haskell makes it easier to produce flexible, maintainable, high-quality software", and that's every software developer's goal, right?
 
-    Probably sometime between <a href="http://www.well-typed.com/blog/2014/09/how-we-might-abolish-cabal-hell-part-1/">Cabal Hell</a>, trying to wrap my head around monads, and deciphering all of the operators in use in Haskell source files, I started drifting away from learning Haskell. I remained interested in what it offered, but I was impatient and didn't have the extra time to devote to everything that revolves around the language.
+Probably sometime between <a href="http://www.well-typed.com/blog/2014/09/how-we-might-abolish-cabal-hell-part-1/">Cabal Hell</a>, trying to wrap my head around monads, and deciphering all of the operators in use in Haskell source files, I started drifting away from learning Haskell. I remained interested in what it offered, but I was impatient and didn't have the extra time to devote to everything that revolves around the language.
 
 ## Erlang (with Elixir soon behind)
 
 While having a go at Go and taking a small detour with Haskell, I ran across [ChicagoBoss](http://www.chicagoboss.org/), a web framework for [Erlang](http://www.erlang.org). Now, this was a few months before the big WhatsApp purchase by Facebook, but I still had heard of Erlang and its use in scalable and fault-tolerant soft real-time systems. I looked things over, went through some tutorials, built some skeleton projects, and even wrote about [a pain-point for some people]({% post_url 2013-10-03-implementing-user-authentication-with-bcrypt-in-chicagoboss %} "Implementing User Authentication with bcrypt in ChicagoBoss"). By all accounts, this framework and language combination was bitchin'.
 
 <center>
-  <img alt="Elixir logo" src="http://elixir-lang.org/images/logo/logo.png" />
+  <amp-img width="227" height="95" alt="Elixir logo" src="http://elixir-lang.org/images/logo/logo.png" />
 </center>
 
 I soon came across a readme doc in the ChicagoBoss repo about using something called "Elixir" in ChicagoBoss projects. _Hmm_, I wondered. _What's this thing?_ After heading the the [Elixir homepage](http://elixir-lang.org/) and reading that it leverages the Erlang VM and interoperates with Erlang code, offers a more inviting syntax (I later appreciated the Erlang syntax more), and includes nifty features including hygenic macros and the pipe operator, furious Googling ensued.
