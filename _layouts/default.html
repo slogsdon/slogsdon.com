@@ -7,6 +7,10 @@ layout: compress
     {% include head.html %}
   </head>
   <body class="{{ page.title | slugify }}">
+    {% unless jekyll.environment == "development" %}
+      {% include google-analytics.html %}
+    {% endunless %}
+
     {% include header.html %}
 
     <div class="sub-header">
@@ -19,9 +23,5 @@ layout: compress
         {% include footer.html %}
       {% endunless %}
     </div>
-
-    {% unless jekyll.environment == "development" %}
-      {% include google-analytics.html %}
-    {% endunless %}
   </body>
 </html>
