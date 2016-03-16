@@ -3,6 +3,8 @@ layout: page
 title: Shane Logsdon
 menu_label: Home
 menu_weight: 0
+redirect_from:
+ - /m/
 ---
 
 {% include brief-personal-info.html %}
