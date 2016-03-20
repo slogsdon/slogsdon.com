@@ -3,17 +3,41 @@ layout: default
 ---
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="header">
+    <meta itemscope itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" itemid="{{ page.url | prepend: site.base_url | prepend: site.url }}">
     <h1 class="title" itemprop="name headline">{{ page.title }}</h1>
     <p class="meta">
       <time datetime="{{ page.date | date_to_xmlschema }}"
             itemprop="datePublished">
         {{ page.date | date: "%b %-d, %Y" }}
       </time>
+      <time datetime="{{ page.modified | default: page.date | date_to_xmlschema }}"
+            itemprop="dateModified">
+        {% if page.modified %}
+          Modified: {{ page.modified | date: "%b %-d, %Y" }}
+        {% endif %}
+      </time>
       {% if page.author %}
+        {% assign author = site.data.authors[page.author] %}
         <span class="sep">•</span>
         <span itemprop="author" itemscope
               itemtype="http://schema.org/Person">
-          <span itemprop="name">{{ page.author }}</span>
+          <span itemprop="name">{{ author.name }}</span>
+        </span>
+        <span itemprop="publisher" itemscope
+              itemtype="http://schema.org/Organization">
+          <meta itemprop="name" content="{{ author.name }}">
+          <span itemprop="logo" itemscope
+                itemtype="http://schema.org/ImageObject">
+            <meta itemprop="url" content="{{ author.picture }}">
+            <meta itemprop="width" itemtype="https://schema.org/Distance" content"60">
+            <meta itemprop="height" itemtype="https://schema.org/Distance" content="60">
+          </span>
+        </span>
+        <span itemprop="image" itemscope
+              itemtype="http://schema.org/ImageObject">
+          <meta itemprop="url" content="{{ author.picture }}">
+          <meta itemprop="width" itemtype="https://schema.org/Distance" content"60">
+          <meta itemprop="height" itemtype="https://schema.org/Distance" content="60">
         </span>
       {% endif %}
     </p>
