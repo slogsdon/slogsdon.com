@@ -27,6 +27,5 @@ kramdown:
 sass:
   style: compressed
 gems:
-  - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-redirect-from
