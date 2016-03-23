@@ -49,7 +49,7 @@
 
 {% assign seo_description = page.description | default: page.excerpt | default: site.description %}
 {% if seo_description %}
-  {% assign seo_description = seo_description | markdownify | strip_html | strip_newlines | escape_once %}
+  {% assign seo_description = seo_description | markdownify | strip_html | strip_newlines | strip | escape_once %}
 {% endif %}
 
 {% assign seo_author = page.author | default: page.authors[0] | default: site.author %}
@@ -86,10 +86,12 @@
   {% assign seo_author = site.data.authors[page.author] %}
 {% endif %}
 
-{% assign seo_site_logo = site.logo | default: seo_author.image | prepend: seo_url | escape %}
+{% assign seo_site_logo = site.logo | default: seo_author.picture | escape %}
 
 {% if page.image %}
-  {% assign seo_page_image = page.image | prepend: seo_url | escape %}
+  {% assign seo_page_image = page.image | prepend: '/assets/images/' | prepend: seo_url | escape %}
+{% else %}
+  {% assign seq_page_image = seo_site_logo %}
 {% endif %}
 
 {% if seo_title %}
@@ -171,8 +173,8 @@
 {% if seo_page_title %}
     "headline": {{ seo_page_title | jsonify }},
 {% endif %}
-{% if seo_page_image or seo_page_logo %}
-    "image": {{ seo_page_image | default: seo_page_logo | jsonify }},
+{% if seo_page_image or seo_site_logo %}
+    "image": {{ seo_page_image | default: seo_site_logo | jsonify }},
 {% endif %}
 {% if page.date %}
     "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
@@ -196,7 +198,12 @@
     "publisher": {
       "@type": "Organization",
       "name": {{ seo_author.name | jsonify }},
-      "logo": {{ seo_site_logo | jsonify }}
+      "logo": {
+        "@type": "ImageObject",
+        "url": {{ seo_site_logo | jsonify }},
+        "width": "60",
+        "height": "60"
+      }
     },
 {% endif %}
     "mainEntityOfPage": {{ page.url | prepend: seo_url | replace: '/index.html','/' | jsonify }},

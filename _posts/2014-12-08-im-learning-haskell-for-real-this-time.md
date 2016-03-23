@@ -13,6 +13,7 @@ tags:
   - golang
   - haskell
 redirect_from: /im-learning-haskell-for-real-this-time/
+image: plank-over-lake.jpeg
 ---
 About a couple of years ago, I was looking for something to add to my metaphoric programming toolbox. That something needed to push me beyond PHP and C#. My initial desires were performance related (I mean PHP isn't really known for it's blistering speed), and as I thought about the possibilities, a paradigm shift wasn't out of the question. And so, my quest began.
 

@@ -11,6 +11,7 @@ tags:
   - php
   - review
 redirect_from: /review-getting-started-with-phalcon/
+image: look-up-towards-skyscrapers.jpeg
 ---
 With most newcomers to development frameworks, acclimating to the idea of the model-view-controller (MVC) pattern can be one of the biggest challenges. The [Phalcon PHP framework][1] pose an additional barrier to entry, installation. Having both of these to overcome, let's see how Stephan A. Miller brings the self-proclaimed "fastest PHP framework" to the masses in his new book, **[Getting Started with Phalcon][2]**.
 
