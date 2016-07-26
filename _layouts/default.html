@@ -2,26 +2,19 @@
 layout: compress
 ---
 <!DOCTYPE html>
-<html amp lang="en">
+<html lang="en">
   <head>
     {% include head.html %}
   </head>
-  <body class="{{ page.title | slugify }}">
-    {% unless jekyll.environment == "development" %}
-      {% include google-analytics.html %}
-    {% endunless %}
-
+  <body class="{{ page.title | slugify }} w-100 fw2 sans-serif">
     {% include header.html %}
 
-    <div class="sub-header">
-      <main class="content">
+    <div class="sub-header w-100 bt b--black-10">
+      <main class="content ph3 ph5-ns">
         {{ content }}
       </main>
 
-      {% assign index_url = page_url index | prepend: '/' %}
-      {% unless page.url == index_url %}
-        {% include footer.html %}
-      {% endunless %}
+      {% include footer.html page=page %}
     </div>
   </body>
 </html>

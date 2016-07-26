@@ -7,8 +7,14 @@ $accent-color: #bbb;
 $code-font-color: #990073;
 $page-width: 40em;
 
-@import 'mixins',
-        'base',
-        'laptop',
+@import //'mixins',
+        //'base',
+        //'laptop',
         'syntax-highlighting'
 ;
+
+pre {
+  overflow: auto;
+  word-wrap: normal;
+  white-space: pre;
+}

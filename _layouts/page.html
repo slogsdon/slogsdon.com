@@ -1,12 +1,16 @@
 ---
 layout: default
 ---
-<article class="post">
-  <header class="header">
-    <h1 class="title">{{ page.title }}</h1>
+<article class="post cf ph3 ph5-ns pv5">
+  <header class="header w-50-ns pr4-ns">
+    {% assign index_url = page_url index | prepend: '/' %}
+    {% unless page.url == index_url %}
+      <h1 class="title mb3 mt0 lh-title">{{ page.title }}</h1>
+    {% endunless %}
   </header>
 
-  <section class="content">
+  <section class="content w-50-ns lh-copy">
     {{ content }}
+    {% include classify-elements.html %}
   </section>
 </article>

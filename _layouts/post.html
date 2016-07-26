@@ -1,10 +1,10 @@
 ---
 layout: default
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-  <header class="header">
+<article class="post cf ph3 ph5-ns pv5" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="header w-50-ns pr4-ns">
     <meta itemscope itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" itemid="{{ page.url | prepend: site.base_url | prepend: site.url }}">
-    <h1 class="title" itemprop="name headline">{{ page.title }}</h1>
+    <h1 class="title mb3 mt0 lh-title" itemprop="name headline">{{ page.title }}</h1>
     <p class="meta">
       <time datetime="{{ page.date | date_to_xmlschema }}"
             itemprop="datePublished">
@@ -43,17 +43,17 @@ layout: default
     </p>
   </header>
 
-  <section class="content" itemprop="articleBody">
+  <section class="content w-50-ns lh-copy" itemprop="articleBody">
     {{ content }}
+    {% include classify-elements.html %}
   </section>
 
-  <footer class="footer">
+  <footer class="post-footer w-50-ns">
     {% if page.tags %}
       <p class="meta tags">
-        <span class="label">#:</span>
+        <span class="label f6 fw6 black-70 mr1 mr3-m mr4-l dib">tags:</span>
         {% for tag in page.tags %}
-          {% unless forloop.first %}<span class="sep">,</span>{% endunless %}
-          <a href="{{ tag | slugify | append: '/' | prepend: '/tag/' | prepend: site.base_url }}">{{ tag }}</a>
+          <a href="{{ tag | slugify | append: '/' | prepend: '/tag/' | prepend: site.base_url }}" class="f6 fw6 dim link black-70 mr1 mr3-m mr4-l dib underline">{{ tag }}</a>
         {% endfor %}
       </p>
     {% endif %}

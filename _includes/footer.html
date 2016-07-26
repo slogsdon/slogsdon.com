@@ -1,3 +1,31 @@
-<footer class="footer">
-  {% include brief-personal-info.html %}
+<footer class="footer bg-near-white mid-gray ph3 ph5-ns pv5 pv6-ns bt b--black-10">
+  {% assign index_url = page_url index | prepend: '/' %}
+  {% unless include.page.url == index_url %}
+    {% include brief-personal-info.html page=include.page %}
+  {% endunless %}
+  <nav class="nav db v-mid w-100 pv3">
+    {% assign pages = site.pages | sort: 'menu_weight' %}
+    {% for p in pages %}
+      {% if p.menu_hidden %}{% continue %}{% endif %}
+      {% if p.title %}
+        {% capture title %}
+          {% if p.menu_label %}
+            {{ p.menu_label }}
+          {% else %}
+            {{ p.title }}
+          {% endif %}
+        {% endcapture %}
+        <a class="page-link f6 fw6 dim link black-70 mr1 mr3-m mr4-l dib" href="{{ p.url | prepend: site.baseurl }}">{{ title | strip }}</a>
+      {% endif %}
+    {% endfor %}
+  </nav>
+  <div class="copyright f6 measure db lh-copy mt4">
+      <small class="nowrap f6 mt2 mt3-ns pr2 black-70 fw2">&copy; {{ 'now' | date: "%Y" }} Shane Logsdon</small>
+  </div>
+  <script>
+    var footer = document.querySelector('.footer');
+    var nav = document.querySelector('.footer .nav');
+    var description = document.querySelector('.footer .description');
+    try { if (description) footer.insertBefore(nav, description); } catch (e) { }
+  </script>
 </footer>
