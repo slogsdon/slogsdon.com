@@ -1,6 +1,6 @@
 <script>
     /* anchors */
-    var as = document.querySelectorAll('main.content a');
+    var as = document.querySelectorAll('.content a');
     for (var i = 0; i < as.length; i++) {
         var a = as[i];
         a.classList.add('link');
@@ -8,5 +8,18 @@
         a.classList.add('black-70');
         a.classList.add('fw6');
         a.classList.add('underline');
+    }
+    /* content */
+    var contents = document.querySelectorAll('.content p');
+    for (var i = 0; i < contents.length; i++) {
+        var content = contents[i];
+        content.classList.add('measure-wide-m');
+        content.classList.add('measure-wide-l');
+    }
+    var contents = document.querySelectorAll('.content ul, .content ol');
+    for (var i = 0; i < contents.length; i++) {
+        var content = contents[i];
+        content.classList.add('measure-m');
+        content.classList.add('measure-l');
     }
 </script>
