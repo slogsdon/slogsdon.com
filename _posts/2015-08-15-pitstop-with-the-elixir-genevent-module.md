@@ -127,7 +127,7 @@ If I can find a nice work around for the limitation above, most of this would be
   end
 ```
 
-Wouldn't that me nice? I think so!
+Wouldn't that be nice? I think so!
 
  [1]: https://github.com/slogsdon/plug-web-socket
  [2]: https://github.com/slogsdon/plug-web-socket/blob/master/lib/web_socket/events.ex
