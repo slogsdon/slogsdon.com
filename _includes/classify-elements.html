@@ -1,25 +1,33 @@
 <script>
-    /* anchors */
-    var as = document.querySelectorAll('.content a');
-    for (var i = 0; i < as.length; i++) {
-        var a = as[i];
-        a.classList.add('link');
-        a.classList.add('dim');
-        a.classList.add('black-70');
-        a.classList.add('fw6');
-        a.classList.add('underline');
-    }
-    /* content */
-    var contents = document.querySelectorAll('.content p');
-    for (var i = 0; i < contents.length; i++) {
-        var content = contents[i];
-        content.classList.add('measure-wide-m');
-        content.classList.add('measure-wide-l');
-    }
-    var contents = document.querySelectorAll('.content ul, .content ol');
-    for (var i = 0; i < contents.length; i++) {
-        var content = contents[i];
-        content.classList.add('measure-m');
-        content.classList.add('measure-l');
+    var classes = {
+        /* anchors */
+        '.content a': [
+            'link',
+            'dim',
+            'black-70',
+            'fw6',
+            'underline'
+        ],
+        /* content */
+        '.content p': [
+            'measure-wide-m',
+            'measure-wide-l'
+        ],
+        '.content ul, .content ol': [
+            'measure-m',
+            'measure-l'
+        ]
+    };
+    for (var selector in classes) {
+        if (!classes.hasOwnProperty(selector)) {
+            continue;
+        }
+
+        var contents = document.querySelectorAll(selector);
+        Array.prototype.slice.call(contents).map(function (el) {
+            classes[selector].map(function (klass) {
+                el.classList.add(klass);
+            });
+        });
     }
 </script>
