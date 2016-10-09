@@ -1,0 +1,19 @@
+/* VARIABLES*/
+@import 'tachyons-colors';
+
+/* RULES */
+@import 'tachyons-display';
+@import 'tachyons-font-family';
+@import 'tachyons-font-weight';
+@import 'tachyons-line-height';
+@import 'tachyons-lists';
+@import 'tachyons-skins';
+@import 'tachyons-spacing';
+@import 'tachyons-text-align';
+@import 'tachyons-type-scale';
+@import 'tachyons-typography';
+@import 'tachyons-vertical-align';
+@import 'tachyons-widths';
+
+code { color: #990073; }
+pre > code { color: #000; }

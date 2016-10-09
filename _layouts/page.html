@@ -1,15 +1,15 @@
 ---
 layout: default
 ---
-<article class="post cf ph3 ph5-ns pv5">
-  <header class="header w-50-ns pr4-ns">
+<article class="post">
+  <header class="header">
     {% assign index_url = page_url index | prepend: '/' %}
     {% unless page.url == index_url %}
-      <h1 class="title mb3 mt0 lh-title">{{ page.title }}</h1>
+      <h1 class="title lh-title">{{ page.title }}</h1>
     {% endunless %}
   </header>
 
-  <section class="content w-50-ns lh-copy">
+  <section class="content lh-copy">
     {{ content }}
     {% include classify-elements.html %}
   </section>

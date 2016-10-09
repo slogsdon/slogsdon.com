@@ -1,14 +1,14 @@
 ---
 layout: default
 ---
-<article class="post cf pv5" itemscope itemtype="http://schema.org/BlogPosting">
-  <header class="header w-80-ns">
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="header">
     <meta itemscope itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" itemid="{{ page.url | prepend: site.base_url | prepend: site.url }}">
-    <h1 class="title mb3 mt0 lh-title" itemprop="name headline">{{ page.title }}</h1>
+    <h1 class="title lh-title f2 mv4" itemprop="name headline">{{ page.title }}</h1>
     <p class="meta">
       <time datetime="{{ page.date | date_to_xmlschema }}"
             itemprop="datePublished">
-        {{ page.date | date: "%b %-d, %Y" }}
+        Published: {{ page.date | date: "%b %-d, %Y" }}
       </time>
       <time datetime="{{ page.modified | default: page.date | date_to_xmlschema }}"
             itemprop="dateModified">
@@ -18,10 +18,9 @@ layout: default
       </time>
       {% if page.author %}
         {% assign author = site.data.authors[page.author] %}
-        <span class="sep">•</span>
         <span itemprop="author" itemscope
               itemtype="http://schema.org/Person">
-          <span itemprop="name">{{ author.name }}</span>
+          <meta itemprop="name" content="{{ author.name }}">
         </span>
         <span itemprop="publisher" itemscope
               itemtype="http://schema.org/Organization">
@@ -43,17 +42,17 @@ layout: default
     </p>
   </header>
 
-  <section class="content w-100 w-60-ns lh-copy" itemprop="articleBody">
+  <section class="content lh-copy" itemprop="articleBody">
     {{ content }}
     {% include classify-elements.html %}
   </section>
 
-  <footer class="post-footer w-60-ns">
+  <footer class="post-footer mt4">
     {% if page.tags %}
       <p class="meta tags">
-        <span class="label f6 fw6 black-70 mr1 mr3-m mr4-l dib">tags:</span>
+        <span class="label">tags:</span>
         {% for tag in page.tags %}
-          <a href="{{ tag | slugify | append: '/' | prepend: '/tag/' | prepend: site.base_url }}" class="f6 fw6 dim link black-70 mr1 mr3-m mr4-l dib underline">{{ tag }}</a>
+          <a href="{{ tag | slugify | append: '/' | prepend: '/tag/' | prepend: site.base_url }}" class="ml3 black-70">{{ tag }}</a>
         {% endfor %}
       </p>
     {% endif %}

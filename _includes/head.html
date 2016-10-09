@@ -1,13 +1,13 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="{{ '/favicon.ico' | prepend: site.baseurl }}" type="image/x-icon">
+<link rel="icon" href="{{ '/favicon.ico' | prepend: site.baseurl }}" type="image/x-icon">
 
 {% include seo.html %}
 
-<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
-<link rel="stylesheet" href="https://unpkg.com/tachyons@4.0.4/css/tachyons.min.css"/>
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}">
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.baseurl }}" type="text/css" media="all" />
 
 <style>
   {% capture scss %}

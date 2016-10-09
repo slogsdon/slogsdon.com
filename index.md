@@ -7,8 +7,6 @@ redirect_from:
  - /m/
 ---
 
-{% include brief-personal-info.html %}
-
 ## Recent Projects
 
 {% for project in site.data.projects limit: 3 %}
