@@ -13,6 +13,7 @@ tags:
 redirect_from: /functors-applicatives-and-monads-in-elixir/
 image: side-of-building.jpeg
 ---
+
 > **Big ol' note:** By no means am I an expert on any of the below content. I'm currently learning this to the best of my ability and thought to write down my experiences and thoughts with implementing these in Elixir.
 
 We're going to be comparing Elixir protocols with Haskell's type classes using a go-to type for the subject at hand: `Maybe`. The `Maybe` type encapsulates an optional value. A value of type `Maybe a` either contains a value of type `a` (represented as `Just a`), or it is empty (represented as `Nothing`). Here's how Haskell defines the type:

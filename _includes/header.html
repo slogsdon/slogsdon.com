@@ -2,7 +2,7 @@
   <div class="mv4 mv5-l">
     <a href="{{ '/' | prepend: site.baseurl }}" class="f4 f3-l b black-70" title="Home" id="menu">
       {{ site.title }}
-      <div class="">
+      <div>
         <small class="f6 normal">{{ site.subtitle }}</small>
       </div>
     </a>
@@ -31,15 +31,15 @@
 
   <nav class="interaction-nav mv3 pb3">
     <ul class="contact-list list tl">
-      <li class="">Email me: <a href="mailto:{{ site.email }}" target="_blank" class="black-70">{{ site.email }}</a></li>
+      <li class="mv1">Email me: <a href="mailto:{{ site.email }}" target="_blank" class="black-70">{{ site.email }}</a></li>
       {% if site.github.username %}
-        <li class="">
+        <li class="mv1">
           Develop with me:
           <a href="https://github.com/{{ site.github.username }}" target="_blank" title="GitHub" class="black-70">{{ site.github.username }}</a>
         </li>
       {% endif %}
       {% if site.twitter.username %}
-        <li class="">
+        <li class="mv1">
           Tweet me:
           <a href="https://twitter.com/{{ site.twitter.username }}" target="_blank" title="Twitter" class="black-70">{{ site.twitter.username }}</a>
         </li>

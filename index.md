@@ -13,7 +13,7 @@ redirect_from:
   {% include project-listing.html project=project %}
 {% endfor %}
 
-[All Projects]({{ '/projects/' | prepend: site.base_url }})
+See more under [All Projects]({{ '/projects/' | prepend: site.base_url }})
 
 ## Recent Posts
 
@@ -21,4 +21,4 @@ redirect_from:
   {% include post-listing.html post=post %}
 {% endfor %}
 
-[All Posts]({{ '/posts/' | prepend: site.base_url }})
+See more under [All Posts]({{ '/posts/' | prepend: site.base_url }})
