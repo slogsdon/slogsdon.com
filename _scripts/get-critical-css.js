@@ -6,7 +6,7 @@ critical.generate({
     base: '_site/',
     src: 'index.html',
     css: ['assets/css/main.css'],
-    dest: 'assets/css/main.critical.css',
+    dest: '_includes/main.critical.css',
     dimensions: [{
         height: 200,
         width: 500
