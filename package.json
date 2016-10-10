@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "node _scripts/build-css.js"
+    "start": "node _scripts/build-css.js && node _scripts/get-critical-css.js"
   },
   "repository": {
     "type": "git",
@@ -13,6 +13,7 @@
   "license": "MIT",
   "homepage": "https://shane.logsdon.io",
   "devDependencies": {
+    "critical": "^0.8.0",
     "tachyons-border-colors": "^4.2.0",
     "tachyons-borders": "^3.0.1",
     "tachyons-build-css": "^1.1.2",
