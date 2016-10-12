@@ -16,10 +16,11 @@ github:
 exclude:
   - node_modules
   - vendor
+  - CNAME
   - Gemfile
   - Gemfile.lock
-  - CNAME
   - LICENSE
+  - package.json
   - README.md
 permalink: /posts/:title/
 markdown: kramdown
