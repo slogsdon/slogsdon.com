@@ -15,3 +15,5 @@ critical.generate({
         width: 1200
     }]
 });
+
+console.log('assets/css/main.critical.css generated.');

@@ -11,3 +11,5 @@ for tag in tags do
     f.puts "---\n"
   end
 end
+
+puts "tag/*.md generated."

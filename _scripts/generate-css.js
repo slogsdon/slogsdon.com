@@ -12,3 +12,5 @@ tachyonsBuildCss(input, {
 }).then(result => {
   fs.writeFileSync('assets/css/main.css', result.css);
 });
+
+console.log('assets/css/main.css generated.')

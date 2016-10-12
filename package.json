@@ -2,9 +2,6 @@
   "name": "slogsdon.github.io",
   "version": "1.0.0",
   "private": true,
-  "scripts": {
-    "start": "node _scripts/build-css.js && node _scripts/get-critical-css.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/slogsdon/slogsdon.github.io.git"
@@ -14,6 +11,8 @@
   "homepage": "https://shane.logsdon.io",
   "devDependencies": {
     "critical": "^0.8.0",
+    "dotenv": "^2.0.0",
+    "github-api": "^2.3.0",
     "tachyons-border-colors": "^4.2.0",
     "tachyons-borders": "^3.0.1",
     "tachyons-build-css": "^1.1.2",
