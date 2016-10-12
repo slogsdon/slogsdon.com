@@ -9,7 +9,7 @@ redirect_from:
 
 ## Recent Projects
 
-{% for project in site.data.projects limit: 3 %}
+{% for project in site.data.projects limit: 5 %}
   {% include project-listing.html project=project %}
 {% endfor %}
 
@@ -17,7 +17,7 @@ See more under [All Projects]({{ '/projects/' | prepend: site.base_url }})
 
 ## Recent Posts
 
-{% for post in site.posts limit: 3 %}
+{% for post in site.posts limit: 5 %}
   {% include post-listing.html post=post %}
 {% endfor %}
 

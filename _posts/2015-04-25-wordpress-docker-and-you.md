@@ -14,6 +14,7 @@ tags:
   - wordpress
 redirect_from: /wordpress-docker-and-you/
 image: formations-on-beach.jpeg
+description: Wordpress, Docker, and your site can work together in harmony with the right configuration. Follow along as I spill the beans.
 ---
 Once again, I got bored with my website and decided to change it up. I was using [Hakyll][1] to generate a set of static files, which were then hosted on [GitHub Pages][2]. Now, I think GitHub pages is great and had been happy hosting my website there for a couple of years now, but with some projects I have in the works, I wanted to go with an actual CMS for a while.
 

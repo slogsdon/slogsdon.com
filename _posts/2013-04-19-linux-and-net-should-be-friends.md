@@ -10,6 +10,7 @@ tags:
   - .net
   - linux
 redirect_from: /linux-and-net-should-be-friends/
+description: Linux and Microsoft's .NET framework haven't always seen eye to eye. The Mono Project looks to get Linux and .NET on the same page.
 ---
 Linux and Microsoft's .NET framework haven't always seen eye to eye. Linux allows the web to be written and hosted with software that costs nothing. On the other hand, .NET needs a copy of Visual Studio in which to be written (not free) and needs a copy of Windows on which to be run (also not free). All of that remains to be _mostly_ true thanks to the [Mono Project][1].
 
