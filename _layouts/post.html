@@ -4,8 +4,8 @@ layout: default
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="header">
     <meta itemscope itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" itemid="{{ page.url | prepend: site.base_url | prepend: site.url }}">
-    <h1 class="title lh-title f2 mv4 f1-l measure-wide" itemprop="name headline">{{ page.title }}</h1>
-    <p class="meta">
+    <h1 class="title lh-title f2 mt4 mb1 f1-l measure-wide" itemprop="name headline">{{ page.title }}</h1>
+    <div class="meta">
       <time datetime="{{ page.date | date_to_xmlschema }}"
             itemprop="datePublished" class="f6 black-50">
         Published: {{ page.date | date: "%b %-d, %Y" }}
@@ -39,7 +39,7 @@ layout: default
           <meta itemprop="height" itemtype="https://schema.org/Distance" content="60">
         </span>
       {% endif %}
-    </p>
+    </div>
   </header>
 
   <section class="content lh-copy" itemprop="articleBody">
