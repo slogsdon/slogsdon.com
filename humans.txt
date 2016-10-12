@@ -8,7 +8,7 @@
   Location: Louisville, KY, USA
 
 /* SITE */
-  Software: Jekyll/Ruby
+  Software: Jekyll/Ruby, Tachyons
   Language: English
   Components: HTML, SCSS
   IDE: NeoVim, Tmux, Mosh
