@@ -4,12 +4,13 @@ title: Tags
 menu_hidden: true
 ---
 
-{% for tag in site.tags %}
-  {% assign t = tag | first %}
-  {% assign t_url = t | slugify | append: '/' | prepend: '/tag/' | prepend: site.base_url %}
-  <article class="post">
-    <h2>
-      <a class="post-link" href="{{ t_url }}">{{ t }}</a>
+{% capture tagString %}{% for tag in site.tags %}{{ tag[0] }}{% unless forloop.last %}|{% endunless %}{% endfor %}{% endcapture %}
+{% assign tags = tagString | split: '|' | sort %}
+{% for tag in tags %}
+  {% assign t_url = tag | slugify | append: '/' | prepend: '/tag/' | prepend: site.baseurl %}
+  <article class="post dib">
+    <h2 class="dib ma2">
+      <a class="post-link" href="{{ t_url }}">{{ tag }}</a>
     </h2>
   </article>
 {% endfor %}

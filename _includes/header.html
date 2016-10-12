@@ -46,4 +46,16 @@
       {% endif %}
     </ul>
   </nav>
+
+  <nav class="tag-nav mv3 mv4-l">
+    Tags
+    <ul class="tag-list list tl">
+      {% capture tagString %}{% for tag in site.tags %}{{ tag[0] }}{% unless forloop.last %}|{% endunless %}{% endfor %}{% endcapture %}
+      {% assign tags = tagString | split: '|' | sort %}
+      {% for tag in tags %}
+        {% assign t_url = tag | slugify | append: '/' | prepend: '/tag/' | prepend: site.baseurl %}
+        <li class="ma1 dib"><a href="{{ t_url }}" class="black-70">{{ tag }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
 </header>
