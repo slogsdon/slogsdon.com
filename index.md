@@ -13,7 +13,7 @@ redirect_from:
   {% include project-listing.html project=project %}
 {% endfor %}
 
-See more under [All Projects]({{ '/projects/' | prepend: site.base_url }})
+See more under [All Projects]({{ '/projects/' | prepend: site.baseurl }})
 
 ## Recent Posts
 
@@ -21,4 +21,14 @@ See more under [All Projects]({{ '/projects/' | prepend: site.base_url }})
   {% include post-listing.html post=post %}
 {% endfor %}
 
-See more under [All Posts]({{ '/posts/' | prepend: site.base_url }})
+See more under [All Posts]({{ '/posts/' | prepend: site.baseurl }})
+
+## Recent Presentations
+
+{% assign pages = site.pages | sort: 'date' | reverse %}
+{% for presentation in pages limit: 5 %}
+  {% unless presentation.tags contains 'talk' %}{% continue %}{% endunless %}
+  {% include presentation-listing.html presentation=presentation %}
+{% endfor %}
+
+See more under [All Presentations]({{ '/presentations/' | prepent: site.baseurl }})

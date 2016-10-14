@@ -9,7 +9,7 @@
   </div>
 
   <nav class="page-nav mv4 mv5-l bt bb b--black-10">
-    <ul class="list">
+    <ul class="list pl1">
       {% assign pages = site.pages | sort: 'menu_weight' %}
       {% for p in pages %}
         {% if p.menu_hidden %}{% continue %}{% endif %}
