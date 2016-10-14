@@ -10,6 +10,7 @@ tags:
   - talk
 redirect_from: /http-and-me/
 ---
+
 An introduction to HTTP and how it drives the modern web. Deck was created for and targeted at a lunch and learn for developers, designers, and non-creatives at [Blackstone Media][1] and [StarkNine][2] in Louisville, KY.
 
 Slides available at [SpeakerDeck][3].

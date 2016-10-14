@@ -13,6 +13,7 @@ tags:
   - vagrant
 redirect_from: /vagrant-is-awesome/
 ---
+
 I've been working on PHP web apps for years, and over time, my development workflow has remained fairly constant:
 
   1. Configure new app in apache/nginx

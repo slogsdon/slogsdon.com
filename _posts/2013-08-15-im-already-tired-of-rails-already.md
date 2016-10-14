@@ -12,6 +12,7 @@ tags:
   - ruby
 redirect_from: /im-already-tired-of-rails-already/
 ---
+
 Neckbeards of the Internet. Prepare yourselves for the following comment: I don't think Rails is for me.
 
 I love Ruby as a scripting language. Its syntax is elegant and expressive. The tools available for both Ruby and Rails are fantastically built and really help drive the community behind them. The features built into the Rails framework leave me wanting similar features in other frameworks written in other languages.

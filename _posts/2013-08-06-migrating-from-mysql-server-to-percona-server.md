@@ -11,6 +11,7 @@ tags:
   - percona
 redirect_from: /migrating-from-mysql-server-to-percona-server/
 ---
+
 ## What is Percona Server, and why should I care?
 
 Blogs across the Internet have been benchmarking Percona Server against MySQL Server, e.g. [MySQL Performance Blog][1], and the results continually seem to have Percona ahead in many regards. This increased and stable performance for your database will help ensure performance and reliability in your applications.

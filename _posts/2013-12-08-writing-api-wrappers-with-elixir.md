@@ -13,7 +13,9 @@ tags:
   - mandrill
 redirect_from: /writing-api-wrappers-with-elixir/
 image: rainy-train-window.jpeg
+description: Recently, I built an API wrapper for Mandrill. Let's walk through the steps I used to create it and see if this process might be able to help you in your next project.
 ---
+
 Recently, I built an API wrapper for [Mandrill][1]. Let's walk through the steps I used to create it and see if this process might be able to help you in your next project.
 
 <!--more-->

@@ -13,6 +13,7 @@ tags:
   - rails
 redirect_from: /migrating-to-acvte/
 ---
+
 Remember [this][1]? I do. I finally got [acvte][2] to a point where I was comfortable using it in production for this website.
 
 <!--more-->

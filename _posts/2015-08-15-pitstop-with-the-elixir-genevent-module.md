@@ -14,6 +14,7 @@ redirect_from: /pitstop-with-the-elixir-genevent-module/
 image: whitewater.jpeg
 description: Take a break with me as I make a pitstop the Elixir GenEvent module, seeing what it can offer in a real life project.
 ---
+
 Wanting to learn more about WebSockets, I decided to create an easy to use, drop-in tool for Elixir's Plug library that adds WebSocket support for those using Plug and Cowboy ([plug-web-socket][1]), the only officially supported web server. One important piece of the puzzle I needed to align required an interface for users to broadcast and subscribe to events. What's the point of a WebSocket connection anyways of the server can't react to events on the client or even elsewhere on the server?
 
 For that task, my first thoughts went to GenServers. I probably could have made a GenServer to do the necessary work, however I found that GenEvent provided a more focused abstraction around what I wanted accomplished. Let's walk through a basic usage of Elixir's GenEvent module, stepping through the end result of [my library's event notification layer][2].
