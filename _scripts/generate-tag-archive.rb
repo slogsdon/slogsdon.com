@@ -8,6 +8,9 @@ for tag in tags do
     f.puts "title: #{tag["title"]} Archive"
     f.puts "tag: #{tag["tag"]}"
     f.puts "menu_hidden: true"
+    f.puts "redirect_from:"
+    f.puts "  - /tags/#{tag["slug"]}/"
+    f.puts "  - /#{tag["slug"]}/"
     f.puts "---\n"
   end
 end

@@ -13,7 +13,9 @@ tags:
   - migration
   - nginx
   - redirects
-redirect_from: /migrate-your-site-without-killing-your-search-engine-presence/
+redirect_from:
+  - /migrate-your-site-without-killing-your-search-engine-presence/
+  - /posts/devops/migrate-your-site-without-killing-your-search-engine-presence/
 image: view-down-alley.jpeg
 description: SEO is a hard beast to tame. Once you have everything just right, moving to a new platform, a new URL structure, or even a new domain can be stressful without taking the necessary steps first.
 ---

@@ -8,7 +8,10 @@ categories:
 tags:
   - obtvse2
   - ruby
-redirect_from: /using-obtvse2/
+redirect_from:
+  - /using-obtvse2/
+  - /using-obtvs/
+  - /using-obtvse/
 ---
 
 I will be using [obtvse2][1] for the forseeable future. I might finish up my scriptogram clone and release it yet, but I've got other plans for my time at the moment.

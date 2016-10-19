@@ -6,13 +6,19 @@
     "type": "git",
     "url": "git+https://github.com/slogsdon/slogsdon.github.io.git"
   },
+  "scripts": {
+    "start": "gulp"
+  },
   "author": "Shane Logsdon <shane@shanelogsdon.com",
   "license": "MIT",
   "homepage": "https://shane.logsdon.io",
   "devDependencies": {
+    "browser-sync": "^2.17.3",
     "critical": "^0.8.0",
     "dotenv": "^2.0.0",
     "github-api": "^2.3.0",
+    "gulp": "^3.9.1",
+    "gulp-shell": "^0.5.2",
     "tachyons-border-colors": "^4.2.0",
     "tachyons-borders": "^3.0.1",
     "tachyons-build-css": "^1.1.2",

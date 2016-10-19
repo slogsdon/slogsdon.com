@@ -12,7 +12,12 @@ tags:
   - nginx
   - percona
   - php
-redirect_from: /installing-nginx-percona-php-fpm-with-homebrew-on-mountain-lion/
+redirect_from:
+  - /installing-nginx-percona-php-fpm-with-homebrew-on-mountain-lion/
+  - /installing-nginxperconaphp-fpm-with-homebrew-on-mountain-lion/
+  - /devops/installing-nginx-percona-php-fpm-with-homebrew-on-mountain-lion/
+  - /post/installing-nginx-percona-php-fpm-with-homebrew-on-mountain-lion/
+  - /posts/devops/installing-nginx-percona-php-fpm-with-homebrew-on-mountain-lion/
 ---
 
 If it helps anyone else, that's an added bonus, but this is mainly just a reference point for me; I'm always forgetting what all needs to be done setting up a development environment going. [MNPP][1] doesn't seem to work well, and I'm too cheap at the moment to pay for for [MAMP Pro][2]. Plus, MAMP uses Apache which I've been trying to get away from for the past few months because of its slowness.

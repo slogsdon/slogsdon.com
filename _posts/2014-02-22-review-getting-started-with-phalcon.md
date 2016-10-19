@@ -10,7 +10,9 @@ tags:
   - phalcon
   - php
   - review
-redirect_from: /review-getting-started-with-phalcon/
+redirect_from:
+ - /review-getting-started-with-phalcon/
+ - /php/review-getting-started-with-phalcon/
 image: look-up-towards-skyscrapers.jpeg
 description: Stephan A. Miller brings the self-proclaimed “fastest PHP framework” to the masses in his new book, Getting Started with Phalcon.
 ---

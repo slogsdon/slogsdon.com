@@ -10,7 +10,9 @@ tags:
   - elixir
   - functional programming
   - haskell
-redirect_from: /functors-applicatives-and-monads-in-elixir/
+redirect_from:
+  - /functors-applicatives-and-monads-in-elixir/
+  - /functors-applicatives/
 image: side-of-building.jpeg
 description: Elixir doesn't have native modules for functors, applicatives, and monads. Is it possible to create them? Is it worth it?
 ---

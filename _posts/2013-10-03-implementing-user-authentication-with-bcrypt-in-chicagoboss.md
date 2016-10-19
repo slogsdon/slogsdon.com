@@ -12,7 +12,9 @@ tags:
   - chicagoboss
   - erlang
   - functional programming
-redirect_from: /implementing-user-authentication-with-bcrypt-in-chicagoboss/
+redirect_from:
+  - /implementing-user-authentication-with-bcrypt-in-chicagoboss/
+  - /erlang/implementing-user-authentication-with-bcrypt-in-chicagoboss/
 description: Don't rely on MD5/SHA1/SHA256/etc. hashes for storing passwords. Join me in learning how to bcrypt in Erlang applications.
 ---
 

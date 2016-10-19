@@ -11,7 +11,10 @@ tags:
   - elixir
   - functional programming
   - mandrill
-redirect_from: /writing-api-wrappers-with-elixir/
+redirect_from:
+  - /writing-api-wrappers-with-elixir/
+  - /elixir/writing-api-wrappers-with-elixir/
+  - /posts/elixir/writing-api-wrappers-with-elixir/
 image: rainy-train-window.jpeg
 description: Recently, I built an API wrapper for Mandrill. Let's walk through the steps I used to create it and see if this process might be able to help you in your next project.
 ---

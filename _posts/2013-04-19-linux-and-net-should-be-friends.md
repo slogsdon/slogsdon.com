@@ -9,7 +9,10 @@ categories:
 tags:
   - .net
   - linux
-redirect_from: /linux-and-net-should-be-friends/
+redirect_from:
+  - /linux-and-net-should-be-friends/
+  - /net/linux-and-net-should-be-friends/
+  - /posts/net/linux-and-net-should-be-friends/
 description: Linux and Microsoft's .NET framework haven't always seen eye to eye. The Mono Project looks to get Linux and .NET on the same page.
 ---
 

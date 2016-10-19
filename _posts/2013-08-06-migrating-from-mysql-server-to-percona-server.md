@@ -9,7 +9,9 @@ categories:
 tags:
   - mysql
   - percona
-redirect_from: /migrating-from-mysql-server-to-percona-server/
+redirect_from:
+  - /migrating-from-mysql-server-to-percona-server/
+  - /devops/migrating-from-mysql-server-to-percona-server/
 ---
 
 ## What is Percona Server, and why should I care?
