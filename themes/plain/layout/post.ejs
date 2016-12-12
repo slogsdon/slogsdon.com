@@ -1,0 +1,57 @@
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="header">
+    <meta itemscope itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" itemid="<%= page.permalink %>">
+    <h1 class="title lh-title f2 mt4 mb1 f1-l measure-wide" itemprop="name headline"><%= page.title %></h1>
+    <div class="meta">
+      <time datetime="<%= date_xml(page.date) %>"
+            itemprop="datePublished" class="f6 black-50">
+        Published: <%= date(page.date, 'MMM Do, YYYY') %>
+      </time>
+      <time datetime="<%= date_xml(page.updated) %>"
+            itemprop="dateModified" class="f6 black-50">
+        <% if (page.updated) { %>
+          Updated: <%= date(page.updated, 'MMM Do, YYYY') %>
+        <% } %>
+      </time>
+      <% if (page.author) { %>
+        <% var author = site.data.authors[page.author] %>
+        <span itemprop="author" itemscope
+              itemtype="http://schema.org/Person">
+          <meta itemprop="name" content="<%= author.name %>">
+        </span>
+        <span itemprop="publisher" itemscope
+              itemtype="http://schema.org/Organization">
+          <meta itemprop="name" content="<%= author.name %>">
+          <span itemprop="logo" itemscope
+                itemtype="http://schema.org/ImageObject">
+            <meta itemprop="url" content="<%= author.picture %>">
+            <meta itemprop="width" itemtype="https://schema.org/Distance" content="60">
+            <meta itemprop="height" itemtype="https://schema.org/Distance" content="60">
+          </span>
+        </span>
+        <span itemprop="image" itemscope
+              itemtype="http://schema.org/ImageObject">
+          <meta itemprop="url" content="<%= author.picture %>">
+          <meta itemprop="width" itemtype="https://schema.org/Distance" content="60">
+          <meta itemprop="height" itemtype="https://schema.org/Distance" content="60">
+        </span>
+      <% } %>
+    </div>
+  </header>
+
+  <section class="content lh-copy" itemprop="articleBody">
+    <%- page.content %>
+    <%- partial('_partial/classify-elements') %>
+  </section>
+
+  <footer class="post-footer mt4 bt bb b--black-10">
+    <% if (page.tags) { %>
+      <p class="meta tags">
+        <span class="label">tags:</span>
+        <% page.tags.forEach(function (tag) { %>
+          <a href="<% url_for(tag.path) %>" class="ml3 black-70"><%= tag.name %></a>
+        <% }) %>
+      </p>
+    <% } %>
+  </footer>
+</article>

@@ -1,9 +1,0 @@
----
-layout: page
----
-
-{% for post in site.posts %}
-  {% if post.tags contains page.tag %}
-    {% include post-listing.html post=post %}
-  {% endif %}
-{% endfor %}

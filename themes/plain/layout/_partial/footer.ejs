@@ -1,0 +1,9 @@
+<footer class="footer mv4 <% if (pos === 'top') { %>dn db-l<% } else { %>db dn-l<% } %>">
+  <p class="copyright dib mr3">
+    <small>&copy; <%= date(new Date(), 'YYYY') %> Shane Logsdon</small>
+  </p>
+
+  <p class="rss-subscribe mr3 dib">
+    <small>subscribe <a href="<%- url_for('/feed.xml') %>" class="black-70">via RSS</a></small>
+  </p>
+</footer>

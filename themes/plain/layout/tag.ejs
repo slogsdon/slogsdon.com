@@ -1,0 +1,12 @@
+<article class="page">
+  <header class="header">
+    <% if (!is_home()) { %>
+      <h1 class="title lh-title f2 f1-l mt4 mb1 f1-l measure-wide"><%= page.tag %> Archive</h1>
+    <% } %>
+  </header>
+
+  <section class="content lh-copy">
+    <%- partial('_partial/tag-archive', {tag: page}) %>
+    <%- partial('_partial/classify-elements') %>
+  </section>
+</article>

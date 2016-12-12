@@ -1,9 +1,0 @@
-{% assign post = include.post %}
-
-<article class="post">
-  <h2 class="mb1">
-    <a class="post-link black-70" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-  </h2>
-  <span class="post-meta f6 black-50">Published: {{ post.date | date: "%b %-d, %Y" }}</span>
-  <p class="post-description">{{ post.description }}</p>
-</article>

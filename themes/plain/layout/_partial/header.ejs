@@ -1,0 +1,57 @@
+<header class="header w-100 w-20-l dib-ns v-top-ns tc f6 lh-copy mt3 mt1-l ml3-l fl-l bt b--black-10 bn-l">
+  <div class="mv4 mv5-l">
+    <a href="<%- url_for() %>" class="f4 f3-l b black-70" title="Home" id="menu">
+      <%= config.title %>
+      <div>
+        <small class="f6 normal"><%= config.subtitle %></small>
+      </div>
+    </a>
+  </div>
+
+  <nav class="page-nav mv4 mv5-l bt bb b--black-10">
+    <ul class="list pl1">
+      <% site.pages.sort('menu_weight', 'asc').forEach(function (p) { %>
+        <% if (p.menu_hidden) return %>
+        <% if (p.title) { %>
+          <% var title = p.menu_label || p.title %>
+          <li class="di">
+            <a class="page-link black-70 mr3" href="<%= url_for(p.path).replace('index.html', '') %>">
+              <%= title %>
+            </a>
+          </li>
+        <% } %>
+      <% }) %>
+    </ul>
+  </nav>
+
+  <p class="description ma3 mv4-l"><%= config.description %></p>
+
+  <nav class="interaction-nav mv3 pb3">
+    <ul class="contact-list list tl">
+      <li class="mv1">Email me: <a href="mailto:<%= config.email %>" target="_blank" class="black-70"><%= config.email %></a></li>
+      <% if (config.github.username) { %>
+        <li class="mv1">
+          Develop with me:
+          <a href="https://github.com/<%= config.github.username %>" target="_blank" title="GitHub" class="black-70"><%= config.github.username %></a>
+        </li>
+      <% } %>
+      <% if (config.twitter.username) { %>
+        <li class="mv1">
+          Tweet me:
+          <a href="https://twitter.com/<%= config.twitter.username %>" target="_blank" title="Twitter" class="black-70"><%= config.twitter.username %></a>
+        </li>
+      <% } %>
+    </ul>
+  </nav>
+
+  <nav class="tag-nav mv3 mv4-l">
+    Tags
+    <ul class="tag-list list tl">
+      <% site.tags.sort('name', 'asc').forEach(function (tag) { %>
+        <li class="ma1 dib">
+          <a href="<%= url_for(tag.path).replace('index.html', '') %>" class="black-70"><%= tag.name %></a>
+        </li>
+      <% }) %>
+    </ul>
+  </nav>
+</header>

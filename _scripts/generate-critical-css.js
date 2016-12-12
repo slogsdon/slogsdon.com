@@ -3,10 +3,10 @@
 const critical = require('critical');
 
 critical.generate({
-    base: '_site/',
+    base: 'public/',
     src: 'index.html',
-    css: ['assets/css/main.css'],
-    dest: '_includes/main.critical.css',
+    css: ['themes/plain/source/assets/css/main.css'],
+    dest: 'themes/plain/source/layout/_partial/_main.critical.css',
     dimensions: [{
         height: 200,
         width: 500
@@ -16,4 +16,4 @@ critical.generate({
     }]
 });
 
-console.log('assets/css/main.critical.css generated.');
+console.log('_main.critical.css generated.');

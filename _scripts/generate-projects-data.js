@@ -30,11 +30,11 @@ me.listRepos({ type: 'owner' })
         return (dateA < dateB) - (dateA > dateB);
       });
 
-    fs.writeFile('./_data/projects.json', JSON.stringify(repos, null, 2), function (err) {
+    fs.writeFile('./source/_data/projects.json', JSON.stringify(repos, null, 2), function (err) {
       if (err) {
         console.log(err);
       }
 
-      console.log('_data/projects.json generated.');
+      console.log('source/_data/projects.json generated.');
     });
   });
