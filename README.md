@@ -3,20 +3,20 @@
 ## Development
 
 ```bash
-$ npm install
-$ npm start
-```
-
-To regenerate auxillary files:
-
-```bash
-$ ./_scripts/prepare.sh
+npm install
+npm start
 ```
 
 ## Build
 
 ```bash
-$ npm run build
+npm run build
+```
+
+## Build and Deploy
+
+```bash
+npm run deploy
 ```
 
 ## License
