@@ -11,7 +11,8 @@
   },
   "scripts": {
     "start": "gulp",
-    "build": "rimraf public && hexo generate"
+    "build": "rimraf public && ./_scripts/pre.sh && hexo generate && ./_scripts/post.sh",
+    "deploy": "npm run build && hexo deploy"
   },
   "hexo": {
     "version": "3.2.2"
