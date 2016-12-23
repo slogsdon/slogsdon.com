@@ -9,7 +9,7 @@
       </time>
       <time datetime="<%= date_xml(page.updated) %>"
             itemprop="dateModified" class="f6 black-50">
-        <% if (page.updated) { %>
+        <% if (page.updated && date(page.updated, 'MMM Do, YYYY') != date(page.date, 'MMM Do, YYYY')) { %>
           Updated: <%= date(page.updated, 'MMM Do, YYYY') %>
         <% } %>
       </time>
