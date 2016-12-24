@@ -46,7 +46,7 @@
 
   <nav class="tag-nav mv3 mv4-l">
     Tags
-    <ul class="tag-list list tl">
+    <ul class="tag-list list tj">
       <% site.tags.sort('name', 'asc').forEach(function (tag) { %>
         <li class="ma1 dib">
           <a href="<%= url_for(tag.path).replace('index.html', '') %>" class="black-70"><%= tag.name %></a>

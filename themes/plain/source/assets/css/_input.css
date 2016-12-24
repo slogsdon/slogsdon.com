@@ -28,6 +28,7 @@ code { color: #990073; }
 pre { overflow: auto; word-wrap: normal; white-space: pre; }
 pre > code { color: #000; }
 .bw4 { border-width: 1rem; }
+.tj { text-align: justify; }
 
 /* Highlight.js - GitHub Gist */
 /* Author : Louis Barranqueiro - https://github.com/LouisBarranqueiro */
