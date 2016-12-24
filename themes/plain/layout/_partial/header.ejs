@@ -28,17 +28,17 @@
 
   <nav class="interaction-nav mv3 pb3">
     <ul class="contact-list list tl">
-      <li class="mv1">Email me: <a href="mailto:<%= config.email %>" target="_blank" class="black-70"><%= config.email %></a></li>
+      <li class="mv1">Email me: <a href="mailto:<%= config.email %>" target="_blank" class="black-70" rel="noopener"><%= config.email %></a></li>
       <% if (config.github.username) { %>
         <li class="mv1">
           Develop with me:
-          <a href="https://github.com/<%= config.github.username %>" target="_blank" title="GitHub" class="black-70"><%= config.github.username %></a>
+          <a href="https://github.com/<%= config.github.username %>" target="_blank" title="GitHub" class="black-70" rel="noopener"><%= config.github.username %></a>
         </li>
       <% } %>
       <% if (config.twitter.username) { %>
         <li class="mv1">
           Tweet me:
-          <a href="https://twitter.com/<%= config.twitter.username %>" target="_blank" title="Twitter" class="black-70"><%= config.twitter.username %></a>
+          <a href="https://twitter.com/<%= config.twitter.username %>" target="_blank" title="Twitter" class="black-70" rel="noopener"><%= config.twitter.username %></a>
         </li>
       <% } %>
     </ul>
