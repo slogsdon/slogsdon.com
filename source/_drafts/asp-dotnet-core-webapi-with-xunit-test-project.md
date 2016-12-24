@@ -2,7 +2,6 @@
 title: ASP.NET Core WebAPI with xUnit.net Test Project
 author: shane
 layout: post
-date: 2016-12-22
 categories:
   - All Posts
   - Programming
