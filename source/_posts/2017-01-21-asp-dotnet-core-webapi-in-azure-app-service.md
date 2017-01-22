@@ -43,7 +43,7 @@ $ git commit -am "Initial commit"
 
 Adding a new App Service resource to your Azure account is fairly straightforward with Azure's portal, adding a "Web App" under "Web + Mobile" in the new resource pane.
 
-{% img w-100 /images/asp-dotnet-core-webapi-in-azure-app-service/create-new-resource.png %}
+{% img w-100 /assets/images/asp-dotnet-core-webapi-in-azure-app-service/create-new-resource.png %}
 
 When going through the initial setup, you'll be prompted for a few pieces of information:
 
@@ -56,7 +56,7 @@ Once finalized, you'll be able to click the "Create" button. You'll notice a not
 
 If you haven't set up a deployment user/password on your Azure account before, Goto App Deployment > Deployment Credentials
 
-{% img w-100 w-50-l /images/asp-dotnet-core-webapi-in-azure-app-service/app-deployment.png %}
+{% img w-100 w-50-l /assets/images/asp-dotnet-core-webapi-in-azure-app-service/app-deployment.png %}
 
 which will require you enter the following:
 
@@ -249,7 +249,7 @@ Set-Cookie: ARRAffinity=95a49b67d4a8988dc9af99afd3e5e3d0f060d6764e52202b8294a0e6
 Date: Sat, 21 Jan 2017 04:16:05 GMT
 ```
 
-{% img w-100 /images/asp-dotnet-core-webapi-in-azure-app-service/visit-project.png %}
+{% img w-100 /assets/images/asp-dotnet-core-webapi-in-azure-app-service/visit-project.png %}
 
 And don't forget about some of the benefits of using Azure (subscription and configuration allowing):
 
