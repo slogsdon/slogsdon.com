@@ -6,4 +6,18 @@
   <p class="rss-subscribe mr3 dib">
     <small>subscribe <a href="<%- url_for('/feed.xml') %>" class="black-70">via RSS</a></small>
   </p>
+
+  <p class="toggle-ligatures mr3 dib">
+    <small><a href="javascript:toggleLigatures();">toggle code ligatures</a></span>
+    <script>
+      function toggleLigatures() {
+        if (-1 === document.body.className.indexOf('fira-code')) {
+          document.body.className += ' fira-code';
+          return;
+        }
+
+        document.body.className = document.body.className.replace(' fira-code', '');
+      }
+    </script>
+  </p>
 </footer>

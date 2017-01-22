@@ -23,9 +23,28 @@
 /* ELEMENTS */
 @import 'tachyons-lists';
 
+/* FONTS */
+@font-face{
+  font-family: 'Fira Code';
+  src: url('../fonts/FiraCode-Regular.eot');
+  src: url('../fonts/FiraCode-Regular.eot') format('embedded-opentype'),
+       url('../fonts/FiraCode-Regular.woff2') format('woff2'),
+       url('../fonts/FiraCode-Regular.woff') format('woff'),
+       url('../fonts/FiraCode-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* ADDITIONAL */
 code { color: #990073; }
 pre { overflow: auto; word-wrap: normal; white-space: pre; }
+code, pre {
+  font: 1rem/1.5rem Consolas, monaco, monospace;
+  font-feature-settings: "calt" 1;
+  text-rendering: optimizeLegibility;
+  font-variant-ligatures: contextual;
+}
+.fira-code code, .fira-code pre { font: 1rem/1.5rem "Fira Code", Consolas, monaco, monospace; }
 pre > code { color: #000; }
 .bw4 { border-width: 1rem; }
 .tj { text-align: justify; }
