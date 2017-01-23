@@ -12,8 +12,8 @@ description: >-
   While not the primary focus of Microsoft's efforts, F# makes for an excellent
   language choice for applications targeting .NET Core.
 date: 2016-12-23
+modified: 2017-01-22
 ---
-
 
 Interested in functional programming, I've always felt F# would be a good tool to have at my disposal considering there are a plethora of .NET-focused development companies around my area. Even though Microsoft focuses its efforts on C# , F# is an excellent and viable alternative for developing applications that target the .NET Core platform, opening hosting options to more than just Windows.
 
@@ -297,6 +297,8 @@ let app =
 
 startWebServer defaultConfig app
 ```
+
+*Update Jan 22, 2017*: I've looked into this successfully and [reported my experience with ASP.NET Core and Suave](https://shane.logsdon.io/posts/fiddling-with-asp-dotnet-core-and-fsharp-with-suave/).
 
 ## Comments to be Made
 
