@@ -2,7 +2,12 @@
   <h2 class="mb1">
     <a class="post-link black-70" href="<%- url_for(post.path) %>"><%= post.title %></a>
   </h2>
-  <span class="post-meta f6 black-50">Published: <%- date(post.date, 'MMM Do, YYYY') %></span>
+  <span class="post-meta f6 black-50">
+    Published: <%- date(post.date, 'MMM Do, YYYY') %>
+    <% if (page.modified && date(page.modified, 'MMM Do, YYYY') != date(page.date, 'MMM Do, YYYY')) { %>
+      Updated: <%= date(page.modified, 'MMM Do, YYYY') %>
+    <% } %>
+  </span>
   <% if (post.description) { %>
     <p class="post-description"><%= post.description %></p>
   <% } %>
