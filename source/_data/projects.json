@@ -1,5 +1,16 @@
 [
   {
+    "name": "placid",
+    "owner": "slogsdon",
+    "url": "https://github.com/slogsdon/placid",
+    "description": "A REST toolkit for building highly-scalable and fault-tolerant HTTP APIs with Elixir",
+    "created": "2014-09-07T03:27:28Z",
+    "updated": "2017-01-25T00:41:40Z",
+    "language": "Elixir",
+    "stars": 127,
+    "forks": 8
+  },
+  {
     "name": "switch-php",
     "owner": "slogsdon",
     "url": "https://github.com/slogsdon/switch-php",
@@ -44,17 +55,6 @@
     "forks": 11
   },
   {
-    "name": "placid",
-    "owner": "slogsdon",
-    "url": "https://github.com/slogsdon/placid",
-    "description": "A REST toolkit for building highly-scalable and fault-tolerant HTTP APIs with Elixir",
-    "created": "2014-09-07T03:27:28Z",
-    "updated": "2016-10-09T12:59:10Z",
-    "language": "Elixir",
-    "stars": 126,
-    "forks": 8
-  },
-  {
     "name": "plug-web-socket",
     "owner": "slogsdon",
     "url": "https://github.com/slogsdon/plug-web-socket",
@@ -62,7 +62,7 @@
     "created": "2015-05-01T03:52:47Z",
     "updated": "2016-10-09T12:57:20Z",
     "language": "Elixir",
-    "stars": 37,
+    "stars": 38,
     "forks": 12
   },
   {
