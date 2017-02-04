@@ -4,12 +4,12 @@
   <url>
     <loc>https://shane.logsdon.io/posts/asp-dotnet-core-webapi-in-azure-app-service/</loc>
     
-    <lastmod>2017-02-04T05:13:38.000Z</lastmod>
+    <lastmod>2017-02-04T05:18:43.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://shane.logsdon.io/posts/simple-php-socket-programming/</loc>
+    <loc>https://shane.logsdon.io/posts/exploring-fsharp-with-dotnet-core-and-kestrel/</loc>
     
     <lastmod>2017-01-31T06:17:08.000Z</lastmod>
     
@@ -37,14 +37,14 @@
   </url>
   
   <url>
-    <loc>https://shane.logsdon.io/posts/chicagoboss/</loc>
+    <loc>https://shane.logsdon.io/posts/im-already-tired-of-rails-already/</loc>
     
     <lastmod>2017-01-31T06:17:08.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://shane.logsdon.io/posts/im-already-tired-of-rails-already/</loc>
+    <loc>https://shane.logsdon.io/posts/chicagoboss/</loc>
     
     <lastmod>2017-01-31T06:17:08.000Z</lastmod>
     
@@ -58,14 +58,14 @@
   </url>
   
   <url>
-    <loc>https://shane.logsdon.io/posts/implementing-user-authentication-with-bcrypt-in-chicagoboss/</loc>
+    <loc>https://shane.logsdon.io/posts/acvte/</loc>
     
     <lastmod>2017-01-31T06:17:08.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://shane.logsdon.io/posts/acvte/</loc>
+    <loc>https://shane.logsdon.io/posts/implementing-user-authentication-with-bcrypt-in-chicagoboss/</loc>
     
     <lastmod>2017-01-31T06:17:08.000Z</lastmod>
     
@@ -79,14 +79,14 @@
   </url>
   
   <url>
-    <loc>https://shane.logsdon.io/posts/migrate-your-site-without-killing-your-search-engine-presence/</loc>
+    <loc>https://shane.logsdon.io/posts/review-getting-started-with-phalcon/</loc>
     
     <lastmod>2017-01-31T06:17:08.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://shane.logsdon.io/posts/review-getting-started-with-phalcon/</loc>
+    <loc>https://shane.logsdon.io/posts/migrate-your-site-without-killing-your-search-engine-presence/</loc>
     
     <lastmod>2017-01-31T06:17:08.000Z</lastmod>
     
@@ -128,21 +128,14 @@
   </url>
   
   <url>
+    <loc>https://shane.logsdon.io/posts/simple-php-socket-programming/</loc>
+    
+    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://shane.logsdon.io/posts/installing-nginx-percona-php-fpm-with-homebrew-on-mountain-lion/</loc>
-    
-    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://shane.logsdon.io/posts/linux-and-net-should-be-friends/</loc>
-    
-    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://shane.logsdon.io/posts/beginners-hands-on-with-haskell/</loc>
     
     <lastmod>2017-01-31T06:17:08.000Z</lastmod>
     
@@ -156,7 +149,7 @@
   </url>
   
   <url>
-    <loc>https://shane.logsdon.io/posts/exploring-fsharp-with-dotnet-core-and-kestrel/</loc>
+    <loc>https://shane.logsdon.io/posts/linux-and-net-should-be-friends/</loc>
     
     <lastmod>2017-01-31T06:17:08.000Z</lastmod>
     
@@ -164,6 +157,13 @@
   
   <url>
     <loc>https://shane.logsdon.io/posts/fiddling-with-asp-dotnet-core-and-fsharp-with-suave/</loc>
+    
+    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shane.logsdon.io/posts/beginners-hands-on-with-haskell/</loc>
     
     <lastmod>2017-01-31T06:17:08.000Z</lastmod>
     
@@ -184,7 +184,7 @@
   </url>
   
   <url>
-    <loc>https://shane.logsdon.io/posts/introduction-to-testing-with-exunit/</loc>
+    <loc>https://shane.logsdon.io/posts/http-and-me/</loc>
     
     <lastmod>2017-01-31T06:17:08.000Z</lastmod>
     
@@ -198,7 +198,7 @@
   </url>
   
   <url>
-    <loc>https://shane.logsdon.io/posts/http-and-me/</loc>
+    <loc>https://shane.logsdon.io/posts/introduction-to-testing-with-exunit/</loc>
     
     <lastmod>2017-01-31T06:17:08.000Z</lastmod>
     
