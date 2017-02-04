@@ -1,0 +1,14 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+/* TEAM */
+  Author: Shane Logsdon
+  Site: http://www.slogsdon.com
+  Twitter: @shanelogsdon
+  Location: Louisville, KY, USA
+
+/* SITE */
+  Software: Jekyll/Ruby, Tachyons
+  Language: English
+  Components: HTML, SCSS
+  IDE: NeoVim, Tmux, Mosh

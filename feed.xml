@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Shane Logsdon</title>
+    <link>https://shane.logsdon.io/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <description>I develop things. Sometimes, I write about them here.
+Let&#39;s start a conversation.
+</description>
+    <pubDate>Tue, 31 Jan 2017 06:17:08 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Fiddling with ASP.NET Core and F# with Suave</title>
+      <link>https://shane.logsdon.io/posts/fiddling-with-asp-dotnet-core-and-fsharp-with-suave/</link>
+      <guid>https://shane.logsdon.io/posts/fiddling-with-asp-dotnet-core-and-fsharp-with-suave/</guid>
+      <pubDate>Mon, 23 Jan 2017 04:00:25 GMT</pubDate>
+      <description>
+      
+        Suave is a possible replacement for the ASP.NET stack, but with some help, the two can be used together to build composable F# web applications.
+      
+      </description>
+      
+      <comments>https://shane.logsdon.io/posts/fiddling-with-asp-dotnet-core-and-fsharp-with-suave/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>ASP.NET Core WebAPI in Azure App Service</title>
+      <link>https://shane.logsdon.io/posts/asp-dotnet-core-webapi-in-azure-app-service/</link>
+      <guid>https://shane.logsdon.io/posts/asp-dotnet-core-webapi-in-azure-app-service/</guid>
+      <pubDate>Sat, 21 Jan 2017 05:12:50 GMT</pubDate>
+      <description>
+      
+        In my opinion, Azure App Services are an easy and direct way to launch your ASP.NET Core application for the outside world to access. Azure App Service offers a free tier, perfect for tinkering or getting a new project off the ground.
+      
+      </description>
+      
+      <comments>https://shane.logsdon.io/posts/asp-dotnet-core-webapi-in-azure-app-service/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Cross-Compiling Rust Applications for the Onion Omega2 from MacOS</title>
+      <link>https://shane.logsdon.io/posts/cross-compiling-rust-applications-for-the-onion-omega2-from-macos/</link>
+      <guid>https://shane.logsdon.io/posts/cross-compiling-rust-applications-for-the-onion-omega2-from-macos/</guid>
+      <pubDate>Wed, 11 Jan 2017 23:57:01 GMT</pubDate>
+      <description>
+      
+        Onion&#39;s Omega2 SoC computers are a prime target for cross-compiling Rust applications, taking care to set up your environment just right for the Omega2&#39;s MIPS architecture.
+      
+      </description>
+      
+      <comments>https://shane.logsdon.io/posts/cross-compiling-rust-applications-for-the-onion-omega2-from-macos/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Exploring F# with .NET Core and Kestrel</title>
+      <link>https://shane.logsdon.io/posts/exploring-fsharp-with-dotnet-core-and-kestrel/</link>
+      <guid>https://shane.logsdon.io/posts/exploring-fsharp-with-dotnet-core-and-kestrel/</guid>
+      <pubDate>Fri, 23 Dec 2016 05:00:00 GMT</pubDate>
+      <description>
+      
+        While not the primary focus of Microsoft&#39;s efforts, F# makes for an excellent language choice for applications targeting .NET Core.
+      
+      </description>
+      
+      <comments>https://shane.logsdon.io/posts/exploring-fsharp-with-dotnet-core-and-kestrel/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Simple PHP Socket Programming</title>
+      <link>https://shane.logsdon.io/posts/simple-php-socket-programming/</link>
+      <guid>https://shane.logsdon.io/posts/simple-php-socket-programming/</guid>
+      <pubDate>Sat, 29 Oct 2016 04:00:00 GMT</pubDate>
+      <description>
+      
+        PHP isn&#39;t just for templates for Apache&#39;s mod_php. Let&#39;s have fun with socket programming in PHP.
+      
+      </description>
+      
+      <comments>https://shane.logsdon.io/posts/simple-php-socket-programming/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Don&#39;t Leave Cash in the Cart</title>
+      <link>https://shane.logsdon.io/posts/dont-leave-cash-in-the-cart/</link>
+      <guid>https://shane.logsdon.io/posts/dont-leave-cash-in-the-cart/</guid>
+      <pubDate>Sun, 31 Jul 2016 04:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;Presented this iteration of this Heartland eCommerce presentation at the Internet Merchants Association’s sessions during ASD Market Week
+      
+      </description>
+      
+      <comments>https://shane.logsdon.io/posts/dont-leave-cash-in-the-cart/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Beginner&#39;s Hands-On with Haskell</title>
+      <link>https://shane.logsdon.io/posts/beginners-hands-on-with-haskell/</link>
+      <guid>https://shane.logsdon.io/posts/beginners-hands-on-with-haskell/</guid>
+      <pubDate>Tue, 10 May 2016 04:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;From the meetup description:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;An interactive workshop for newcomers to Haskell and functional programming.&lt;/p&gt;
+&lt;/block
+      
+      </description>
+      
+      <comments>https://shane.logsdon.io/posts/beginners-hands-on-with-haskell/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Plug, Friend of Web Developers</title>
+      <link>https://shane.logsdon.io/posts/plug-friend-of-web-developers/</link>
+      <guid>https://shane.logsdon.io/posts/plug-friend-of-web-developers/</guid>
+      <pubDate>Tue, 12 Jan 2016 05:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;From the meetup description:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;We’ll cover the Plug specification, using the web server adapters, and composing Plug mo
+      
+      </description>
+      
+      <comments>https://shane.logsdon.io/posts/plug-friend-of-web-developers/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Introduction to Testing with ExUnit</title>
+      <link>https://shane.logsdon.io/posts/introduction-to-testing-with-exunit/</link>
+      <guid>https://shane.logsdon.io/posts/introduction-to-testing-with-exunit/</guid>
+      <pubDate>Tue, 10 Nov 2015 05:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;From the meetup description:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Bring your laptops for this workshop where we walk through basic testing using ExUnit, E
+      
+      </description>
+      
+      <comments>https://shane.logsdon.io/posts/introduction-to-testing-with-exunit/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Functors, Applicatives, and Monads in Elixir</title>
+      <link>https://shane.logsdon.io/posts/functors-applicatives-and-monads-in-elixir/</link>
+      <guid>https://shane.logsdon.io/posts/functors-applicatives-and-monads-in-elixir/</guid>
+      <pubDate>Sun, 04 Oct 2015 04:00:00 GMT</pubDate>
+      <description>
+      
+        Elixir doesn&#39;t have native modules for functors, applicatives, and monads. Is it possible to create them? Is it worth it?
+      
+      </description>
+      
+      <comments>https://shane.logsdon.io/posts/functors-applicatives-and-monads-in-elixir/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Functional Programming Principles in Elixir</title>
+      <link>https://shane.logsdon.io/posts/functional-programming-principles-in-elixir/</link>
+      <guid>https://shane.logsdon.io/posts/functional-programming-principles-in-elixir/</guid>
+      <pubDate>Tue, 08 Sep 2015 04:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;From the meetup description:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Join us as we discuss core functional programming principles, focusing on Elixir’s usage
+      
+      </description>
+      
+      <comments>https://shane.logsdon.io/posts/functional-programming-principles-in-elixir/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Pitstop with the Elixir GenEvent Module</title>
+      <link>https://shane.logsdon.io/posts/pitstop-with-the-elixir-genevent-module/</link>
+      <guid>https://shane.logsdon.io/posts/pitstop-with-the-elixir-genevent-module/</guid>
+      <pubDate>Sun, 16 Aug 2015 04:00:00 GMT</pubDate>
+      <description>
+      
+        Take a break with me as I make a pitstop the Elixir GenEvent module, seeing what it can offer in a real life project.
+      
+      </description>
+      
+      <comments>https://shane.logsdon.io/posts/pitstop-with-the-elixir-genevent-module/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>WordPress, Docker, and You</title>
+      <link>https://shane.logsdon.io/posts/wordpress-docker-and-you/</link>
+      <guid>https://shane.logsdon.io/posts/wordpress-docker-and-you/</guid>
+      <pubDate>Sat, 25 Apr 2015 04:00:00 GMT</pubDate>
+      <description>
+      
+        Wordpress, Docker, and your site can work together in harmony with the right configuration. Follow along as I spill the beans.
+      
+      </description>
+      
+      <comments>https://shane.logsdon.io/posts/wordpress-docker-and-you/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>I’m Learning Haskell For Real This Time</title>
+      <link>https://shane.logsdon.io/posts/im-learning-haskell-for-real-this-time/</link>
+      <guid>https://shane.logsdon.io/posts/im-learning-haskell-for-real-this-time/</guid>
+      <pubDate>Mon, 08 Dec 2014 05:00:00 GMT</pubDate>
+      <description>
+      
+        About a couple of years ago, I was looking for something to add to my programming toolbox. Follow me on my journey of learning Haskell.
+      
+      </description>
+      
+      <comments>https://shane.logsdon.io/posts/im-learning-haskell-for-real-this-time/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Application Deployment</title>
+      <link>https://shane.logsdon.io/posts/application-deployment/</link>
+      <guid>https://shane.logsdon.io/posts/application-deployment/</guid>
+      <pubDate>Mon, 25 Aug 2014 04:00:00 GMT</pubDate>
+      <description>
+      
+        You may have experience in deploying your Ruby or .NET applications, but when it comes to Elixir, do you have what it takes to deploy your app? Learn the essentials for getting your application from development to production.
+      
+      </description>
+      
+      <comments>https://shane.logsdon.io/posts/application-deployment/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>HTTP and Me</title>
+      <link>https://shane.logsdon.io/posts/http-and-me/</link>
+      <guid>https://shane.logsdon.io/posts/http-and-me/</guid>
+      <pubDate>Mon, 11 Aug 2014 04:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;An introduction to HTTP and how it drives the modern web. Deck was created for and targeted at a lunch and learn for developers, designer
+      
+      </description>
+      
+      <comments>https://shane.logsdon.io/posts/http-and-me/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Go: An Introduction</title>
+      <link>https://shane.logsdon.io/posts/go-an-introduction/</link>
+      <guid>https://shane.logsdon.io/posts/go-an-introduction/</guid>
+      <pubDate>Fri, 06 Jun 2014 04:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;An introduction to the Go programming language. Deck was created for and targeted at a lunch and learn for developers at &lt;a href=&quot;http://
+      
+      </description>
+      
+      <comments>https://shane.logsdon.io/posts/go-an-introduction/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Review: Getting Started with Phalcon</title>
+      <link>https://shane.logsdon.io/posts/review-getting-started-with-phalcon/</link>
+      <guid>https://shane.logsdon.io/posts/review-getting-started-with-phalcon/</guid>
+      <pubDate>Sat, 22 Feb 2014 05:00:00 GMT</pubDate>
+      <description>
+      
+        Stephan A. Miller brings the self-proclaimed “fastest PHP framework” to the masses in his new book, Getting Started with Phalcon.
+      
+      </description>
+      
+      <comments>https://shane.logsdon.io/posts/review-getting-started-with-phalcon/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Migrate Your Site Without Killing Your Search Engine Presence</title>
+      <link>https://shane.logsdon.io/posts/migrate-your-site-without-killing-your-search-engine-presence/</link>
+      <guid>https://shane.logsdon.io/posts/migrate-your-site-without-killing-your-search-engine-presence/</guid>
+      <pubDate>Fri, 20 Dec 2013 05:00:00 GMT</pubDate>
+      <description>
+      
+        SEO is a hard beast to tame. Once you have everything just right, moving to a new platform, a new URL structure, or even a new domain can be stressful without taking the necessary steps first.
+      
+      </description>
+      
+      <comments>https://shane.logsdon.io/posts/migrate-your-site-without-killing-your-search-engine-presence/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Writing API Wrappers with Elixir</title>
+      <link>https://shane.logsdon.io/posts/writing-api-wrappers-with-elixir/</link>
+      <guid>https://shane.logsdon.io/posts/writing-api-wrappers-with-elixir/</guid>
+      <pubDate>Sun, 08 Dec 2013 05:00:00 GMT</pubDate>
+      <description>
+      
+        Recently, I built an API wrapper for Mandrill. Let&#39;s walk through the steps I used to create it and see if this process might be able to help you in your next project.
+      
+      </description>
+      
+      <comments>https://shane.logsdon.io/posts/writing-api-wrappers-with-elixir/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Implementing User Authentication with bcrypt in ChicagoBoss</title>
+      <link>https://shane.logsdon.io/posts/implementing-user-authentication-with-bcrypt-in-chicagoboss/</link>
+      <guid>https://shane.logsdon.io/posts/implementing-user-authentication-with-bcrypt-in-chicagoboss/</guid>
+      <pubDate>Thu, 03 Oct 2013 04:00:00 GMT</pubDate>
+      <description>
+      
+        Don&#39;t rely on MD5/SHA1/SHA256/etc. hashes for storing passwords. Join me in learning how to bcrypt in Erlang applications.
+      
+      </description>
+      
+      <comments>https://shane.logsdon.io/posts/implementing-user-authentication-with-bcrypt-in-chicagoboss/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Acvte</title>
+      <link>https://shane.logsdon.io/posts/acvte/</link>
+      <guid>https://shane.logsdon.io/posts/acvte/</guid>
+      <pubDate>Mon, 02 Sep 2013 04:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;h2 id=&quot;What-it-is&quot;&gt;&lt;a href=&quot;#What-it-is&quot; class=&quot;headerlink&quot; title=&quot;What it is&quot;&gt;&lt;/a&gt;What it is&lt;/h2&gt;&lt;p&gt;A markdown blog based off of @natew’s &lt;a href=&quot;https://github.com/natew/obtvse2&quot;&gt;obtvse2&lt;/a&gt;, which was originally&lt;/p&gt;
+&lt;p&gt;inspired by &lt;a href=&quot;https://svbtle.com&quot;&gt;svbtle&lt;/a&gt;, using Today theme contributed to obtvse2 by &lt;a href=&quot;https://github.com/shilov&quot;&gt;@shilov&lt;/a&gt;. This is basically a direct&lt;/p&gt;
+&lt;p&gt;port of obtvse2 using the &lt;a href=&quot;http://robfig.github.io/revel/&quot;&gt;revel framework&lt;/a&gt; for go, and it was never intended for it to be any more than that. This project was&lt;/p&gt;
+&lt;p&gt;just an exercise in getting comfortable with go and revel.&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://shane.logsdon.io/posts/acvte/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Migrating to Acvte</title>
+      <link>https://shane.logsdon.io/posts/migrating-to-acvte/</link>
+      <guid>https://shane.logsdon.io/posts/migrating-to-acvte/</guid>
+      <pubDate>Sat, 31 Aug 2013 04:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;Remember &lt;a href=&quot;http://shanelogsdon.com/im-already-tired-of-rails-already&quot;&gt;this&lt;/a&gt;? I do. I finally got &lt;a href=&quot;https://github.com/slogsdon/acvte&quot;&gt;acvte&lt;/a&gt; to a point where I was comfortable using it in production for this website.&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://shane.logsdon.io/posts/migrating-to-acvte/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>ChicagoBoss</title>
+      <link>https://shane.logsdon.io/posts/chicagoboss/</link>
+      <guid>https://shane.logsdon.io/posts/chicagoboss/</guid>
+      <pubDate>Tue, 27 Aug 2013 04:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;I need to stop finding awesome projects to try out. &lt;a href=&quot;http://www.erlang.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Erlang&lt;/a&gt; and &lt;a hre
+      
+      </description>
+      
+      <comments>https://shane.logsdon.io/posts/chicagoboss/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>I’m already tired of Rails…already</title>
+      <link>https://shane.logsdon.io/posts/im-already-tired-of-rails-already/</link>
+      <guid>https://shane.logsdon.io/posts/im-already-tired-of-rails-already/</guid>
+      <pubDate>Thu, 15 Aug 2013 04:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;Neckbeards of the Internet. Prepare yourselves for the following comment: I don’t think Rails is for me.&lt;/p&gt;
+&lt;p&gt;I love Ruby as a scripting language. Its syntax is elegant and expressive. The tools available for both Ruby and Rails are fantastically built and really help drive the community behind them. The features built into the Rails framework leave me wanting similar features in other frameworks written in other languages.&lt;/p&gt;
+&lt;p&gt;These points don’t have any effect on my main gripes with Rails. I’ve always strived for low memory consumption and fast execution times when it comes to my web applications. Using .NET at work, our in-house SAAS products all conform to these goals, and I always aim at having my personal projects hitting them as well, even if they aren’t compiled. Being a PHP developer at heart, I love the benefits of an interpreted language running a web app, but when the app is consuming way more memory than I think it should, it’s time to replace it.&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://shane.logsdon.io/posts/im-already-tired-of-rails-already/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Vagrant is Awesome</title>
+      <link>https://shane.logsdon.io/posts/vagrant-is-awesome/</link>
+      <guid>https://shane.logsdon.io/posts/vagrant-is-awesome/</guid>
+      <pubDate>Wed, 07 Aug 2013 04:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;I’ve been working on PHP web apps for years, and over time, my development workflow has remained fairly constant:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Configure new app in apache/nginx&lt;/li&gt;
+&lt;li&gt;Starting coding to find out my environment is broken&lt;/li&gt;
+&lt;li&gt;Fix my environment&lt;/li&gt;
+&lt;li&gt;Continue coding&lt;/li&gt;
+&lt;li&gt;Get bored&lt;/li&gt;
+&lt;li&gt;See step 1&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Managing DevOps items when I should be focusing on building a product is not beneficial to my productivity.&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://shane.logsdon.io/posts/vagrant-is-awesome/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Using obtvse2</title>
+      <link>https://shane.logsdon.io/posts/using-obtvse2/</link>
+      <guid>https://shane.logsdon.io/posts/using-obtvse2/</guid>
+      <pubDate>Tue, 06 Aug 2013 04:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;I will be using &lt;a href=&quot;https://github.com/natew/obtvse2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;obtvse2&lt;/a&gt; for the forseeable future. I might 
+      
+      </description>
+      
+      <comments>https://shane.logsdon.io/posts/using-obtvse2/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Migrating from MySQL Server to Percona Server</title>
+      <link>https://shane.logsdon.io/posts/migrating-from-mysql-server-to-percona-server/</link>
+      <guid>https://shane.logsdon.io/posts/migrating-from-mysql-server-to-percona-server/</guid>
+      <pubDate>Tue, 06 Aug 2013 04:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;h2 id=&quot;What-is-Percona-Server-and-why-should-I-care&quot;&gt;&lt;a href=&quot;#What-is-Percona-Server-and-why-should-I-care&quot; class=&quot;headerlink&quot; title=&quot;What is Percona Server, and why should I care?&quot;&gt;&lt;/a&gt;What is Percona Server, and why should I care?&lt;/h2&gt;&lt;p&gt;Blogs across the Internet have been benchmarking Percona Server against MySQL Server, e.g. &lt;a href=&quot;http://www.mysqlperformanceblog.com/2013/05/08/mysql-and-percona-server-in-linkbench-benchmark/&quot;&gt;MySQL Performance Blog&lt;/a&gt;, and the results continually seem to have Percona ahead in many regards. This increased and stable performance for your database will help ensure performance and reliability in your applications.&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://shane.logsdon.io/posts/migrating-from-mysql-server-to-percona-server/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Linux and .NET should be friends</title>
+      <link>https://shane.logsdon.io/posts/linux-and-net-should-be-friends/</link>
+      <guid>https://shane.logsdon.io/posts/linux-and-net-should-be-friends/</guid>
+      <pubDate>Fri, 19 Apr 2013 04:00:00 GMT</pubDate>
+      <description>
+      
+        Linux and Microsoft&#39;s .NET framework haven&#39;t always seen eye to eye. The Mono Project looks to get Linux and .NET on the same page.
+      
+      </description>
+      
+      <comments>https://shane.logsdon.io/posts/linux-and-net-should-be-friends/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Installing nginx/percona/php-fpm with homebrew on Mountain Lion</title>
+      <link>https://shane.logsdon.io/posts/installing-nginx-percona-php-fpm-with-homebrew-on-mountain-lion/</link>
+      <guid>https://shane.logsdon.io/posts/installing-nginx-percona-php-fpm-with-homebrew-on-mountain-lion/</guid>
+      <pubDate>Sun, 14 Apr 2013 04:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;If it helps anyone else, that’s an added bonus, but this is mainly just a reference point for me; I’m always forgetting what all needs to be done setting up a development environment going. &lt;a href=&quot;http://getmnpp.org&quot;&gt;MNPP&lt;/a&gt; doesn’t seem to work well, and I’m too cheap at the moment to pay for for &lt;a href=&quot;http://www.mamp.info/en/mamp-pro/&quot;&gt;MAMP Pro&lt;/a&gt;. Plus, MAMP uses Apache which I’ve been trying to get away from for the past few months because of its slowness.&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://shane.logsdon.io/posts/installing-nginx-percona-php-fpm-with-homebrew-on-mountain-lion/#disqus_thread</comments>
+    </item>
+    
+  </channel>
+</rss>

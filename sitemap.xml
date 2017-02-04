@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://shane.logsdon.io/posts/asp-dotnet-core-webapi-in-azure-app-service/</loc>
+    
+    <lastmod>2017-02-04T05:13:38.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shane.logsdon.io/posts/simple-php-socket-programming/</loc>
+    
+    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shane.logsdon.io/posts/migrating-from-mysql-server-to-percona-server/</loc>
+    
+    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shane.logsdon.io/posts/using-obtvse2/</loc>
+    
+    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shane.logsdon.io/posts/vagrant-is-awesome/</loc>
+    
+    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shane.logsdon.io/posts/chicagoboss/</loc>
+    
+    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shane.logsdon.io/posts/im-already-tired-of-rails-already/</loc>
+    
+    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shane.logsdon.io/posts/migrating-to-acvte/</loc>
+    
+    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shane.logsdon.io/posts/implementing-user-authentication-with-bcrypt-in-chicagoboss/</loc>
+    
+    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shane.logsdon.io/posts/acvte/</loc>
+    
+    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shane.logsdon.io/posts/writing-api-wrappers-with-elixir/</loc>
+    
+    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shane.logsdon.io/posts/migrate-your-site-without-killing-your-search-engine-presence/</loc>
+    
+    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shane.logsdon.io/posts/review-getting-started-with-phalcon/</loc>
+    
+    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shane.logsdon.io/posts/application-deployment/</loc>
+    
+    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shane.logsdon.io/posts/im-learning-haskell-for-real-this-time/</loc>
+    
+    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shane.logsdon.io/posts/wordpress-docker-and-you/</loc>
+    
+    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shane.logsdon.io/posts/pitstop-with-the-elixir-genevent-module/</loc>
+    
+    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shane.logsdon.io/posts/functors-applicatives-and-monads-in-elixir/</loc>
+    
+    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shane.logsdon.io/posts/installing-nginx-percona-php-fpm-with-homebrew-on-mountain-lion/</loc>
+    
+    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shane.logsdon.io/posts/linux-and-net-should-be-friends/</loc>
+    
+    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shane.logsdon.io/posts/beginners-hands-on-with-haskell/</loc>
+    
+    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shane.logsdon.io/posts/cross-compiling-rust-applications-for-the-onion-omega2-from-macos/</loc>
+    
+    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shane.logsdon.io/posts/exploring-fsharp-with-dotnet-core-and-kestrel/</loc>
+    
+    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shane.logsdon.io/posts/fiddling-with-asp-dotnet-core-and-fsharp-with-suave/</loc>
+    
+    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shane.logsdon.io/posts/dont-leave-cash-in-the-cart/</loc>
+    
+    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shane.logsdon.io/posts/functional-programming-principles-in-elixir/</loc>
+    
+    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shane.logsdon.io/posts/introduction-to-testing-with-exunit/</loc>
+    
+    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shane.logsdon.io/posts/go-an-introduction/</loc>
+    
+    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shane.logsdon.io/posts/http-and-me/</loc>
+    
+    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shane.logsdon.io/posts/plug-friend-of-web-developers/</loc>
+    
+    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shane.logsdon.io/404.html</loc>
+    
+    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shane.logsdon.io/googleb037566fd7a29448.html</loc>
+    
+    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shane.logsdon.io/index.html</loc>
+    
+    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shane.logsdon.io/about/index.html</loc>
+    
+    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shane.logsdon.io/posts/index.html</loc>
+    
+    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shane.logsdon.io/presentations/index.html</loc>
+    
+    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shane.logsdon.io/projects/index.html</loc>
+    
+    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shane.logsdon.io/tag/index.html</loc>
+    
+    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
+    
+  </url>
+  
+</urlset>
