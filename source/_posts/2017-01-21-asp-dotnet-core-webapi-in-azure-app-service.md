@@ -176,7 +176,7 @@ Big take away is that your existing files need to move into a directory under `s
 }
 ```
 
-This would have the benefit of not requiring a change in projecy strucutre, but if you like to keep your source and test projects separate (I do), you can keep your main project in `src` and a test project in `test`, ensuring that `test` was added to the `projects` array in the `global.json` file. Either way should get the job done at the end of the day, so be sure to pick what makes most sense to you and your project.
+This would have the benefit of not requiring a change in project structure, but if you like to keep your source and test projects separate (I do), you can keep your main project in `src` and a test project in `test`, ensuring that `test` was added to the `projects` array in the `global.json` file. Either way should get the job done at the end of the day, so be sure to pick what makes most sense to you and your project.
 
 If, like me, you have no idea which SDK your locally installed `dotnet` is using, running `dotnet --version` will give the exact string needed under `sdk.version` in your config. Once set up, you can commit all of those changes and push them up to your app, eventually seeing the below:
 
