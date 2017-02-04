@@ -15,6 +15,7 @@ description: >-
   offers a free tier, perfect for tinkering or getting a new project off the
   ground.
 date: 2017-01-21 00:12:50
+modified: 2017-02-03
 ---
 
 In my opinion, Azure App Services are an easy and direct way to launch your ASP.NET Core application for the outside world to access. Azure App Service offers a free tier, perfect for tinkering or getting a new project off the ground.
@@ -165,6 +166,17 @@ Big take away is that your existing files need to move into a directory under `s
   "sdk": { "version": "1.0.0-preview2-1-003177" }
 }
 ```
+
+*Update 03 February 2017*: Moving your project files to `src` does not seem to be a hard requirement. Dan Clark pointed this out to me [via Twitter](https://twitter.com/dracan/status/827406653754531840), stating the following `global.json` file should work as well:
+
+```json
+{
+  "projects": [ "." ],
+  "sdk": { "version": "1.0.0-preview2-1-003177" }
+}
+```
+
+This would have the benefit of not requiring a change in projecy strucutre, but if you like to keep your source and test projects separate (I do), you can keep your main project in `src` and a test project in `test`, ensuring that `test` was added to the `projects` array in the `global.json` file. Either way should get the job done at the end of the day, so be sure to pick what makes most sense to you and your project.
 
 If, like me, you have no idea which SDK your locally installed `dotnet` is using, running `dotnet --version` will give the exact string needed under `sdk.version` in your config. Once set up, you can commit all of those changes and push them up to your app, eventually seeing the below:
 
