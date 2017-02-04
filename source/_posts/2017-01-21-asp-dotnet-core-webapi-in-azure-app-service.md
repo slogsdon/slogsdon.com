@@ -167,7 +167,7 @@ Big take away is that your existing files need to move into a directory under `s
 }
 ```
 
-*Update 03 February 2017*: Moving your project files to `src` does not seem to be a hard requirement. Dan Clark pointed this out to me [via Twitter](https://twitter.com/dracan/status/827406653754531840), stating the following `global.json` file should work as well:
+*Update 03 February 2017*: Moving your project files to `src` does not seem to be a hard requirement. Dan Clarke pointed this out to me [via Twitter](https://twitter.com/dracan/status/827406653754531840), stating the following `global.json` file should work as well:
 
 ```json
 {
