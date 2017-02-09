@@ -1,5 +1,27 @@
 [
   {
+    "name": "plug-web-socket",
+    "owner": "slogsdon",
+    "url": "https://github.com/slogsdon/plug-web-socket",
+    "description": "An exploration into a stand-alone library for Plug applications to easily adopt WebSockets.",
+    "created": "2015-05-01T03:52:47Z",
+    "updated": "2017-02-07T15:44:45Z",
+    "language": "Elixir",
+    "stars": 38,
+    "forks": 12
+  },
+  {
+    "name": "elixir-reverse-proxy",
+    "owner": "slogsdon",
+    "url": "https://github.com/slogsdon/elixir-reverse-proxy",
+    "description": "A Plug based, reverse proxy server written in Elixir.",
+    "created": "2015-08-09T02:57:18Z",
+    "updated": "2017-02-07T05:01:11Z",
+    "language": "Elixir",
+    "stars": 58,
+    "forks": 12
+  },
+  {
     "name": "placid",
     "owner": "slogsdon",
     "url": "https://github.com/slogsdon/placid",
@@ -42,28 +64,6 @@
     "language": "Elixir",
     "stars": 12,
     "forks": 2
-  },
-  {
-    "name": "elixir-reverse-proxy",
-    "owner": "slogsdon",
-    "url": "https://github.com/slogsdon/elixir-reverse-proxy",
-    "description": "A Plug based, reverse proxy server written in Elixir.",
-    "created": "2015-08-09T02:57:18Z",
-    "updated": "2016-10-09T13:49:39Z",
-    "language": "Elixir",
-    "stars": 57,
-    "forks": 11
-  },
-  {
-    "name": "plug-web-socket",
-    "owner": "slogsdon",
-    "url": "https://github.com/slogsdon/plug-web-socket",
-    "description": "An exploration into a stand-alone library for Plug applications to easily adopt WebSockets.",
-    "created": "2015-05-01T03:52:47Z",
-    "updated": "2016-10-09T12:57:20Z",
-    "language": "Elixir",
-    "stars": 38,
-    "forks": 12
   },
   {
     "name": "keystrokes",
@@ -437,7 +437,7 @@
     "updated": "2013-10-29T01:58:25Z",
     "language": "Erlang",
     "stars": 1,
-    "forks": 0
+    "forks": 1
   },
   {
     "name": "IntroToJavascript",
