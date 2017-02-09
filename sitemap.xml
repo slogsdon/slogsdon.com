@@ -72,6 +72,13 @@
   </url>
   
   <url>
+    <loc>https://shane.logsdon.io/posts/review-getting-started-with-phalcon/</loc>
+    
+    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://shane.logsdon.io/posts/writing-api-wrappers-with-elixir/</loc>
     
     <lastmod>2017-01-31T06:17:08.000Z</lastmod>
@@ -80,13 +87,6 @@
   
   <url>
     <loc>https://shane.logsdon.io/posts/migrate-your-site-without-killing-your-search-engine-presence/</loc>
-    
-    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://shane.logsdon.io/posts/review-getting-started-with-phalcon/</loc>
     
     <lastmod>2017-01-31T06:17:08.000Z</lastmod>
     
@@ -184,7 +184,7 @@
   </url>
   
   <url>
-    <loc>https://shane.logsdon.io/posts/go-an-introduction/</loc>
+    <loc>https://shane.logsdon.io/posts/introduction-to-testing-with-exunit/</loc>
     
     <lastmod>2017-01-31T06:17:08.000Z</lastmod>
     
@@ -198,7 +198,7 @@
   </url>
   
   <url>
-    <loc>https://shane.logsdon.io/posts/introduction-to-testing-with-exunit/</loc>
+    <loc>https://shane.logsdon.io/posts/go-an-introduction/</loc>
     
     <lastmod>2017-01-31T06:17:08.000Z</lastmod>
     
@@ -233,13 +233,6 @@
   </url>
   
   <url>
-    <loc>https://shane.logsdon.io/about/index.html</loc>
-    
-    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://shane.logsdon.io/posts/index.html</loc>
     
     <lastmod>2017-01-31T06:17:08.000Z</lastmod>
@@ -255,6 +248,13 @@
   
   <url>
     <loc>https://shane.logsdon.io/projects/index.html</loc>
+    
+    <lastmod>2017-01-31T06:17:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shane.logsdon.io/about/index.html</loc>
     
     <lastmod>2017-01-31T06:17:08.000Z</lastmod>
     
