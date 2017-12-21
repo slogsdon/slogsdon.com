@@ -260,32 +260,38 @@ Luckily, the build process for the LEDE SDK is the same as the OpenWrt SDK, and 
 > 2. Install [Homebrew](http://brew.sh/).
 >
 > 3. Add duplicates repository to homebrew for grep formulae:
+>
 >    ```
 >    brew tap homebrew/dupes
 >    ```
 >
 > 4. Install additional formulae:
->     ```
->     brew install coreutils findutils gawk gnu-getopt gnu-tar grep wget quilt xz
->     ```
+>
+>    ```
+>    brew install coreutils findutils gawk gnu-getopt gnu-tar grep wget quilt xz
+>    ```
 >
 > 5. `gnu-getopt` is keg-only, so force linking it:
+>
 >    ```
 >    brew ln gnu-getopt --force
 >    ```
 >
 > 6. To get rid of "date illegal option" you can add to your `.bash_profile` (wasn't required for me):
+>
 >    ```
 >    PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 >    ```
 >
 > 7. OS X by default comes with a case-insensitive filesystem. OpenWrt won't build on that. As a workaround, create a (Sparse) case-sensitive disk-image that you then mount in Finder and use as build directory:
+>
 >    ```
 >    hdiutil create -size 20g -type SPARSE -fs "Case-sensitive HFS+" -volname OpenWrt OpenWrt.sparseimage
 >    hdiutil attach OpenWrt.sparseimage
 >    ```
 >
 > 8. Change to your newly created and mounted disk image:
+>
 >    ```
 >    /Volumes/OpenWrt
 >    ```

@@ -33,7 +33,9 @@ export default class extends React.Component<IDecksPageProps> {
 
         {this.props.data.allMarkdownRemark.edges.map((node) => {
           const entry = node.node;
-          return <Entry entry={entry} key={entry.fields.slug} styles={styles} />;
+          return (
+            <Entry entry={entry} key={entry.fields.slug} styles={styles} />
+          );
         })}
       </div>
     );

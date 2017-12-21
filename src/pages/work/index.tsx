@@ -11,7 +11,10 @@ export default ({ data }: any) => (
     <h1>Work</h1>
 
     <article className={styles.project}>
-      <Img sizes={data.secureSubmitImage.sizes} resolutions={data.secureSubmitImage.resolutions} />
+      <Img
+        sizes={data.secureSubmitImage.sizes}
+        resolutions={data.secureSubmitImage.resolutions}
+      />
       <h2>
         <a href="https://github.com/hps/heartland-tokenization" target="_blank">
           Secure Submit
@@ -19,8 +22,9 @@ export default ({ data }: any) => (
       </h2>
 
       <p>
-        Heartland Payment System's JavaScript library provides single-use tokenization
-        capabilities for card present and card not present merchants
+        Heartland Payment System's JavaScript library provides single-use
+        tokenization capabilities for card present and card not present
+        merchants
       </p>
     </article>
   </div>

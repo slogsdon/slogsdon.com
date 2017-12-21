@@ -20,7 +20,7 @@ interface IndexPageProps {
 
 export default class extends React.Component<IndexPageProps> {
   public render() {
-    const {description, title} = this.props.data.site.siteMetadata;
+    const { description, title } = this.props.data.site.siteMetadata;
     return (
       <div className={styles.container}>
         <Helmet title={title} />

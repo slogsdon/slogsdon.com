@@ -16,7 +16,8 @@
     "dev": "gatsby develop",
     "format": "prettier --write 'src/**/*' '!src/**/*.png'",
     "lint": "tslint --project tsconfig.json",
-    "start": "gatsby serve"
+    "start": "gatsby serve",
+    "test": "yarn run lint && yarn run build"
   },
   "dependencies": {
     "@types/node": "^8.5.1",

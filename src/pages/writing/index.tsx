@@ -24,13 +24,17 @@ export default class extends React.Component<IWritingPageProps> {
   public render() {
     return (
       <div>
-        <Helmet title={"Writing - " + this.props.data.site.siteMetadata.title} />
+        <Helmet
+          title={"Writing - " + this.props.data.site.siteMetadata.title}
+        />
 
         <h1>Writing</h1>
 
         {this.props.data.allMarkdownRemark.edges.map((node) => {
           const entry = node.node;
-          return <Entry entry={entry} key={entry.fields.slug} styles={styles} />;
+          return (
+            <Entry entry={entry} key={entry.fields.slug} styles={styles} />
+          );
         })}
       </div>
     );

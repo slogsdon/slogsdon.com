@@ -16,7 +16,7 @@ export default ({ children, data }: any) => (
       <div className={styles.title}>
         <Link to="/">SL</Link>
       </div>
-      <Menu styles={styles}/>
+      <Menu styles={styles} />
       <div className={styles.clearBoth} />
     </header>
     {children()}

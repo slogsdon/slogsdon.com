@@ -1,7 +1,7 @@
 import Link from "gatsby-link";
 import * as React from "react";
 
-export default function Menu({styles}: any) {
+export default function Menu({ styles }: any) {
   if (!styles) {
     styles = {};
   }
