@@ -10,7 +10,7 @@
     "url": "git+https://github.com/slogsdon/slogsdon.github.io.git"
   },
   "scripts": {
-    "prebuild": "yarn clean",
+    "prebuild": "yarn run clean",
     "build": "gatsby build",
     "clean": "rimraf public",
     "dev": "gatsby develop",
