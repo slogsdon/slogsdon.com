@@ -3,28 +3,27 @@
 ## Development
 
 ```bash
-npm install
-npm start
+yarn install
+yarn dev
 ```
 
 ## Build
 
 ```bash
-npm run build
+yarn build
 ```
 
 ## Build and Deploy
 
 ```bash
-npm run deploy
+yarn deploy
 ```
 
 ## License
 
 The following directories and their contents are copyright Shane Logsdon. You may not reuse anything therein without my permission:
 
-- `source/_drafts/`
-- `source/_posts/`
-- `source/presentations/`
+- `src/pages/posts/`
+- `src/pages/presentations/`
 
 All other directories and files are MIT Licensed. See [LICENSE](https://github.com/slogsdon/slogsdon.github.io/blob/master/LICENSE) for more details.

@@ -1,7 +1,0 @@
-<% tag.posts.forEach(function (post) { %>
-  <% if (post.tags.filter(function (t) { return t.name === 'talk' }).length) { %>
-    <%- partial('_partial/presentation-listing', {presentation: post}) %>
-  <% } else { %>
-    <%- partial('_partial/post-listing', {post: post}) %>
-  <% } %>
-<% }) %>

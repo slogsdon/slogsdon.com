@@ -1,0 +1,3 @@
+/posts/*          /writing/:splat
+/presentations/*  /decks/:splat
+/projects/*       /work/:splat

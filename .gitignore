@@ -1,8 +1,5 @@
-.DS_Store
-Thumbs.db
-db.json
-*.log
+.cache/
 node_modules/
 public/
-.deploy*/
+.DS_Store
 .env
