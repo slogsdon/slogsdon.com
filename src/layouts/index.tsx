@@ -2,6 +2,7 @@ import Link from "gatsby-link";
 import * as React from "react";
 import Helmet from "react-helmet";
 
+import Footer from "../components/footer";
 import Menu from "../components/menu";
 
 const styles = require("./index.module.css");
@@ -20,6 +21,7 @@ export default ({ children, data }: any) => (
       <div className={styles.clearBoth} />
     </header>
     {children()}
+    <Footer styles={styles} />
   </div>
 );
 
