@@ -23,7 +23,7 @@ interface IWritingPageProps {
 export default class extends React.Component<IWritingPageProps> {
   public render() {
     return (
-      <div>
+      <main>
         <Helmet
           title={"Writing - " + this.props.data.site.siteMetadata.title}
         />
@@ -36,7 +36,7 @@ export default class extends React.Component<IWritingPageProps> {
             <Entry entry={entry} key={entry.fields.slug} styles={styles} />
           );
         })}
-      </div>
+      </main>
     );
   }
 }

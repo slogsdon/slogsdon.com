@@ -22,14 +22,14 @@ export default class extends React.Component<IndexPageProps> {
   public render() {
     const { description, title } = this.props.data.site.siteMetadata;
     return (
-      <div className={styles.container}>
+      <main className={styles.container}>
         <Helmet title={title} />
 
         <h1 className={styles.title}>{title}</h1>
         <p className={styles.description}>{description}</p>
 
         <Menu styles={styles} />
-      </div>
+      </main>
     );
   }
 }

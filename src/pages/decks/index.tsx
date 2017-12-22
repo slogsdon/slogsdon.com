@@ -24,7 +24,7 @@ interface IDecksPageProps {
 export default class extends React.Component<IDecksPageProps> {
   public render() {
     return (
-      <div>
+      <main>
         <Helmet
           title={"Slide Decks - " + this.props.data.site.siteMetadata.title}
         />
@@ -37,7 +37,7 @@ export default class extends React.Component<IDecksPageProps> {
             <Entry entry={entry} key={entry.fields.slug} styles={styles} />
           );
         })}
-      </div>
+      </main>
     );
   }
 }

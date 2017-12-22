@@ -1,6 +1,7 @@
-.entry p,
+.entry blockquote,
 .entry li,
-.entry blockquote {
+.entry p,
+.entry time {
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida,
     "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
@@ -20,4 +21,8 @@
 }
 .entry blockquote p {
   display: inline;
+}
+
+.date {
+  color: #a9a9a9;
 }

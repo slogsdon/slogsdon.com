@@ -15,6 +15,7 @@ interface IBlogPostProps {
       frontmatter: {
         date: string;
         title: string;
+        modified?: string;
       };
     };
   };
@@ -24,7 +25,7 @@ export default class BlogPostTemplate extends React.Component<IBlogPostProps> {
   public render() {
     const { markdownRemark: post } = this.props.data;
     return (
-      <div className={styles.entry}>
+      <main className={styles.entry}>
         <Helmet
           title={
             post.frontmatter.title +
@@ -33,9 +34,19 @@ export default class BlogPostTemplate extends React.Component<IBlogPostProps> {
           }
         />
 
-        <h1>{post.frontmatter.title}</h1>
+        <header>
+          <h1>{post.frontmatter.title}</h1>
+          <div className={styles.date}>
+            <time>{post.frontmatter.date}</time>
+            {` `}
+            {post.frontmatter.modified && (
+              <time>Updated: {post.frontmatter.modified}</time>
+            )}
+          </div>
+        </header>
+
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-      </div>
+      </main>
     );
   }
 }
@@ -52,6 +63,7 @@ export const pageQuery = graphql`
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
+        modified(formatString: "MMMM DD, YYYY")
       }
     }
   }
