@@ -46,7 +46,7 @@ export default ({ data }: any) => (
     <ul>
       <li><a href="https://github.com/slogsdon" target="_blank">@slogsdon</a> on GitHub</li>
       <li><a href="https://github.com/hps" target="_blank">@hps</a> on GitHub</li>
-      <li><a href="https://github.com/GlobaPayments" target="_blank">@GlobaPayments</a> on GitHub</li>
+      <li><a href="https://github.com/GlobalPayments" target="_blank">@GlobalPayments</a> on GitHub</li>
     </ul>
   </main>
 );
