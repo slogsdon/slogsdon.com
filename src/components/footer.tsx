@@ -1,7 +1,7 @@
 import Link from "gatsby-link";
 import * as React from "react";
 
-export default ({styles}: any) => {
+export default ({ styles }: any) => {
   if (!styles) {
     styles = {};
   }

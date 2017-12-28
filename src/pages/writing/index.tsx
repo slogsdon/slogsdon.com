@@ -63,8 +63,8 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            title
             description
+            title
           }
         }
       }

@@ -44,9 +44,24 @@ export default ({ data }: any) => (
     <p>See other contributions under these organizations:</p>
 
     <ul>
-      <li><a href="https://github.com/slogsdon" target="_blank">@slogsdon</a> on GitHub</li>
-      <li><a href="https://github.com/hps" target="_blank">@hps</a> on GitHub</li>
-      <li><a href="https://github.com/GlobalPayments" target="_blank">@GlobalPayments</a> on GitHub</li>
+      <li>
+        <a href="https://github.com/slogsdon" target="_blank">
+          @slogsdon
+        </a>{" "}
+        on GitHub
+      </li>
+      <li>
+        <a href="https://github.com/hps" target="_blank">
+          @hps
+        </a>{" "}
+        on GitHub
+      </li>
+      <li>
+        <a href="https://github.com/GlobalPayments" target="_blank">
+          @GlobalPayments
+        </a>{" "}
+        on GitHub
+      </li>
     </ul>
   </main>
 );

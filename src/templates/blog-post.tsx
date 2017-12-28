@@ -62,8 +62,9 @@ export const pageQuery = graphql`
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
-        title
         modified(formatString: "MMMM DD, YYYY")
+        tags
+        title
       }
     }
   }
