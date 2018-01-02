@@ -40,8 +40,10 @@ export default class PaymentForm extends React.Component<IPaymentFormProps> {
     }
 
     const request = this.createPaymentRequest();
+    console.log(request);
     (request as any).canMakePayment()
       .then((result: any) => {
+        console.log("canMakePayment response", result);
         if (!result) {
           this.error("Issue creating payment request.");
           return;
@@ -118,6 +120,9 @@ export default class PaymentForm extends React.Component<IPaymentFormProps> {
       requestShipping: false,
     };
 
+    console.log(supportedInstruments);
+    console.log(details);
+    console.log(options);
     return new PaymentRequest(supportedInstruments, details, options);
   }
 
