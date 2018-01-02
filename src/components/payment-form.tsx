@@ -51,7 +51,8 @@ export default class PaymentForm extends React.Component<IPaymentFormProps> {
 
         this.payButton.setAttribute("style", "display: inline;");
       })
-      .catch(() => {
+      .catch((reason: any) => {
+        console.log(reason);
         this.error("Cannot check if Google Pay is available.");
       });
   }
@@ -120,9 +121,9 @@ export default class PaymentForm extends React.Component<IPaymentFormProps> {
       requestShipping: false,
     };
 
-    console.log(supportedInstruments);
-    console.log(details);
-    console.log(options);
+    console.log("supportedInstruments", supportedInstruments);
+    console.log("details", details);
+    console.log("options", options);
     return new PaymentRequest(supportedInstruments, details, options);
   }
 
