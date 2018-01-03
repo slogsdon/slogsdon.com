@@ -146,7 +146,7 @@ export default class PaymentForm extends React.Component<IPaymentFormProps> {
    * process.
    */
   private sendPaymentToServer(response: PaymentResponse) {
-    fetch("http://localhost:8000/api/payment", {
+    fetch("https://google-pay-demo-api.azurewebsites.net/api/payments", {
       body: JSON.stringify({
           mobileType: "pay-with-google",
           response: response.toJSON(),
