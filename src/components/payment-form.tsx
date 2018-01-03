@@ -151,6 +151,9 @@ export default class PaymentForm extends React.Component<IPaymentFormProps> {
           mobileType: "pay-with-google",
           response: response.toJSON(),
       }),
+      headers: {
+        "Content-Type": "application/json; charset=utf-8",
+      },
       method: "post",
       mode: "no-cors",
     })
