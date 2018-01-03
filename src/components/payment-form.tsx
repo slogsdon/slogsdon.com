@@ -152,6 +152,7 @@ export default class PaymentForm extends React.Component<IPaymentFormProps> {
           response: response.toJSON(),
       }),
       method: "post",
+      mode: "no-cors",
     })
       .then((resp) => {
         response.complete("success")
