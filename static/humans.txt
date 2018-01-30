@@ -8,7 +8,7 @@
   Location: Louisville, KY, USA
 
 /* SITE */
-  Software: Gatsby/JavaScript, Tachyons
+  Software: Next.js/JavaScript, CSS
   Language: English
-  Components: HTML, React,
-  IDE: VS Code
+  Components: HTML, React, CSS
+  IDE: VS Code, Neovim/Tmux
