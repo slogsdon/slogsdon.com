@@ -1,6 +1,8 @@
+import highlight from "../lib/highlight-code";
+
 export const Code = ({ children, syntax }) => (
   <pre className={`language-${syntax ? syntax : ""}`}>
-    <code>{children.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, "")}</code>
+    <code dangerouslySetInnerHTML={{__html: highlight(children.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, ""), syntax) }}/>
   </pre>
 );
 
