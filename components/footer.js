@@ -44,7 +44,7 @@ const Footer = () => (
       }
 
       .menu-item {
-        display: inline;
+        display: inline-block;
         margin: 0;
         margin-right: 1.5rem;
       }
