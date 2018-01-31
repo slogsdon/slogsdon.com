@@ -3,7 +3,7 @@ import Head from "next/head";
 const BlankLayout = ({ children }) => (
   <div>
     <Head>
-      <html lang="en" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
     </Head>
 
     {children}
