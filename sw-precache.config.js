@@ -1,7 +1,6 @@
 module.exports = {
   staticFileGlobs: [
-    'public/**/*',
-    '!public/_redirects',
+    'public/**/*.+(js|txt|html|xml|eot|ttf|woff|woff2|ico|jpeg|png)',
   ],
   stripPrefix: 'public/',
 };
