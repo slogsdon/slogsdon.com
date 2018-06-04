@@ -21,6 +21,7 @@
     "get-data": "node src/bin/get-data.js run",
     "postinstall": "$npm_execpath run get-data",
     "prebuild": "$npm_execpath run clean",
+    "postbuild": "cp -R static/* dist",
     "start": "x0 src/pages"
   },
   "dependencies": {
