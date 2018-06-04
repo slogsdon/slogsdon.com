@@ -1,10 +1,15 @@
 {
-  "name": "site-x0-contentful",
+  "name": "shane.logsdon.io",
   "version": "1.0.0",
+  "private": true,
   "main": "index.js",
   "author": "Shane Logsdon <shane@shanelogsdon.com>",
   "license": "MIT",
-  "private": true,
+  "homepage": "https://shane.logsdon.io",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slogsdon/shane.logsdon.io.git"
+  },
   "x0": {
     "static": true,
     "title": "Shane Logsdon"
@@ -25,9 +30,7 @@
     "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
-    "babel-preset-env": "^1.7.0",
     "contentful": "^6.1.1",
-    "parcel-bundler": "^1.8.1",
     "prettier": "^1.13.4"
   }
 }
