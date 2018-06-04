@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="fable/Fable.Next.fs" />
+    <!-- Components -->
+    <Compile Include="components/entry.fs" />
+    <Compile Include="components/footer.fs" />
+    <Compile Include="components/menu.fs" />
+    <Compile Include="components/image.fs" />
+    <Compile Include="components/blank-layout.fs" />
+    <Compile Include="components/main-layout.fs" />
+    <!-- Pages -->
+    <Compile Include="pages/index.fs" />
+    <Compile Include="pages/test.fs" />
+    <!-- <Compile Include="pages/about.fs" /> -->
+  </ItemGroup>
+  <Import Project="..\.paket\Paket.Restore.targets" />
+</Project>

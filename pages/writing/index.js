@@ -1,7 +1,7 @@
 import Head from "next/head";
 
-import Entry from "../../components/entry";
-import MainLayout from "../../components/main-layout";
+import {render as Entry} from "../../src/components/entry.fs";
+import {render as MainLayout} from "../../src/components/main-layout.fs";
 import { postList } from "./_list";
 
 import { title } from "../../lib/settings";
