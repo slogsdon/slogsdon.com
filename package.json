@@ -1,35 +1,33 @@
 {
-  "name": "slogsdon.github.io",
+  "name": "site-x0-contentful",
   "version": "1.0.0",
-  "private": true,
   "main": "index.js",
   "author": "Shane Logsdon <shane@shanelogsdon.com>",
   "license": "MIT",
-  "homepage": "https://shane.logsdon.io",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/slogsdon/slogsdon.github.io.git"
+  "private": true,
+  "x0": {
+    "static": true,
+    "title": "Shane Logsdon"
   },
   "scripts": {
-    "build": "next build && next export -s -o public",
-    "clean": "rm -rf .next public",
-    "develop": "next",
-    "format": "prettier --write 'components/**/*' 'lib/**/*' 'pages/**/*' '*.json' '*.js' .babelrc",
-    "postbuild": "mv public/static/_redirects public/static/*.* public/ && sw-precache --root=public --config=sw-precache.config.js",
-    "prebuild": "yarn run clean",
-    "start": "serve --ssl public",
-    "test": "yarn build"
+    "build": "x0 build --static src/pages",
+    "clean": "rm -rf dist",
+    "format": "prettier --write 'src/**/*' '!src/data/**/*'",
+    "get-data": "node src/bin/get-data.js run",
+    "postinstall": "$npm_execpath run get-data",
+    "prebuild": "$npm_execpath run clean",
+    "start": "x0 src/pages"
   },
   "dependencies": {
-    "markdown-in-js": "^1.1.3",
-    "next": "^4.2.3",
-    "prettier": "^1.10.2",
-    "prismjs": "^1.10.0",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "@compositor/x0": "^5.0.4",
+    "react": "^16.4.0",
+    "react-markdown": "^3.3.2",
+    "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
-    "serve": "^6.4.9",
-    "sw-precache": "^5.2.1"
+    "babel-preset-env": "^1.7.0",
+    "contentful": "^6.1.1",
+    "parcel-bundler": "^1.8.1",
+    "prettier": "^1.13.4"
   }
 }
