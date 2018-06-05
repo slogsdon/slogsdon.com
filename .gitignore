@@ -1,5 +1,5 @@
 src/data/*
 !src/data/.gitkeep
 !src/data/post/.gitkeep
-dist/
 node_modules/
+public/

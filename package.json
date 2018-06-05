@@ -15,8 +15,8 @@
     "title": "Shane Logsdon"
   },
   "scripts": {
-    "build": "x0 build --static --out-dir public src/pages",
-    "clean": "rm -rf dist",
+    "build": "x0 build --out-dir public src/pages",
+    "clean": "rm -rf public",
     "format": "prettier --write 'src/**/*' '!src/data/**/*'",
     "get-data": "node src/bin/get-data.js run",
     "postinstall": "$npm_execpath run get-data",
