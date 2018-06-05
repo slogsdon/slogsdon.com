@@ -2,8 +2,8 @@ import * as React from "react";
 import { default as Markdown } from "react-markdown";
 
 import Loading from "../components/loading";
-import PageWriting from "../components/page-writing";
-import PageWritingPost from "../components/page-writing-post";
+import WritingList from "../components/writing-list";
+import WritingPost from "../components/writing-post";
 import * as data from "../data/pageWriting";
 
 const routes = [{ path: "/writing" }];
@@ -25,10 +25,10 @@ export default class Writing extends React.Component {
     if (this.props.match && this.props.match.params.slug) {
       const post = data.items
         .filter(i => i.slug === this.props.match.params.slug)
-        .pop();
-      return <PageWritingPost {...post} />;
+        .shift();
+      return <WritingPost {...post} />;
     }
 
-    return <PageWriting {...data} />;
+    return <WritingList {...data} />;
   }
 }

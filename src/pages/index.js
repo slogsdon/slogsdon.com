@@ -1,7 +1,7 @@
 import * as React from "react";
 import Nav from "../components/nav";
 
-export default () => (
+const Index = () => (
   <React.Fragment>
     <main className="container">
       <h1 className="title">Shane Logsdon</h1>
@@ -13,3 +13,5 @@ export default () => (
     </main>
   </React.Fragment>
 );
+
+export default Index;

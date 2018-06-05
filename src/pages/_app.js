@@ -1,10 +1,12 @@
 import * as React from "react";
 import Nav from "../components/nav";
 
-export default ({ render }) => (
+const App = ({ render }) => (
   <React.Fragment>
     <Nav />
     <hr />
     {render()}
   </React.Fragment>
 );
+
+export default App;

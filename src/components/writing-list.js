@@ -14,6 +14,7 @@ const PageWriting = ({ intro, items, outro, title }) => {
       return (
         <article key={slug}>
           <Link to={`/writing/${slug}`}>{title}</Link>
+          <time datetime={new Date(i.date).toISOString()}>{i.date}</time>
           <Markdown source={excerpt} />
         </article>
       );
