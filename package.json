@@ -15,22 +15,26 @@
     "title": "Shane Logsdon"
   },
   "scripts": {
-    "build": "x0 build --out-dir public src/pages",
-    "clean": "rm -rf public",
-    "format": "prettier --write 'src/**/*' '!src/data/**/*'",
+    "build": "bsb -make-world && x0 build --out-dir public src/pages",
+    "clean": "bsb -clean-world && rm -rf lib public",
+    "format": "prettier --write 'src/**/*' '!src/**/*.re' '!src/**/*.bs.js' '!src/data/**/*' && bsrefmt --in-place src/**/*.re",
     "get-data": "node src/bin/get-data.js run",
     "postinstall": "$npm_execpath run get-data",
     "prebuild": "$npm_execpath run clean",
-    "start": "x0 src/pages",
+    "start": "concurrently 'bsb -make-world -w' 'x0 src/pages'",
     "test": "echo 'no tests'"
   },
   "dependencies": {
-    "@compositor/x0": "^5.0.4",
+    "bs-webapi": "^0.10.0",
     "react": "^16.4.0",
     "react-markdown": "^3.3.2",
-    "react-router-dom": "^4.2.2"
+    "react-router-dom": "^4.2.2",
+    "reason-react": "^0.4.2"
   },
   "devDependencies": {
+    "@compositor/x0": "^5.0.4",
+    "bs-platform": "^3.1.5",
+    "concurrently": "^3.5.1",
     "contentful": "^6.1.1",
     "copy-webpack-plugin": "^4.5.1",
     "prettier": "^1.13.4"

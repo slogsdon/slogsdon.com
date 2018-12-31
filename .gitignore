@@ -1,5 +1,11 @@
-src/data/*
-!src/data/.gitkeep
-!src/data/post/.gitkeep
-node_modules/
-public/
+/public/
+/lib/
+/node_modules/
+/src/**/*.bs.js
+/src/data/*
+!/src/data/.gitkeep
+!/src/data/post/.gitkeep
+
+.bsb.lock
+.merlin
+yarn-error.log

@@ -1,9 +1,7 @@
 import * as React from "react";
-import { default as Markdown } from "react-markdown";
 
-import Loading from "../components/loading";
-import WritingList from "../components/writing-list";
-import WritingPost from "../components/writing-post";
+import WritingList from "../components/WritingList.bs";
+import WritingPost from "../components/WritingPost.bs";
 import * as data from "../data/pageWriting";
 
 const routes = [{ path: "/writing" }];
@@ -29,6 +27,6 @@ export default class Writing extends React.Component {
       return <WritingPost {...post} />;
     }
 
-    return <WritingList {...data} />;
+    return <WritingList data={data} />;
   }
 }
