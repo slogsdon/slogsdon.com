@@ -1,3 +1,7 @@
-language: node_js
+language: php
 
-cache: yarn
+cache:
+  directories:
+    - vendor
+
+script: composer build

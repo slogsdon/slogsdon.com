@@ -1,0 +1,15 @@
+{
+    "name": "slogsdon/site",
+    "description": "Source for shane.logsdon.io",
+    "scripts": {
+        "build": "flat-file build",
+        "clean": "rm -rf dist",
+        "develop": "flat-file serve"
+    },
+    "require": {
+        "slogsdon/flat-file": "dev-code-highlight"
+    },
+    "config": {
+        "process-timeout": 0
+    }
+}
