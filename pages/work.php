@@ -4,10 +4,10 @@ $this->layout('partials::layouts/main', [
 ]);
 $patentUrl =
     "http://appft.uspto.gov/netacgi/nph-Parser"
-    + "?Sect1=PTO1&Sect2=HITOFF&d=PG01&p=1&u="
-    + "%2Fnetahtml%2FPTO%2Fsrchnum.html&r=1&f="
-    + "G&l=50&s1=%2220180060867%22.PGNR.&OS="
-    + "DN/20180060867&RS=DN/20180060867";
+    . "?Sect1=PTO1&Sect2=HITOFF&d=PG01&p=1&u="
+    . "%2Fnetahtml%2FPTO%2Fsrchnum.html&r=1&f="
+    . "G&l=50&s1=%2220180060867%22.PGNR.&OS="
+    . "DN/20180060867&RS=DN/20180060867";
 ?>
 
 <main class="container" aria-labelledby="title">
