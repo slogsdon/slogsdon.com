@@ -23,9 +23,9 @@
         <div class="brand-title">
             <a href="/">SL</a>
         </div>
-        <site-menu></site-menu>
+        <?php $this->insert('partials::components/site-menu'); ?>
         <div class="clear-both"></div>
     </header>
     <?= $this->section('content'); ?>
-    <site-footer></site-footer>
+    <?php $this->insert('partials::components/site-menu', ['isFooter' => true]); ?>
 </div>

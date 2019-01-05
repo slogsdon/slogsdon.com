@@ -209,5 +209,4 @@
             .register('/sw.js')
             .catch(() => {});
 </script>
-<?php $this->insert('partials::components'); ?>
 <?php /* end scripts */ ?>

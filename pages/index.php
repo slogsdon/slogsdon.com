@@ -18,5 +18,5 @@
 <main class="container">
     <h1 class="title"><?= $settings->title; ?></h1>
     <p class="description"><?= $settings->description; ?></p>
-    <site-menu is-index></site-menu>
+    <?php $this->insert('partials::components/site-menu', ['isIndex' => true]); ?>
 </main>
