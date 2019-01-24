@@ -23,27 +23,6 @@
         margin: 0;
         padding: 0;
     }
-    h1 {
-        font-weight: 200;
-        letter-spacing: .1rem;
-        line-height: 2.5rem;
-        word-spacing: .25rem;
-    }
-    h2 {
-        font-weight: 200;
-        letter-spacing: .08rem;
-        line-height: 2rem;
-        word-spacing: .20rem;
-    }
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-weight: 100;
-        letter-spacing: .06rem;
-        line-height: 2rem;
-        word-spacing: .01rem;
-    }
     a {
         color: #000;
         font-weight: 500;
@@ -54,6 +33,27 @@
     }
     a:hover {
         text-decoration: underline;
+    }
+    h1, h1 > a {
+        font-weight: 200;
+        letter-spacing: .1rem;
+        line-height: 2.5rem;
+        word-spacing: .25rem;
+    }
+    h2, h2 > a {
+        font-weight: 200;
+        letter-spacing: .08rem;
+        line-height: 2rem;
+        word-spacing: .20rem;
+    }
+    h3, h3 > a,
+    h4, h4 > a,
+    h5, h5 > a,
+    h6, h6 > a {
+        font-weight: 100;
+        letter-spacing: .06rem;
+        line-height: 2rem;
+        word-spacing: .01rem;
     }
     hr {
         border-collapse: collapse;
