@@ -16,7 +16,7 @@
         font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
             Helvetica, Helvetica Neue, Ubuntu, Roboto, Noto, Segoe UI, Arial,
             sans-serif;
-        font-weight: 500;
+        /* font-weight: 500; */
         text-decoration: none;
     }
     .menu-link:hover {

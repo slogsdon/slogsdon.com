@@ -13,7 +13,7 @@
     }
     .brand-title {
         float: left;
-        font-weight: 700;
+        /* font-weight: 700; */
         margin: 1rem 0;
         padding: 0;
     }

@@ -19,41 +19,15 @@
             Helvetica, Helvetica Neue, Ubuntu, Roboto, Noto, Segoe UI, Arial,
             sans-serif;
         font-size: 16px;
-        line-height: 1.5rem;
         margin: 0;
         padding: 0;
     }
     a {
         color: #000;
-        font-weight: 500;
         text-decoration: none;
-    }
-    li > a, p > a {
-        font-weight: 600;
     }
     a:hover {
         text-decoration: underline;
-    }
-    h1, h1 > a {
-        font-weight: 200;
-        letter-spacing: .1rem;
-        line-height: 2.5rem;
-        word-spacing: .25rem;
-    }
-    h2, h2 > a {
-        font-weight: 200;
-        letter-spacing: .08rem;
-        line-height: 2rem;
-        word-spacing: .20rem;
-    }
-    h3, h3 > a,
-    h4, h4 > a,
-    h5, h5 > a,
-    h6, h6 > a {
-        font-weight: 100;
-        letter-spacing: .06rem;
-        line-height: 2rem;
-        word-spacing: .01rem;
     }
     hr {
         border-collapse: collapse;
@@ -68,6 +42,7 @@
         font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif,
             Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif,
             Georgia, serif;
+        line-height: 1.5rem;
     }
     blockquote {
         background: rgb(249, 249, 249);
