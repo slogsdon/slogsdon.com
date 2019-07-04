@@ -6,3 +6,15 @@ publish = "dist"
 [build.environment]
 
 PHP_VERSION="7.2"
+
+[[redirects]]
+from="/posts/*"
+to="/writing/:splat"
+
+[[redirects]]
+from="/presentations/*"
+to="/decks/:splat"
+
+[[redirects]]
+from="/projects/*"
+to="/work/:splat"
