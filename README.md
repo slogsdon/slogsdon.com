@@ -1,16 +1,16 @@
-# slogsdon.github.io
+# shane.logsdon.io
 
 ## Development
 
 ```bash
-yarn install
-yarn develop
+composer install
+composer develop
 ```
 
 ## Build
 
 ```bash
-yarn build
+composer build
 ```
 
 ## License
