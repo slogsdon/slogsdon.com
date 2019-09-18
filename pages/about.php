@@ -4,55 +4,13 @@
 
 <h1>About</h1>
 
-<h2>Short Version</h2>
-
-<p>
-    I&apos;m a polyglot web developer. Current interests include Elixir/Erlang,
-    Rust, Haskell, .NET (F#/C#), and DevOps when necessary.
-</p>
-<p>
-    I have limited availability for contract projects and am currently not
-    looking for new full-time opportunities. Send me an email if you&apos;d like to
-    discuss a project with me.
-</p>
-
-<h2>Long Version</h2>
-
-<p>
-    I am a polyglot developer striving to build performant and scalable
-    applications and libraries targeted for the web.
-</p>
-
-<p>
-    I have building building applications for the web since 2003, when I was
-    enrolled in a "Web Programming" class in high school. The course was
-    supposed to cover only HTML and CSS, but myself and a few others were
-    offered to learn PHP instead because of our quick grasp of the basics.
-    I&apos;ve been tinkering with and learning web programming on my own ever
-    since.
-</p>
-
-<p>
-    Professionally, I have developed for a variety of companies ranging from
-    individuals and startups to agencies and financial institutions in a
-    variety of programming languages, including C# and VB.NET, PHP, and
-    Elixir.
-</p>
-
-<p>
-    My current passions include improving developer efficiency and experience,
-    functional programming (in the form of Elixir, Erlang, F#, and Haskell),
-    and writing resilient code (whether by architecture choice, testing, or
-    leveraging language/platform traits).
-</p>
-
 <h2>Getting in touch</h2>
 
 <p>If you need to connect with me, I&apos;m fairly active at these places:</p>
 
 <ul>
     <li>
-        Twitter
+        Twitter &mdash;
         <a
             href="https://twitter.com/shanelogsdon"
             title="Shane Logsdon on Twitter"
@@ -61,7 +19,7 @@
         </a>
     </li>
     <li>
-        GitHub
+        GitHub &mdash;
         <a href="https://github.com/slogsdon" title="Shane Logsdon on GitHub">
             @slogsdon
         </a>
@@ -72,16 +30,7 @@
 
 <ul>
     <li>
-        Google+
-        <a
-            href="https://plus.google.com/+ShaneLogsdon"
-            title="Shane Logsdon on Google+"
-        >
-            +ShaneLogsdon
-        </a>
-    </li>
-    <li>
-    LinkedIn
+        LinkedIn &mdash;
         <a
             href="https://www.linkedin.com/in/shanelogsdon"
             title="Shane Logsdon on LinkedIn"
@@ -90,7 +39,7 @@
         </a>
     </li>
     <li>
-        Hacker News
+        Hacker News &mdash;
         <a
             href="https://news.ycombinator.com/user?id=slogsdon"
             title="Shane Logsdon on Hacker News"
@@ -99,24 +48,9 @@
         </a>
     </li>
     <li>
-        Keybase
+        Keybase &mdash;
         <a href="https://keybase.io/slogsdon" title="Shane Logsdon on Keybase">
             slogsdon
-        </a>
-    </li>
-    <li>
-        Tumblr
-        <a href="http://slogsdon01.tumblr.com" title="Shane Logsdon on Tumblr">
-            slogsdon01
-        </a>
-    </li>
-    <li>
-        Instagram
-        <a
-            href="http://instagram.com/slogsdon01"
-            title="Shane Logsdon on Instagram"
-        >
-            slogsdon01
         </a>
     </li>
 </ul>
