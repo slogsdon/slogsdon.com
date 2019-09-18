@@ -12,16 +12,8 @@
 <meta name="description" content="<?= $this->e(!empty($description) ? $description : $settings->description); ?>">
 <?php /* end lighthouse */ ?>
 
+<style id="blank-css"><?= file_get_contents('https://slogsdon.github.io/blank/blank.css') ?></style>
 <style>
-    body,
-    html {
-        font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
-            Helvetica, Helvetica Neue, Ubuntu, Roboto, Noto, Segoe UI, Arial,
-            sans-serif;
-        font-size: 16px;
-        margin: 0;
-        padding: 0;
-    }
     a {
         color: #000;
         text-decoration: none;
@@ -29,48 +21,42 @@
     a:hover {
         text-decoration: underline;
     }
-    hr {
-        border-collapse: collapse;
-        border: 0;
+    .container {
+        margin: 0 auto;
+        max-width: 650px;
+        padding: 0 1rem;
+    }
+    .container > header {
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 0;
+    }
+    .menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .menu-item {
+        display: inline;
+        margin-left: 0.5rem;
+    }
+    .index-page.menu-container .menu-item {
+        font-size: 1.5rem;
+        margin-left: 0;
+        margin-right: 0.75rem;
+    }
+    .footer.menu-container {
         border-top: 1px solid #e9e9e9;
-        margin: 1.5rem 0;
+        margin-top: 1.5rem;
+        padding: 3rem 0;
     }
-    blockquote,
-    li,
-    p,
-    time {
-        font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif,
-            Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif,
-            Georgia, serif;
-        line-height: 1.5rem;
+    .footer.menu-item {
+        display: inline-block;
+        margin: 0;
+        margin-right: 1.5rem;
     }
-    blockquote {
-        background: rgb(249, 249, 249);
-        border-left: 5px solid rgb(204, 204, 204);
-        margin: 1.5em 0px;
-        padding: 0.5em 15px;
-    }
-    code,
-    pre {
-        color: rgb(51, 51, 51);
-        text-align: left;
-        white-space: pre;
-        tab-size: 4;
-        hyphens: none;
-        font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-        line-height: 1.4;
-    }
-    pre {
-        font-size: 85%;
-        overflow: auto;
-        margin: 1em 0px;
-        padding: 1.2em;
-        border-radius: 3px;
-    }
-    code,
-    :not(pre) > code,
-    pre {
-        background: rgb(249, 249, 249);
+    .footer.menu-link {
+        color: #727272;
     }
 </style>
 <style id="hljs-atom-one-light">
