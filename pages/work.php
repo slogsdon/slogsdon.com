@@ -10,7 +10,7 @@ $patentUrl =
     . "DN/20180060867&RS=DN/20180060867";
 ?>
 
-<main class="container" aria-labelledby="title">
+<main aria-labelledby="title">
     <h1 id="title">Work</h1>
 
     <article class="project">

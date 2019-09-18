@@ -10,7 +10,7 @@ $posts = json_decode(file_get_contents(sprintf('resources/data/%s-list.json', $s
         margin-bottom: 2rem;
     }
 </style>
-<main class="container" aria-labelledby="title">
+<main aria-labelledby="title">
     <h1 id="title"><?= $title; ?></h1>
 
     <?php foreach ($posts as $postSlug => $post) : ?>
