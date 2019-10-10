@@ -12,7 +12,7 @@
 <meta name="description" content="<?= $this->e(!empty($description) ? $description : $settings->description); ?>">
 <?php /* end lighthouse */ ?>
 
-<style id="blank-css"><?= file_get_contents('https://slogsdon.github.io/blank/blank.css?' . uniqid()) ?></style>
+<style id="blank-css"><?= file_get_contents('https://slogsdon.github.io/blank/blank.min.css?' . uniqid()) ?></style>
 <style id="site-overrides"><?= file_get_contents('public/_/site-overrides.css') ?></style>
 <style id="hljs-atom-one-light"><?= file_get_contents('public/_/hljs-atom-one-light.css') ?></style>
 
