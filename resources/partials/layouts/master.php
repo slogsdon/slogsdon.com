@@ -14,33 +14,7 @@
 
 <style id="blank-css"><?= file_get_contents('https://slogsdon.github.io/blank/blank.min.css?' . uniqid()) ?></style>
 <style id="site-overrides"><?= file_get_contents('public/_/site-overrides.css') ?></style>
-<style id="hljs-atom-one">
-.hljs {
-  display: block;
-  overflow-x: auto;
-  padding: 1.5em;
-}
-
-.hljs-comment,
-.hljs-quote {
-  font-style: italic;
-}
-
-<?= file_get_contents('public/_/hljs-atom-one-light.css') ?>
-@media (prefers-color-scheme: dark) { <?= file_get_contents('public/_/hljs-atom-one-dark.css') ?> }
-
-.hljs-emphasis {
-  font-style: italic;
-}
-
-.hljs-strong {
-  font-weight: bold;
-}
-
-.hljs-link {
-  text-decoration: underline;
-}
-</style>
+<style id="hljs-atom-one"><?= file_get_contents('public/_/hljs-atom-one.css') ?></style>
 
 <?php /* start content */ ?>
 <?= $this->section('content'); ?>
@@ -48,13 +22,13 @@
 
 <?php /* start scripts */ ?>
 <script type="module">
-    document.getElementsByTagName('html')[0]
-        .classList.remove('no-module');
+  document.getElementsByTagName('html')[0]
+    .classList.remove('no-module');
 </script>
 <script>
-    ('serviceWorker' in navigator)
-        && navigator.serviceWorker
-            .register('/sw.js')
-            .catch(() => {});
+  ('serviceWorker' in navigator)
+    && navigator.serviceWorker
+      .register('/sw.js')
+      .catch(() => {});
 </script>
 <?php /* end scripts */ ?>
