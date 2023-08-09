@@ -3,10 +3,6 @@
 command = "composer build"
 publish = "dist"
 
-[build.environment]
-
-PHP_VERSION="7.2"
-
 [[redirects]]
 from="/posts/*"
 to="/writing/:splat"
