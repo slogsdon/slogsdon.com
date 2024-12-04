@@ -4,7 +4,7 @@
     "scripts": {
         "build": "flat-file build",
         "clean": "rm -rf dist",
-        "develop": "flat-file serve"
+        "start": "flat-file serve"
     },
     "require": {
         "slogsdon/flat-file": "dev-code-highlight"
