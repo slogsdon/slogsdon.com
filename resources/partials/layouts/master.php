@@ -15,6 +15,15 @@
 <style id="blank-css"><?= file_get_contents('https://slogsdon.github.io/blank/blank.min.css?' . uniqid()) ?></style>
 <style id="site-overrides"><?= file_get_contents('public/_/site-overrides.css') ?></style>
 <style id="hljs-atom-one"><?= file_get_contents('public/_/hljs-atom-one.css') ?></style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9Y89SVEQW9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9Y89SVEQW9');
+</script>
 
 <?php /* start content */ ?>
 <?= $this->section('content'); ?>
