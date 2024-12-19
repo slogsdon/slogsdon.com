@@ -5,11 +5,17 @@ publish = "dist"
 
 [[redirects]]
 from="/posts/*"
-to="/writing/:splat"
+to="/articles/:splat"
+[[redirects]]
+from="/writing/*"
+to="/articles/:splat"
 
 [[redirects]]
 from="/presentations/*"
-to="/decks/:splat"
+to="/speaking/:splat"
+[[redirects]]
+from="/decks/*"
+to="/speaking/:splat"
 
 [[redirects]]
 from="/projects/*"

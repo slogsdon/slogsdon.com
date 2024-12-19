@@ -10,5 +10,5 @@
 /* SITE */
   Software: HTML, JavaScript, CSS
   Language: English
-  Components: HTML, React, CSS
+  Components: PHP, HTML, CSS
   IDE: VS Code, Neovim/Tmux

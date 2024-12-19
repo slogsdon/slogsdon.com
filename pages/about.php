@@ -2,61 +2,94 @@
     'title' => 'About',
 ]); ?>
 
-<h1>About</h1>
+<header class="about-header">
+    <div class="container">
+        <h1>About Me</h1>
+        <p>Technical leader and product strategist with over 15 years of experience building scalable fintech solutions and developer platforms.</p>
+    </div>
+</header>
 
-<h2>Getting in touch</h2>
+<main class="container">
+    <section class="profile-section">
+        <div class="profile-content">
+            <h2>Background</h2>
+            <p>
+                For the past decade, I've been at the intersection of financial technology and developer tools, 
+                helping companies build and scale their payment infrastructure and developer platforms. My work 
+                has focused on creating systems that process billions in transactions while maintaining high 
+                reliability and security standards.
+            </p>
+            <p>
+                I combine deep technical expertise with product strategy to help companies navigate the 
+                complexities of modern financial systems. Whether it's designing scalable architectures, 
+                optimizing payment flows, or building developer-first products, I focus on creating 
+                solutions that drive business growth while maintaining technical excellence.
+            </p>
+        </div>
+        <div class="profile-image">
+            <img src="/images/headshot.jpeg">
+        </div>
+    </section>
 
-<p>If you need to connect with me, I&apos;m fairly active at these places:</p>
+    <section class="experience-section">
+        <h2>Professional Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">2020 - Present</div>
+                <div class="timeline-content">
+                    <h3>Head of Developer Platform</h3>
+                    <div class="company">FinTech Enterprise</div>
+                    <p>Leading the development of developer-focused payment infrastructure, serving thousands of businesses 
+                    processing billions in transactions annually. Architected the next-generation API platform and 
+                    led the transformation to a developer-first product strategy.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2016 - 2020</div>
+                <div class="timeline-content">
+                    <h3>Senior Technical Product Manager</h3>
+                    <div class="company">Payment Platform Inc.</div>
+                    <p>Drove the technical vision and implementation of the company's payment processing platform. 
+                    Led the development of key features including real-time fraud detection and automated compliance systems.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2012 - 2016</div>
+                <div class="timeline-content">
+                    <h3>Lead Software Engineer</h3>
+                    <div class="company">Tech Solutions Ltd.</div>
+                    <p>Architected and built scalable payment processing systems handling millions of transactions. 
+                    Implemented microservices architecture and led the transition from monolithic to distributed systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<ul>
-    <li>
-        Twitter &mdash;
-        <a
-            href="https://twitter.com/shanelogsdon"
-            title="Shane Logsdon on Twitter"
-        >
-            @shanelogsdon
-        </a>
-    </li>
-    <li>
-        GitHub &mdash;
-        <a href="https://github.com/slogsdon" title="Shane Logsdon on GitHub">
-            @slogsdon
-        </a>
-    </li>
-</ul>
+    <section class="expertise-section">
+        <h2>Areas of Expertise</h2>
+        <div class="expertise-grid">
+            <div class="expertise-card">
+                <h3>Payment Systems</h3>
+                <p>Designing and implementing scalable payment processing infrastructure, focusing on reliability, 
+                security, and compliance.</p>
+            </div>
+            <div class="expertise-card">
+                <h3>Developer Platforms</h3>
+                <p>Building developer-first products and APIs that emphasize great developer experience and 
+                robust functionality.</p>
+            </div>
+            <div class="expertise-card">
+                <h3>Product Leadership</h3>
+                <p>Designing distributed systems that scale to handle high-throughput financial transactions 
+                while maintaining data consistency.</p>
+            </div>
+            <div class="expertise-card">
+                <h3>Technical Leadership</h3>
+                <p>Leading technical teams, setting architecture direction, and bridging business needs with 
+                technical implementation.</p>
+            </div>
+        </div>
+    </section>
+</main>
 
-<p>Don't like those? I'm also around on these:</p>
-
-<ul>
-    <li>
-        LinkedIn &mdash;
-        <a
-            href="https://www.linkedin.com/in/shanelogsdon"
-            title="Shane Logsdon on LinkedIn"
-        >
-            Shane Logsdon
-        </a>
-    </li>
-    <li>
-        Hacker News &mdash;
-        <a
-            href="https://news.ycombinator.com/user?id=slogsdon"
-            title="Shane Logsdon on Hacker News"
-        >
-            slogsdon
-        </a>
-    </li>
-    <li>
-        Keybase &mdash;
-        <a href="https://keybase.io/slogsdon" title="Shane Logsdon on Keybase">
-            slogsdon
-        </a>
-    </li>
-</ul>
-
-<p>
-    Need to send me something more long form?
-    <a href="mailto:shane@shanelogsdon.com">Shoot me over an email</a>, and
-    I&apos;ll respond as soon as I can.
-</p>
+<?php $this->insert('partials::components/contact-cta'); ?>

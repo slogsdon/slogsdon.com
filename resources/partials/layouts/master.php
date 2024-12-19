@@ -12,19 +12,22 @@
 <meta name="description" content="<?= $this->e(!empty($description) ? $description : $settings->description); ?>">
 <?php /* end lighthouse */ ?>
 
-<style id="blank-css"><?= file_get_contents('https://slogsdon.github.io/blank/blank.min.css?' . uniqid()) ?></style>
-<style id="site-overrides"><?= file_get_contents('public/_/site-overrides.css') ?></style>
+<!-- <style id="blank-css"><?= file_get_contents('https://slogsdon.github.io/blank/blank.min.css?' . uniqid()) ?></style> -->
+<style id="site"><?= file_get_contents('public/_/site.css') ?></style>
 <style id="hljs-atom-one"><?= file_get_contents('public/_/hljs-atom-one.css') ?></style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9Y89SVEQW9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<?php if ($_SERVER['SERVER_NAME'] !== 'localhost'): ?>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9Y89SVEQW9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-9Y89SVEQW9');
-</script>
+    gtag('config', 'G-9Y89SVEQW9');
+  </script>
+<?php endif; ?>
 
+<body aria-labelledby="title">
 <?php /* start content */ ?>
 <?= $this->section('content'); ?>
 <?php /* end content */ ?>

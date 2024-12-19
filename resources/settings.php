@@ -1,6 +1,16 @@
 <?php
+$author = (object) [
+    'shane' => (object) [
+        'name' => 'Shane Logsdon',
+        'title' => 'Technical Product Leader',
+        'description' => 'Technical leader with 15+ years of experience in developer platforms and payment systems. Helping companies build scalable, secure, and user-centric financial solutions.',
+    ],
+];
+
 return (object) [
-    'title' => 'Shane Logsdon',
-    'description' =>
-        'I develop things. Sometimes, I write about them here. Let\'s start a conversation.',
+    'title' => $author->shane->name,
+    'subtitle' => 'Building the Future of Financial Technology',
+    'description' => $author->shane->description,
+    'avgWordsPerMinute' => 200,
+    'author' => $author,
 ];

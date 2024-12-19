@@ -2,19 +2,15 @@
     'title' => !empty($title) ? $title : null,
 ]); ?>
 
-<header>
+<nav class="nav-container">
     <div class="container">
-        <div class="brand-title">
-            <a href="/">SL</a>
+        <div class="nav-content">
+            <a href="/" class="site-logo">SL</a>
+            <?php $this->insert('partials::components/site-menu'); ?>
         </div>
-        <?php $this->insert('partials::components/site-menu'); ?>
     </div>
-</header>
-<div class="container">
-    <?= $this->section('content'); ?>
-</div>
-<footer>
-    <div class="container">
-        <?php $this->insert('partials::components/site-menu', ['isFooter' => true]); ?>
-    </div>
-</footer>
+</nav>
+
+<?= $this->section('content'); ?>
+
+<?php $this->insert('partials::components/footer'); ?>

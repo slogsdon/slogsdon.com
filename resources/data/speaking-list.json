@@ -1,0 +1,138 @@
+{
+  "drive-growth-with-effective-partnerships": {
+    "title": "Drive Growth with Effective Partnerships",
+    "description": "Strategic approaches to building and maintaining effective technical partnerships for platform growth",
+    "type": "conference",
+    "category": "strategic-insights",
+    "archived": false,
+    "tags": [
+      "tech-strategy",
+      "engineering-leadership",
+      "developer-tooling",
+      "fintech"
+    ],
+    "presentationMetadata": {
+      "venue": "DrupalCon Seattle 2019",
+      "audienceType": "Technical Leaders & Business Stakeholders",
+      "isPrimary": true
+    }
+  },
+  "dont-leave-cash-in-the-cart": {
+    "title": "Don't Leave Cash in the Cart",
+    "description": "Presented this iteration of this Heartland eCommerce presentation at the Internet Merchants Association's sessions during ASD Market Week",
+    "type": "conference",
+    "category": "strategic-insights",
+    "archived": false,
+    "tags": [
+      "payment-systems",
+      "fintech",
+      "tech-strategy"
+    ],
+    "presentationMetadata": {
+      "venue": "ASD Market Week 2016",
+      "audienceType": "Business & Technical",
+      "isPrimary": true
+    }
+  },
+  "http-and-me": {
+    "title": "HTTP and Me",
+    "description": "An introduction to HTTP and how it drives the modern web. Deck was created for and targeted at a lunch and learn for developers, designers",
+    "type": "lunch-and-learn",
+    "category": "technical-deep-dives",
+    "archived": true,
+    "archiveReason": "Basic technical introduction not aligned with current expertise level",
+    "tags": [
+      "backend-engineering",
+      "system-architecture"
+    ],
+    "presentationMetadata": {
+      "venue": "Internal Lunch & Learn",
+      "audienceType": "Developers & Designers",
+      "isPrimary": false
+    }
+  },
+  "beginners-hands-on-with-haskell": {
+    "title": "Beginner's Hands-On with Haskell",
+    "description": "An interactive workshop for newcomers to Haskell and functional programming.",
+    "type": "meetup",
+    "category": "technical-deep-dives",
+    "archived": true,
+    "archiveReason": "Introductory workshop not aligned with current focus",
+    "tags": [
+      "functional-programming",
+      "backend-engineering"
+    ],
+    "presentationMetadata": {
+      "venue": "Meetup",
+      "audienceType": "Developers",
+      "isPrimary": false
+    }
+  },
+  "plug-friend-of-web-developers": {
+    "title": "Plug, Friend of Web Developers",
+    "description": "We'll cover the Plug specification, using the web server adapters, and composing Plug modules/functions",
+    "type": "meetup",
+    "category": "technical-deep-dives",
+    "archived": true,
+    "archiveReason": "Framework-specific content not aligned with current focus",
+    "tags": [
+      "backend-engineering",
+      "system-architecture"
+    ],
+    "presentationMetadata": {
+      "venue": "Meetup",
+      "audienceType": "Developers",
+      "isPrimary": false
+    }
+  },
+  "introduction-to-testing-with-exunit": {
+    "title": "Introduction to Testing with ExUnit",
+    "description": "Bring your laptops for this workshop where we walk through basic testing using ExUnit, Elixir's built-in testing framework",
+    "type": "meetup",
+    "category": "technical-deep-dives",
+    "archived": true,
+    "archiveReason": "Basic testing workshop not aligned with current expertise level",
+    "tags": [
+      "backend-engineering",
+      "developer-tooling"
+    ],
+    "presentationMetadata": {
+      "venue": "Meetup",
+      "audienceType": "Developers",
+      "isPrimary": false
+    }
+  },
+  "functional-programming-principles-in-elixir": {
+    "title": "Functional Programming Principles in Elixir",
+    "description": "Join us as we discuss core functional programming principles, focusing on Elixir's usage/implementation of them",
+    "type": "meetup",
+    "category": "technical-deep-dives",
+    "archived": true,
+    "archiveReason": "Language-specific content not aligned with current focus",
+    "tags": [
+      "functional-programming",
+      "backend-engineering"
+    ],
+    "presentationMetadata": {
+      "venue": "Meetup",
+      "audienceType": "Developers",
+      "isPrimary": false
+    }
+  },
+  "go-an-introduction": {
+    "title": "Go: An Introduction",
+    "description": "An introduction to the Go programming language. Deck was created for and targeted at a lunch and learn for developers at Blackstone Media",
+    "type": "lunch-and-learn",
+    "category": "technical-deep-dives",
+    "archived": true,
+    "archiveReason": "Introductory language workshop not aligned with current focus",
+    "tags": [
+      "backend-engineering"
+    ],
+    "presentationMetadata": {
+      "venue": "Internal Lunch & Learn",
+      "audienceType": "Developers",
+      "isPrimary": false
+    }
+  }
+}

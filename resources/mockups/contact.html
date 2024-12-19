@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Alex Smith - Fintech Technical Leader</title>
+    <style>
+        /* Base styles from previous pages */
+        :root {
+            --primary-color: #1a365d;
+            --secondary-color: #2b6cb0;
+            --text-color: #2d3748;
+            --background-color: #ffffff;
+            --light-gray: #f7fafc;
+            --border-color: #e2e8f0;
+            --spacing: 2rem;
+            --content-width: 800px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+
+        .container {
+            max-width: var(--content-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing);
+        }
+
+        /* Contact Page Specific Styles */
+        .contact-header {
+            background-color: var(--light-gray);
+            padding: 4rem 0;
+            margin-bottom: 4rem;
+        }
+
+        .contact-header h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .contact-header p {
+            font-size: 1.2rem;
+            max-width: 60ch;
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 4rem;
+            margin-bottom: 4rem;
+        }
+
+        /* Form Styles */
+        .contact-form {
+            margin-bottom: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--primary-color);
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 1rem;
+            background-color: white;
+        }
+
+        textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        select {
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%232d3748' viewBox='0 0 12 12'%3E%3Cpath d='M2 4l4 4 4-4'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+            padding-right: 2.5rem;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 0.8rem 1.6rem;
+            background-color: var(--secondary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 500;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .button:hover {
+            background-color: var(--primary-color);
+        }
+
+        /* Contact Info Styles */
+        .contact-info {
+            background-color: var(--light-gray);
+            padding: 2rem;
+            border-radius: 8px;
+            height: fit-content;
+        }
+
+        .contact-info h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .contact-method {
+            margin-bottom: 2rem;
+        }
+
+        .contact-method h4 {
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .contact-method p {
+            margin-bottom: 0.5rem;
+        }
+
+        .social-links {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .social-link {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+
+        .social-link:hover {
+            color: var(--primary-color);
+        }
+
+        /* Form Validation Styles */
+        input:invalid,
+        textarea:invalid {
+            border-color: #e53e3e;
+        }
+
+        .error-message {
+            color: #e53e3e;
+            font-size: 0.875rem;
+            margin-top: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .contact-header {
+                padding: 3rem 0;
+            }
+
+            .contact-header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="contact-header">
+        <div class="container">
+            <h1>Get in Touch</h1>
+            <p>Interested in working together? Let's discuss how I can help with your fintech challenges.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="contact-content">
+            <div class="contact-form-container">
+                <form class="contact-form" action="/submit-form" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="interest">Area of Interest</label>
+                        <select id="interest" name="interest" required>
+                            <option value="">Select an option</option>
+                            <option value="payment-systems">Payment Systems</option>
+                            <option value="developer-platforms">Developer Platforms</option>
+                            <option value="technical-architecture">Technical Architecture</option>
+                            <option value="consulting">Technical Consulting</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+
+                    <button type="submit" class="button">Send Message</button>
+                </form>
+            </div>
+
+            <aside class="contact-info">
+                <h3>Other Ways to Connect</h3>
+                
+                <div class="contact-method">
+                    <h4>Email</h4>
+                    <p>alex.smith@example.com</p>
+                </div>
+
+                <div class="contact-method">
+                    <h4>Location</h4>
+                    <p>San Francisco Bay Area</p>
+                </div>
+
+                <div class="contact-method">
+                    <h4>Professional Profiles</h4>
+                    <ul class="social-links">
+                        <li><a href="#" class="social-link">LinkedIn</a></li>
+                        <li><a href="#" class="social-link">GitHub</a></li>
+                        <li><a href="#" class="social-link">Twitter</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+</body>
+</html>

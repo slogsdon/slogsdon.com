@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Smith | Fintech Technical Leader</title>
+    <style>
+        :root {
+            --primary-color: #1a365d;
+            --secondary-color: #2b6cb0;
+            --text-color: #2d3748;
+            --background-color: #ffffff;
+            --light-gray: #f7fafc;
+            --border-color: #e2e8f0;
+            --spacing: 2rem;
+            --content-width: 800px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        .container {
+            max-width: var(--content-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing);
+        }
+
+        /* Navigation */
+        .nav-container {
+            background: var(--background-color);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .site-logo {
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 1.25rem;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+        }
+
+        .nav-menu a:hover {
+            color: var(--secondary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: var(--light-gray);
+            padding: 4rem 0;
+            margin-bottom: 4rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            max-width: 60ch;
+        }
+
+        /* Featured Articles */
+        .section-title {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+        }
+
+        .article-list {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            margin-bottom: 4rem;
+        }
+
+        .article {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding-bottom: 3rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .article:last-child {
+            border-bottom: none;
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .article-meta span:not(:last-child)::after {
+            content: "•";
+            margin-left: 1rem;
+        }
+
+        .article h2 {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            line-height: 1.3;
+        }
+
+        .article h2 a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .article h2 a:hover {
+            color: var(--secondary-color);
+        }
+
+        .article-excerpt {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #4a5568;
+        }
+
+        .article-footer {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        .tag {
+            font-size: 0.85rem;
+            color: var(--secondary-color);
+        }
+
+        .tag:not(:last-child)::after {
+            content: "•";
+            color: #cbd5e0;
+            margin-left: 1rem;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background-color: var(--light-gray);
+            padding: 4rem 0;
+            margin: 4rem 0;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 60ch;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 0.8rem 1.6rem;
+            background-color: var(--secondary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: background-color 0.2s;
+        }
+
+        .button:hover {
+            background-color: var(--primary-color);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 4rem 0;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer h3 {
+            color: white;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.8;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-links a:hover {
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 3rem 0;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .article h2 {
+                font-size: 1.5rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .article-meta {
+                flex-wrap: wrap;
+            }
+
+            .nav-toggle {
+                display: block;
+            }
+
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                padding: 1rem;
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-container">
+        <div class="container">
+            <div class="nav-content">
+                <a href="/" class="site-logo">AS</a>
+                <ul class="nav-menu">
+                    <li><a href="/articles">Articles</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/speaking">Speaking</a></li>
+                    <li><a href="/consulting">Consulting</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1>Building the Future of Financial Technology</h1>
+            <p>Technical leader with 15+ years of experience in developer platforms and payment systems. Helping companies build scalable, secure, and user-centric financial solutions.</p>
+            <a href="/consulting" class="button">Work with me</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="featured-articles">
+            <h2 class="section-title">Featured Articles</h2>
+            <div class="article-list">
+                <article class="article">
+                    <div class="article-meta">
+                        <span>March 15, 2024</span>
+                        <span>12 min read</span>
+                        <span>Technical Deep Dive</span>
+                    </div>
+                    <h2><a href="#">Building Payment Systems at Scale: Architecture Deep Dive</a></h2>
+                    <p class="article-excerpt">
+                        A comprehensive exploration of architecture patterns that enable reliable, secure payment processing at scale. 
+                        Learn about handling high transaction volumes, ensuring data consistency, and maintaining system reliability.
+                    </p>
+                    <div class="article-footer">
+                        <span class="tag">Architecture</span>
+                        <span class="tag">Payments</span>
+                        <span class="tag">Scaling</span>
+                    </div>
+                </article>
+
+                <article class="article">
+                    <div class="article-meta">
+                        <span>March 10, 2024</span>
+                        <span>15 min read</span>
+                        <span>Technical Architecture</span>
+                    </div>
+                    <h2><a href="#">AI-Powered Fraud Detection Systems</a></h2>
+                    <p class="article-excerpt">
+                        An in-depth look at building modern fraud detection systems using machine learning and real-time processing. 
+                        Covers system architecture, model deployment, and handling high-throughput data streams.
+                    </p>
+                    <div class="article-footer">
+                        <span class="tag">Security</span>
+                        <span class="tag">AI</span>
+                        <span class="tag">Real-time</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Let's Build Something Great Together</h2>
+            <p>Looking for expertise in fintech development, payment systems, or product strategy?</p>
+            <a href="/contact" class="button">Get in Touch</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h3>Navigation</h3>
+                    <ul class="footer-links">
+                        <li><a href="/articles">Articles</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/speaking">Speaking</a></li>
+                        <li><a href="/consulting">Consulting</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Topics</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Payment Systems</a></li>
+                        <li><a href="#">Developer Tools</a></li>
+                        <li><a href="#">System Architecture</a></li>
+                        <li><a href="#">Security & Compliance</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Connect</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

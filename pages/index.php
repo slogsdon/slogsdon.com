@@ -1,22 +1,27 @@
 <?php $settings = require('resources/settings.php'); ?>
-<?php $this->layout('partials::layouts/master'); ?>
+<?php $this->layout('partials::layouts/main', [
+    'title' => 'About',
+]); ?>
 
-<style>
-    .container {
-        margin: 10rem auto;
-        max-width: 650px;
-        padding: 0 0.5rem;
-    }
-    .title {
-        font-size: 3rem;
-    }
-    .description {
-        font-size: 1.5rem;
-        line-height: 2rem;
-    }
-</style>
+<header class="hero">
+    <div class="container">
+        <h1 class="title"><?= $settings->title; ?></h1>
+        <h2 class="subtitle"><?= $settings->subtitle; ?></h2>
+        <p class="description"><?= $settings->description ;?></p>
+    </div>
+</header>
+
 <main class="container">
-    <h1 class="title"><?= $settings->title; ?></h1>
-    <p class="description"><?= $settings->description; ?></p>
-    <?php $this->insert('partials::components/site-menu', ['isIndex' => true]); ?>
+    <section class="featured-articles">
+        <h2 class="section-title">Featured Articles</h2>
+        <?php
+        $this->insert('partials::components/post-list', [
+            'slug' => 'articles',
+            'limit' => 3,
+        ]);
+        ?>
+        <p><a href="/articles/">Discover More Articles</a>
+    </section>
 </main>
+
+<?php $this->insert('partials::components/contact-cta'); ?>

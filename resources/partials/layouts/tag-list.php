@@ -8,13 +8,12 @@ $this->layout('partials::layouts/main', [
 <header class="page-header">
     <div class="container">
         <h1 id="title"><?= $title; ?></h1>
-        <p>Deep dives into fintech architecture, developer platforms, and technical leadership.</p>
     </div>
 </header>
 
 
 <main class="container">
-    <section class="topic-filter">
+    <!-- <section class="topic-filter">
         <div class="topic-list">
             <a href="#" class="topic-link active">All Topics</a>
             <a href="#" class="topic-link">Payment Systems</a>
@@ -22,9 +21,12 @@ $this->layout('partials::layouts/main', [
             <a href="#" class="topic-link">Developer Tools</a>
             <a href="#" class="topic-link">Security</a>
         </div>
-    </section>
+    </section> -->
 
     <?php $this->insert('partials::components/post-list', [
         'slug' => $slug,
+        'filterByTag' => $tag,
     ]); ?>
+
+    <p><a href="/<?= $slug ?>/">< Back to All Articles & Insights</a>
 </main>
