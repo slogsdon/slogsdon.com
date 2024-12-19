@@ -4,11 +4,16 @@
 $settings = require('resources/settings.php');
 $allCategories = json_decode(file_get_contents('resources/data/categories.json'), true);
 $allTags = json_decode(file_get_contents('resources/data/tags.json'), true);
-$allPosts = array_merge(
-    json_decode(file_get_contents("resources/data/articles-list.json"), true),
+$articles = array_map(
+    function ($post) { $post['type'] = 'articles'; return $post; },
+    json_decode(file_get_contents("resources/data/articles-list.json"), true)
+);
+$speaking = array_map(
+    function ($post) { $post['type'] = 'speaking'; return $post; },
     json_decode(file_get_contents("resources/data/speaking-list.json"), true)
 );
-$meta = (object)($allPosts[$slug]);
+$allPosts = array_merge($articles, $speaking);
+$meta = (object)(isset($allPosts[$slug]) ? $allPosts[$slug] : ['tags'=>[]]);
 ?>
 
 <main>
@@ -17,15 +22,21 @@ $meta = (object)($allPosts[$slug]);
             <div class="container">
                 <h1 id="title"><?= $title; ?></h1>
                 <div class="article-meta">
-                    <?php $date = DateTime::createFromFormat('U', $date)->format('F j, Y') ?>
+                    <?php $date = DateTime::createFromFormat('U', isset($date) ? $date : '0')->format('F j, Y') ?>
                     <span class="publish-date"><?= $date ?></span>
                     <span class="read-time"><?= ceil(str_word_count(strip_tags($content)) / $settings->avgWordsPerMinute) ?> min read</span>
-                    <span class="category"><?= isset($meta->category) ? $allCategories[$meta->category] : '' ?></span>
+                    <?php if (isset($meta->category)): ?>
+                        <span class="category">
+                            <a href="/<?= $meta->type ?>/<?= $meta->category ?>/"><?= $allCategories[$meta->category] ?></a>
+                        </span>
+                    <?php endif; ?>
                 </div>
                 <div class="tags">
                     <span class="tag-header">Tags:</span>
                     <?php foreach ($meta->tags as $tag): ?>
-                        <span class="tag"><?= $allTags[$tag] ?></span>
+                        <span class="tag">
+                            <a href="/<?= $slug ?>/tags/<?= $tag ?>/"><?= $allTags[$tag] ?></a>
+                        </span>
                     <?php endforeach; ?>
                 </div>
             </div>
@@ -75,7 +86,7 @@ $meta = (object)($allPosts[$slug]);
                         repo="slogsdon/shane.logsdon.io"
                         issue-term="pathname"
                         theme="github-light"
-                        <?php if ($_SERVER['SERVER_NAME'] !== 'localhost'): ?>
+                        <?php if (!isset($_SERVER['SERVER_NAME']) || $_SERVER['SERVER_NAME'] !== 'localhost'): ?>
                             crossorigin="anonymous"
                         <?php endif; ?>
                         async>

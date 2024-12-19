@@ -25,8 +25,9 @@ $this->layout('partials::layouts/main', [
 
     <?php $this->insert('partials::components/post-list', [
         'slug' => $slug,
-        'filterByTag' => $tag,
+        'filterByTopic' => $topic,
+        'filterType' => $topicType,
     ]); ?>
 
-    <p><a href="/<?= $slug ?>/">< Back to All Articles & Insights</a>
+    <p><a href="/<?= $slug ?>/">< Back to All <?= $slug === 'articles' ? 'Articles & Insights' : 'Speaking Engagements' ?></a>
 </main>

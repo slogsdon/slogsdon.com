@@ -15,7 +15,7 @@
 <!-- <style id="blank-css"><?= file_get_contents('https://slogsdon.github.io/blank/blank.min.css?' . uniqid()) ?></style> -->
 <style id="site"><?= file_get_contents('public/_/site.css') ?></style>
 <style id="hljs-atom-one"><?= file_get_contents('public/_/hljs-atom-one.css') ?></style>
-<?php if ($_SERVER['SERVER_NAME'] !== 'localhost'): ?>
+<?php if (!isset($_SERVER['SERVER_NAME']) || $_SERVER['SERVER_NAME'] !== 'localhost'): ?>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9Y89SVEQW9"></script>
   <script>

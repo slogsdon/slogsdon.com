@@ -1,3 +1,6 @@
+<?php
+$categories = json_decode(file_get_contents('resources/data/categories.json'));
+?>
 <footer class="footer">
     <div class="container">
         <div class="footer-content">
@@ -8,10 +11,9 @@
             <div>
                 <h3>Topics</h3>
                 <ul class="footer-links">
-                    <li><a href="#">Payment Systems</a></li>
-                    <li><a href="#">Developer Tools</a></li>
-                    <li><a href="#">System Architecture</a></li>
-                    <li><a href="#">Security & Compliance</a></li>
+                    <?php foreach ($categories as $catSlug => $catTitle): ?>
+                        <li><a href="/articles/<?= $catSlug ?>/"><?= $catTitle ?></a></li>
+                    <?php endforeach; ?>
                 </ul>
             </div>
             <div>

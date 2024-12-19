@@ -1,12 +1,12 @@
 {
     "backend-engineering": "Backend Engineering",
-    "functional-programming": "Functional Programming",
-    "system-architecture": "System Architecture",
     "cloud-infrastructure": "Cloud Infrastructure",
-    "fintech": "Fintech",
     "developer-tooling": "Developer Tooling",
-    "payment-systems": "Payment Systems",
     "engineering-leadership": "Engineering Leadership",
+    "fintech": "Fintech",
+    "functional-programming": "Functional Programming",
+    "payment-systems": "Payment Systems",
     "product-strategy": "Product Strategy",
+    "system-architecture": "System Architecture",
     "tech-strategy": "Tech Strategy"
 }

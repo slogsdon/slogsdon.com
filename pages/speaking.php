@@ -1,5 +1,5 @@
 <?php
 $this->layout('partials::layouts/post-list', [
-    'title' => 'Speaking',
+    'title' => 'Speaking Engagements',
     'slug' => 'speaking',
 ]);

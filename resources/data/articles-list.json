@@ -87,7 +87,7 @@
     "title": "WordPress, Docker, and You",
     "description": "Wordpress, Docker, and your site can work together in harmony with the right configuration.",
     "date": "2015-04-25",
-    "category": "leadership-and-management",
+    "category": "technical-deep-dives",
     "archived": true,
     "archiveReason": "Basic tutorial not aligned with current expertise level",
     "tags": [
@@ -135,11 +135,11 @@
     "title": "Migrate Your Site Without Killing Your Search Engine Presence",
     "description": "SEO is a hard beast to tame. Once you have everything just right, moving to a new platform, a new URL structure, or even a new domain can be stressful.",
     "date": "2013-12-20",
-    "category": "leadership-and-management",
+    "category": "technical-deep-dives",
     "archived": false,
     "tags": [
       "tech-strategy",
-      "engineering-leadership"
+      "backend-engineering"
     ]
   },
   "writing-api-wrappers-with-elixir": {
