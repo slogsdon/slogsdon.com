@@ -5,14 +5,14 @@
 <header class="contact-header">
     <div class="container">
         <h1>Get in Touch</h1>
-        <p>Interested in working together? Let's discuss how I can help with your fintech challenges.</p>
+        <p>Looking for expertise in fintech development, payment systems, or product strategy? Let's discuss how I can help with your technical product challenges.</p>
     </div>
 </header>
 
 <main class="container">
     <div class="contact-content">
         <div class="contact-form-container">
-            <form class="contact-form" action="/contact/" method="POST" netlify>
+            <form class="contact-form" method="POST" netlify>
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required>
