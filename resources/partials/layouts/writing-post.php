@@ -88,9 +88,6 @@ $this->layout('partials::layouts/main', [
                         repo="slogsdon/shane.logsdon.io"
                         issue-term="pathname"
                         theme="github-light"
-                        <?php if (!isset($_SERVER['SERVER_NAME']) || $_SERVER['SERVER_NAME'] !== 'localhost'): ?>
-                            crossorigin="anonymous"
-                        <?php endif; ?>
                         async>
                 </script>
             </section>
