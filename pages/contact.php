@@ -34,7 +34,7 @@
                         <option value="">Select an option</option>
                         <option value="payment-systems">Payment Systems</option>
                         <option value="developer-platforms">Developer Platforms</option>
-                        <option value="technical-architecture">Technical Architecture</option>
+                        <option value="product-strategy">Product Strategy</option>
                         <option value="consulting">Technical Consulting</option>
                         <option value="other">Other</option>
                     </select>
