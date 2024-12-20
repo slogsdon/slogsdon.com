@@ -1,6 +1,4 @@
-<?php $this->layout('partials::layouts/main', [
-    'title' => !empty($title) ? $title : null,
-]); 
+<?php
 $settings = require('resources/settings.php');
 $allCategories = json_decode(file_get_contents('resources/data/categories.json'), true);
 $allTags = json_decode(file_get_contents('resources/data/tags.json'), true);
@@ -14,6 +12,10 @@ $speaking = array_map(
 );
 $allPosts = array_merge($articles, $speaking);
 $meta = (object)(isset($allPosts[$slug]) ? $allPosts[$slug] : ['tags'=>[]]);
+$this->layout('partials::layouts/main', [
+    'title' => !empty($title) ? $title : null,
+    'description' => $meta->description,
+]); 
 ?>
 
 <main>
@@ -22,7 +24,7 @@ $meta = (object)(isset($allPosts[$slug]) ? $allPosts[$slug] : ['tags'=>[]]);
             <div class="container">
                 <h1 id="title"><?= $title; ?></h1>
                 <div class="article-meta">
-                    <?php $date = DateTime::createFromFormat('U', isset($date) ? $date : '0')->format('F j, Y') ?>
+                    <?php $originalDate = $date; $date = DateTime::createFromFormat('U', isset($originalDate) ? $originalDate : '0')->format('F j, Y') ?>
                     <span class="publish-date"><?= $date ?></span>
                     <span class="read-time"><?= ceil(str_word_count(strip_tags($content)) / $settings->avgWordsPerMinute) ?> min read</span>
                     <?php if (isset($meta->category)): ?>
@@ -94,4 +96,38 @@ $meta = (object)(isset($allPosts[$slug]) ? $allPosts[$slug] : ['tags'=>[]]);
             </section>
         </div>
     </article>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org/",
+        "@type": "BlogPosting",
+        "@id": "https://shane.logsdon.io/<?= $meta->type ?>/<?= $meta->category ?>/<?= $slug ?>/#BlogPosting",
+        "mainEntityOfPage": "https://shane.logsdon.io/<?= $meta->type ?>/<?= $meta->category ?>/<?= $slug ?>/",
+        "headline": "<?= $title ?>",
+        "name": "<?= $title ?>",
+        "description": "<?= $meta->description ?>",
+        "datePublished": "<?= DateTime::createFromFormat('U', isset($originalDate) ? $originalDate : '0')->format('Y-m-d') ?>",
+        "dateModified": "<?= DateTime::createFromFormat('U', isset($modified) ? $modified : (isset($originalDate) ? $originalDate : '0'))->format('Y-m-d') ?>",
+        "author": {
+            "@type": "Person",
+            "@id": "https://shane.logsdon.io/about/#Person",
+            "name": "Shane Logsdon",
+            "url": "https://shane.logsdon.io/about/",
+            "image": {
+                "@type": "ImageObject",
+                "@id": "https://shane.logsdon.io/images/headshot.jpeg",
+                "url": "https://shane.logsdon.io/images/headshot.jpeg",
+                "height": "2827",
+                "width": "1887"
+            }
+        },
+        "url": "https://shane.logsdon.io/<?= $meta->type ?>/<?= $meta->category ?>/<?= $slug ?>/",
+        "isPartOf": {
+            "@type" : "Blog",
+            "@id": "https://shane.logsdon.io/articles/",
+            "name": "Shane Logsdon's Blog"
+        },
+        "wordCount": "<?= str_word_count(strip_tags($content)) ?>"
+    }
+    </script>
 </main>

@@ -1,11 +1,13 @@
 <?php $this->layout('partials::layouts/main', [
     'title' => 'About',
-]); ?>
+]);
+$settings = require('resources/settings.php');
+?>
 
 <header class="about-header">
     <div class="container">
         <h1>About Me</h1>
-        <p>Technical leader and product strategist with over 15 years of experience building scalable fintech solutions and developer platforms.</p>
+        <p><?= $settings->author->shane->description ?></p>
     </div>
 </header>
 
@@ -90,6 +92,35 @@
             </div>
         </div>
     </section>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "dateCreated": "2024-12-19",
+      "dateModified": "2024-12-19",
+      "mainEntity": {
+        "@type": "Person",
+        "@id": "https://shane.logsdon.io/about/#Person",
+        "name": "Shane Logsdon",
+        "url": "https://shane.logsdon.io/about/",
+        "image": {
+            "@type": "ImageObject",
+            "@id": "https://shane.logsdon.io/images/headshot.jpeg",
+            "url": "https://shane.logsdon.io/images/headshot.jpeg",
+            "height": "2827",
+            "width": "1887"
+        },
+        "alternateName": "slogsdon",
+        "description": "<?= $settings->author->shane->description ?>",
+        "sameAs": [
+            "https://www.linkedin.com/in/shanelogsdon",
+            "https://github.com/slogsdon",
+            "https://twitter.com/shanelogsdon"
+        ]
+      }
+    }
+    </script>
 </main>
 
 <?php $this->insert('partials::components/contact-cta'); ?>
