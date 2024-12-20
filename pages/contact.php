@@ -12,7 +12,7 @@
 <main class="container">
     <div class="contact-content">
         <div class="contact-form-container">
-            <form class="contact-form" action="/submit-form" method="POST">
+            <form class="contact-form" action="/contact/" method="POST">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required>
