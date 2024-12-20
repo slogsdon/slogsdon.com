@@ -7,7 +7,7 @@ publish = "dist"
 package = "@netlify/plugin-sitemap"
   [plugins.inputs]
   exclude = [
-    './articles/_drafts/**/*'
+    './dist/articles/_drafts/**/*'
   ]
 [[plugins]]
 package = "@netlify/plugin-lighthouse"
