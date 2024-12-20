@@ -31,7 +31,7 @@
         </div>
     </section>
 
-    <section class="experience-section">
+    <!-- <section class="experience-section">
         <h2>Professional Experience</h2>
         <div class="timeline">
             <div class="timeline-item">
@@ -63,7 +63,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section class="expertise-section">
         <h2>Areas of Expertise</h2>
@@ -80,8 +80,8 @@
             </div>
             <div class="expertise-card">
                 <h3>Product Leadership</h3>
-                <p>Designing distributed systems that scale to handle high-throughput financial transactions 
-                while maintaining data consistency.</p>
+                <p>Transforming complex financial capabilities into scalable developer platforms that drive
+                rapid market adoption and revenue growth.</p>
             </div>
             <div class="expertise-card">
                 <h3>Technical Leadership</h3>
