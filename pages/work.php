@@ -1,6 +1,7 @@
 <?php
 $this->layout('partials::layouts/main', [
   'title' => 'Work',
+    'url' => '/work/',
 ]);
 $patentUrl =
     "http://appft.uspto.gov/netacgi/nph-Parser"

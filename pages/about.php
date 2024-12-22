@@ -1,5 +1,6 @@
 <?php $this->layout('partials::layouts/main', [
     'title' => 'About',
+    'url' => '/about/',
 ]);
 $settings = require('resources/settings.php');
 ?>

@@ -1,7 +1,13 @@
 <?php
+if ($topicType === 'tag') {
+    $url = sprintf('/%s/tags/%s/', $slug, $topic);
+} else {
+    $url = sprintf('/%s/%s/', $slug, $topic);
+}
 $this->layout('partials::layouts/main', [
     'title' => $title,
     'slug' => $slug,
+    'url' => !empty($url) ? $url : null,
 ]);
 ?>
 

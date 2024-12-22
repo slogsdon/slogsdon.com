@@ -12,9 +12,18 @@ $speaking = array_map(
 );
 $allPosts = array_merge($articles, $speaking);
 $meta = (object)(isset($allPosts[$slug]) ? $allPosts[$slug] : ['tags'=>[]]);
+$originalDate = $date;
+if ($meta->archived) {
+    $year = DateTime::createFromFormat('U', isset($originalDate) ? $originalDate : '0')
+        ->format('Y');
+    $url = sprintf('/archive/%s/%s/', $year, $slug);
+} else {
+    $url = sprintf('/%s/%s/%s/', $meta->type, $meta->category, $slug);
+}
 $this->layout('partials::layouts/main', [
     'title' => !empty($title) ? $title : null,
     'description' => $meta->description,
+    'url' => !empty($url) ? $url : null,
 ]); 
 ?>
 
@@ -24,7 +33,7 @@ $this->layout('partials::layouts/main', [
             <div class="container">
                 <h1 id="title"><?= $title; ?></h1>
                 <div class="article-meta">
-                    <?php $originalDate = $date; $date = DateTime::createFromFormat('U', isset($originalDate) ? $originalDate : '0')->format('F j, Y') ?>
+                    <?php $date = DateTime::createFromFormat('U', isset($originalDate) ? $originalDate : '0')->format('F j, Y') ?>
                     <span class="publish-date"><?= $date ?></span>
                     <span class="read-time"><?= ceil(str_word_count(strip_tags($content)) / $settings->avgWordsPerMinute) ?> min read</span>
                     <?php if (isset($meta->category)): ?>

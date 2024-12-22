@@ -1,6 +1,7 @@
 <?php $settings = require('resources/settings.php'); ?>
 <?php $this->layout('partials::layouts/main', [
     'title' => 'About',
+    'url' => '/',
 ]); ?>
 
 <header class="hero">

@@ -11,6 +11,9 @@
 <meta name="theme-color" content="#000000">
 <meta name="description" content="<?= $this->e(!empty($description) ? $description : $settings->description); ?>">
 <?php /* end lighthouse */ ?>
+<?php if (!empty($url)): ?>
+  <link rel="canonical" href="https://shane.logsdon.io<?= $this->e($url); ?>">
+<?php endif; ?>
 
 <style id="site"><?= file_get_contents('public/_/site.css') ?></style>
 <style id="hljs-atom-one"><?= file_get_contents('public/_/hljs-atom-one.css') ?></style>

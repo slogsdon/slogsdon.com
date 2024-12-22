@@ -1,5 +1,6 @@
 <?php $this->layout('partials::layouts/main', [
     'title' => 'Contact',
+    'url' => '/contact/',
 ]); ?>
 
 <header class="contact-header">
