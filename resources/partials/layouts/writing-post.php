@@ -11,10 +11,17 @@ $speaking = array_map(
     json_decode(file_get_contents("resources/data/speaking-list.json"), true)
 );
 $allPosts = array_merge($articles, $speaking);
-$meta = (object)(isset($allPosts[$slug]) ? $allPosts[$slug] : ['tags'=>[]]);
-$originalDate = $date;
+$defaultMeta = [
+    'type'=>'articles',
+    'category'=>'technical-deep-dives',
+    'description'=>'',
+    'archived'=>false,
+    'tags'=>[],
+];
+$meta = (object)(isset($allPosts[$slug]) ? $allPosts[$slug] : $defaultMeta);
+$originalDate = isset($date) ? $date : '0';
 if ($meta->archived) {
-    $year = DateTime::createFromFormat('U', isset($originalDate) ? $originalDate : '0')
+    $year = DateTime::createFromFormat('U', $originalDate)
         ->format('Y');
     $url = sprintf('/archive/%s/%s/', $year, $slug);
 } else {
