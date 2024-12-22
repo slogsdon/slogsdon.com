@@ -8,7 +8,7 @@ package = "@netlify/plugin-sitemap"
   exclude = [
     './dist/articles/_drafts/**/*'
   ]
-  prettyUrls = true
+  prettyURLs = true
   trailingSlash = true
 
 [[plugins]]
