@@ -24,5 +24,8 @@
         <li class="menu-item">
             <a href="/contact/" class="menu-link">Contact</a>
         </li>
+        <li class="menu-item">
+            <a href="/archive/" class="menu-link">Archive</a>
+        </li>
     <?php endif; ?>
 </ul>

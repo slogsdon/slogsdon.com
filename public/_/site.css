@@ -610,6 +610,100 @@ textarea:invalid {
   text-decoration: underline;
 }
 
+/* Archive-specific styles */
+.archive-section {
+  /* Subtle gray background to differentiate */
+  background-color: #f8f9fa;
+  /* Softer text for archived content */
+  color: #495057;
+}
+
+.archive-section .page-header {
+  background-color: #f8f9fa;
+}
+
+/* Archive link colors */
+.archive-section a {
+  color: #6c757d;
+}
+
+.archive-section a:hover {
+  color: #495057;
+}
+
+/* Archived article card */
+.archive-article-card {
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  background-color: white;
+}
+
+/* Archive heading styles */
+.archive-heading {
+  font-family: var(--font-sans);
+  color: #6c757d;
+  font-size: 1.75rem;
+  border-bottom: 2px solid #dee2e6;
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Archive metadata */
+.archive-metadata {
+  font-size: 0.875rem;
+  color: #6c757d;
+  font-style: italic;
+}
+
+/* Archive navigation */
+.archive-nav {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+
+.archive-year-select {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.archive-year-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  background-color: white;
+  color: #495057;
+  cursor: pointer;
+}
+
+.archive-year-btn.active {
+  background-color: #495057;
+  color: white;
+}
+
+/* Archive tags */
+.archive-tags {
+  margin-top: 1rem;
+}
+
+.archive-tags .tag {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  background-color: #e9ecef;
+  color: #6c757d;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  margin-right: 0.5rem;
+}
+
+.archive-content {
+  padding-bottom: 3rem;
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
   h1 {

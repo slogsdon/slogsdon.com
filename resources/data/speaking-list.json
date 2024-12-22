@@ -4,6 +4,7 @@
     "description": "Strategic approaches to building and maintaining effective technical partnerships for platform growth",
     "type": "conference",
     "category": "strategic-insights",
+    "date": "2019-04-10",
     "archived": false,
     "tags": [
       "tech-strategy",
@@ -15,13 +16,20 @@
       "venue": "DrupalCon Seattle 2019",
       "audienceType": "Technical Leaders & Business Stakeholders",
       "isPrimary": true
-    }
+    },
+    "related": [
+      "dont-leave-cash-in-the-cart",
+      "writing-api-wrappers-with-elixir",
+      "asp-dotnet-core-webapi-in-azure-app-service",
+      "vagrant-is-awesome"
+    ]
   },
   "dont-leave-cash-in-the-cart": {
     "title": "Don't Leave Cash in the Cart",
     "description": "Presented this iteration of this Heartland eCommerce presentation at the Internet Merchants Association's sessions during ASD Market Week",
     "type": "conference",
     "category": "strategic-insights",
+    "date": "2016-07-31",
     "archived": false,
     "tags": [
       "payment-systems",
@@ -32,13 +40,20 @@
       "venue": "ASD Market Week 2016",
       "audienceType": "Business & Technical",
       "isPrimary": true
-    }
+    },
+    "related": [
+      "drive-growth-with-effective-partnerships",
+      "asp-dotnet-core-webapi-in-azure-app-service",
+      "writing-api-wrappers-with-elixir",
+      "implementing-user-authentication-with-bcrypt-in-chicagoboss"
+    ]
   },
   "http-and-me": {
     "title": "HTTP and Me",
     "description": "An introduction to HTTP and how it drives the modern web. Deck was created for and targeted at a lunch and learn for developers, designers",
     "type": "lunch-and-learn",
     "category": "technical-deep-dives",
+    "date": "2014-08-11",
     "archived": true,
     "archiveReason": "Basic technical introduction not aligned with current expertise level",
     "tags": [
@@ -56,6 +71,7 @@
     "description": "An interactive workshop for newcomers to Haskell and functional programming.",
     "type": "meetup",
     "category": "technical-deep-dives",
+    "date": "2016-05-10",
     "archived": true,
     "archiveReason": "Introductory workshop not aligned with current focus",
     "tags": [
@@ -73,6 +89,7 @@
     "description": "We'll cover the Plug specification, using the web server adapters, and composing Plug modules/functions",
     "type": "meetup",
     "category": "technical-deep-dives",
+    "date": "2016-01-12",
     "archived": true,
     "archiveReason": "Framework-specific content not aligned with current focus",
     "tags": [
@@ -90,6 +107,7 @@
     "description": "Bring your laptops for this workshop where we walk through basic testing using ExUnit, Elixir's built-in testing framework",
     "type": "meetup",
     "category": "technical-deep-dives",
+    "date": "2015-11-10",
     "archived": true,
     "archiveReason": "Basic testing workshop not aligned with current expertise level",
     "tags": [
@@ -107,6 +125,7 @@
     "description": "Join us as we discuss core functional programming principles, focusing on Elixir's usage/implementation of them",
     "type": "meetup",
     "category": "technical-deep-dives",
+    "date": "2015-09-08",
     "archived": true,
     "archiveReason": "Language-specific content not aligned with current focus",
     "tags": [
@@ -124,6 +143,7 @@
     "description": "An introduction to the Go programming language. Deck was created for and targeted at a lunch and learn for developers at Blackstone Media",
     "type": "lunch-and-learn",
     "category": "technical-deep-dives",
+    "date": "2014-06-06",
     "archived": true,
     "archiveReason": "Introductory language workshop not aligned with current focus",
     "tags": [

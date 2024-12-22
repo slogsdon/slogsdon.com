@@ -37,7 +37,7 @@ $this->layout('partials::layouts/main', [
                     <span class="tag-header">Tags:</span>
                     <?php foreach ($meta->tags as $tag): ?>
                         <span class="tag">
-                            <a href="/<?= $slug ?>/tags/<?= $tag ?>/"><?= $allTags[$tag] ?></a>
+                            <a href="/<?= $meta->type ?>/tags/<?= $tag ?>/"><?= $allTags[$tag] ?></a>
                         </span>
                     <?php endforeach; ?>
                 </div>
@@ -92,39 +92,39 @@ $this->layout('partials::layouts/main', [
                 </script>
             </section>
         </div>
-    </article>
 
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org/",
-        "@type": "BlogPosting",
-        "@id": "https://shane.logsdon.io/<?= $meta->type ?>/<?= $meta->category ?>/<?= $slug ?>/#BlogPosting",
-        "mainEntityOfPage": "https://shane.logsdon.io/<?= $meta->type ?>/<?= $meta->category ?>/<?= $slug ?>/",
-        "headline": "<?= $title ?>",
-        "name": "<?= $title ?>",
-        "description": "<?= $meta->description ?>",
-        "datePublished": "<?= DateTime::createFromFormat('U', isset($originalDate) ? $originalDate : '0')->format('Y-m-d') ?>",
-        "dateModified": "<?= DateTime::createFromFormat('U', isset($modified) ? $modified : (isset($originalDate) ? $originalDate : '0'))->format('Y-m-d') ?>",
-        "author": {
-            "@type": "Person",
-            "@id": "https://shane.logsdon.io/about/#Person",
-            "name": "Shane Logsdon",
-            "url": "https://shane.logsdon.io/about/",
-            "image": {
-                "@type": "ImageObject",
-                "@id": "https://shane.logsdon.io/images/headshot.jpeg",
-                "url": "https://shane.logsdon.io/images/headshot.jpeg",
-                "height": "2827",
-                "width": "1887"
-            }
-        },
-        "url": "https://shane.logsdon.io/<?= $meta->type ?>/<?= $meta->category ?>/<?= $slug ?>/",
-        "isPartOf": {
-            "@type" : "Blog",
-            "@id": "https://shane.logsdon.io/articles/",
-            "name": "Shane Logsdon's Blog"
-        },
-        "wordCount": "<?= str_word_count(strip_tags($content)) ?>"
-    }
-    </script>
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org/",
+            "@type": "BlogPosting",
+            "@id": "https://shane.logsdon.io/<?= $meta->type ?>/<?= $meta->category ?>/<?= $slug ?>/#BlogPosting",
+            "mainEntityOfPage": "https://shane.logsdon.io/<?= $meta->type ?>/<?= $meta->category ?>/<?= $slug ?>/",
+            "headline": "<?= $title ?>",
+            "name": "<?= $title ?>",
+            "description": "<?= $meta->description ?>",
+            "datePublished": "<?= DateTime::createFromFormat('U', isset($originalDate) ? $originalDate : '0')->format('Y-m-d') ?>",
+            "dateModified": "<?= DateTime::createFromFormat('U', isset($modified) ? $modified : (isset($originalDate) ? $originalDate : '0'))->format('Y-m-d') ?>",
+            "author": {
+                "@type": "Person",
+                "@id": "https://shane.logsdon.io/about/#Person",
+                "name": "Shane Logsdon",
+                "url": "https://shane.logsdon.io/about/",
+                "image": {
+                    "@type": "ImageObject",
+                    "@id": "https://shane.logsdon.io/images/headshot.jpeg",
+                    "url": "https://shane.logsdon.io/images/headshot.jpeg",
+                    "height": "2827",
+                    "width": "1887"
+                }
+            },
+            "url": "https://shane.logsdon.io/<?= $meta->type ?>/<?= $meta->category ?>/<?= $slug ?>/",
+            "isPartOf": {
+                "@type" : "Blog",
+                "@id": "https://shane.logsdon.io/articles/",
+                "name": "Shane Logsdon's Blog"
+            },
+            "wordCount": "<?= str_word_count(strip_tags($content)) ?>"
+        }
+        </script>
+    </article>
 </main>

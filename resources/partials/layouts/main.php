@@ -1,6 +1,6 @@
 <?php $this->layout('partials::layouts/master', [
     'title' => !empty($title) ? $title : null,
-    'description' => !empty($description) ? $empty : null,
+    'description' => !empty($description) ? $description : null,
 ]); ?>
 
 <nav class="nav-container">

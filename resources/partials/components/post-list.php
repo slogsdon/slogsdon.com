@@ -15,6 +15,9 @@ if (isset($filterByTopic)) {
         }
     });
 }
+$posts = array_filter($posts, function ($post) {
+    return !$post->archived;
+});
 $allCategories = json_decode(file_get_contents('resources/data/categories.json'), true);
 $allTags = json_decode(file_get_contents('resources/data/tags.json'), true);
 ?>

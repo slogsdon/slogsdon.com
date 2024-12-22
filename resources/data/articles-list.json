@@ -9,6 +9,12 @@
       "backend-engineering",
       "functional-programming",
       "system-architecture"
+    ],
+    "related": [
+      "asp-dotnet-core-webapi-in-azure-app-service",
+      "exploring-fsharp-with-dotnet-core-and-kestrel",
+      "writing-api-wrappers-with-elixir",
+      "functors-applicatives-and-monads-in-elixir"
     ]
   },
   "asp-dotnet-core-webapi-in-azure-app-service": {
@@ -21,6 +27,12 @@
       "backend-engineering",
       "cloud-infrastructure",
       "tech-strategy"
+    ],
+    "related": [
+      "fiddling-with-asp-dotnet-core-and-fsharp-with-suave",
+      "application-deployment",
+      "writing-api-wrappers-with-elixir",
+      "linux-and-net-should-be-friends"
     ]
   },
   "cross-compiling-rust-applications-for-the-onion-omega2-from-macos": {
@@ -45,6 +57,12 @@
       "backend-engineering",
       "functional-programming",
       "system-architecture"
+    ],
+    "related": [
+      "fiddling-with-asp-dotnet-core-and-fsharp-with-suave",
+      "asp-dotnet-core-webapi-in-azure-app-service",
+      "writing-api-wrappers-with-elixir",
+      "im-learning-haskell-for-real-this-time"
     ]
   },
   "simple-php-socket-programming": {
@@ -117,6 +135,12 @@
       "cloud-infrastructure",
       "system-architecture",
       "tech-strategy"
+    ],
+    "related": [
+      "asp-dotnet-core-webapi-in-azure-app-service",
+      "migrating-from-mysql-server-to-percona-server",
+      "writing-api-wrappers-with-elixir",
+      "installing-nginx-percona-php-fpm-with-homebrew-on-mountain-lion"
     ]
   },
   "review-getting-started-with-phalcon": {
@@ -140,6 +164,12 @@
     "tags": [
       "tech-strategy",
       "backend-engineering"
+    ],
+    "related": [
+      "application-deployment",
+      "writing-api-wrappers-with-elixir",
+      "migrating-from-mysql-server-to-percona-server",
+      "migrating-to-acvte"
     ]
   },
   "writing-api-wrappers-with-elixir": {
@@ -152,6 +182,12 @@
       "backend-engineering",
       "system-architecture",
       "developer-tooling"
+    ],
+    "related": [
+      "asp-dotnet-core-webapi-in-azure-app-service",
+      "implementing-user-authentication-with-bcrypt-in-chicagoboss",
+      "application-deployment",
+      "pitstop-with-the-elixir-genevent-module"
     ]
   },
   "implementing-user-authentication-with-bcrypt-in-chicagoboss": {
@@ -163,6 +199,12 @@
     "tags": [
       "backend-engineering",
       "system-architecture"
+    ],
+    "related": [
+      "writing-api-wrappers-with-elixir",
+      "application-deployment",
+      "migrating-from-mysql-server-to-percona-server",
+      "chicagoboss"
     ]
   },
   "acvte": {
@@ -234,6 +276,12 @@
       "backend-engineering",
       "system-architecture",
       "tech-strategy"
+    ],
+    "related": [
+      "application-deployment",
+      "writing-api-wrappers-with-elixir",
+      "implementing-user-authentication-with-bcrypt-in-chicagoboss",
+      "installing-nginx-percona-php-fpm-with-homebrew-on-mountain-lion"
     ]
   },
   "using-obtvse2": {
