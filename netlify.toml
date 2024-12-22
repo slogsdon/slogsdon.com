@@ -6,7 +6,9 @@ publish = "dist"
 package = "@netlify/plugin-sitemap"
   [plugins.inputs]
   exclude = [
-    './dist/articles/_drafts/**/*'
+    './dist/articles/_drafts/**/*',
+    '404.html',
+    'google*.html'
   ]
   prettyURLs = true
   trailingSlash = true
